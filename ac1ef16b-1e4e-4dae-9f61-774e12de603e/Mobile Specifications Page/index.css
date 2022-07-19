@@ -1,0 +1,24 @@
+.boarder {
+    border-color: #707070;
+    padding:2px;
+}
+
+.image {
+    height: 50vh;
+    width: 75vh;
+    padding:2px;
+}
+
+.heading {
+    color: #0a1f44;
+    font-weight: bold;
+    font-family: "Roboto";
+    font-size: 28px;
+    padding: 20px;
+}
+
+.paragraph {
+    color: #0a1f44;
+    font-size: 20px;
+    padding: 2px;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="./index.css" />
+  </head>
+
+<body>
+    <div class="bg-container">
+        <div class="image-container">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/nemo-c1-img.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/nemo-c2-img.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/nemo-c3-img.png" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <div class="d-flex flex-row">
+                <h1 class="heading">Finding Nemo</h1>
+                <button class="button">watch Now</button>
+            </div>
+            <p class="paragraph">A clown fish,is overly cautious with his son,Nemo who has a foreshortened fin.When Nemo swims too close to the surface to prove himself.he is caught by adriver, and horrified Marlin must set out to find him.A blue reef fish named Dory joins Marlin and complicates the encounters with sharks,jeelyfish,and a host of ocean dangers.Meanwhile,Nemo plots his escape from a dentist's fish tank.</p>
+            <h1 class="heading">Similar Movies</h1>
+            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/finding-dory-img.png" class="image" />
+            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/bugslife-img.png" class="image" />
+            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/ratatouille-movie-img.png" class="image" />
+
+        </div>
+    </div>
+<script src="./index.js" type="text/javascript"></script>
+  </body>
+
+</html>

@@ -1,0 +1,76 @@
+.bg-container {
+    background-color: #0967d219;
+    background-size: cover;
+}
+
+.bg-card-container1 {
+    background-color: white;
+    margin: 10px;
+}
+
+.bg-card-container {
+    background-color: white;
+    margin: 10px;
+}
+
+.heading1 {
+    font-size: 20px;
+    font-family: "Roboto";
+    color: #323f4b;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.image1 {
+    height: 60px;
+    width: 50px;
+}
+
+.button {
+    border-radius: 19px;
+    height: 15px;
+    width: 150px;
+    padding: 5px;
+}
+
+.inner-card-container {
+    background-color: #0967d219;
+    margin: 30px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.paragraph {
+    font-size: 12px;
+    font-family: "Roboto";
+    color: #707070;
+    font-weight: 500;
+
+}
+
+.image1-card-container {
+    background-color: #3ebd93;
+    margin: 5px;
+    border-radius: 10px;
+    color: white;
+}
+
+.image2-card-container {
+    background-color: #e668a7;
+    margin: 5px;
+    border-radius: 10px;
+    color: white;
+}
+
+.image3-card-container {
+    background-color: #a368fc;
+    margin: 5px;
+    border-radius: 10px;
+    color: white;
+}
+
+.inner-inner-card-container {
+    background-color: #e12d3919;
+    margin: 10px;
+    border-radius: 10px;
+}

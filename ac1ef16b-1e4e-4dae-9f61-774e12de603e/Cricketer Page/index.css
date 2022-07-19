@@ -1,0 +1,72 @@
+.bg-container {
+    background-image: url("https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/klrahul-img1.png");
+    background-color: #fb4e71;
+    background-size: cover;
+    padding:15px;
+
+}
+
+.top-heading {
+    color: #ffffff;
+    font-size: 30px;
+    font-family: "roboto";
+    font-weight: bold;
+    
+}
+
+.top-paragraph {
+    color: #ffffff;
+    font-size: 20px;
+    font-family: "roboto";
+
+}
+
+.bottom-section-container {
+    background-color: #e6f6ff;
+}
+
+.heading1 {
+    font-family: "roboto";
+    font-size: 30px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.bottom-section-card-container {
+    margin: 10px;
+    background-color: #ffffff;
+}
+
+.heading {
+    font-size: 30px;
+    font-family: "roboto";
+    font-weight: bold;
+    padding: 2px;
+}
+
+.paragraph {
+    font-size: 12px;
+    font-family: "roboto";
+    color: #888888;
+    padding: 2px;
+}
+
+.image {
+    height: 100px;
+    width: 50px;
+}
+
+.bottom-bottom-section-card-container {
+    margin: 5px;
+}
+
+.paragraph1 {
+    color: #323f4b;
+    width: 150px;
+    font-size: 18px;
+    padding: 2px;
+}
+
+.button {
+    padding: 10px;
+}

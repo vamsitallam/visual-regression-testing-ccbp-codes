@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+.home-page {
+  background-color: #225db0;
+  height: 100vh;
+  padding-top: 48px;
+  padding-left: 32px;
+  padding-bottom: 48px;
+  padding-right: 32px;
+}
+
+.introduction-heading {
+  color: #ffffff;
+  font-family: "Roboto";
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.description {
+  color: #ffffff;
+  font-family: "Roboto";
+  font-size: 16px;
+}
+
+.category-card {
+  background-color: #ffffff;
+  width: 140px;
+  border-radius: 8px;
+  margin-top: 16px;
+  margin-right: 16px;
+  padding-top: 12px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.category-image {
+  width: 32px;
+  height: 32px;
+}
+
+.category-title {
+  color: #1f2933;
+  font-family: "Roboto";
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+.list-of-topics-section {
+  background-color: #225db0;
+  height: 100vh;
+  padding-top: 24px;
+  padding-left: 24px;
+  padding-bottom: 32px;
+  padding-right: 24px;
+}
+
+.list-of-topics-title {
+  color: #ffffff;
+  font-family: "Roboto";
+  font-size: 24px;
+  font-weight: 500;
+  margin-top: 22px;
+}
+
+.topics-list {
+  margin-top: 24px;
+}
+
+.topic-name {
+  color: #ffffff;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+.button {
+  background-color: #225db0;
+  color: #ffffff;
+  font-family: "Roboto";
+  font-size: 10px;
+  width: 40px;
+  height: 20px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #ffffff;
+}

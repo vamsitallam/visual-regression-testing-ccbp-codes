@@ -1,0 +1,21 @@
+.heading1 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #323f4b;
+    padding: 15px;
+}
+
+.paragraph {
+    font-size: 12px;
+    color: #9aa5b1;
+    padding: 10px;
+}
+
+.image {
+    margin: 10px;
+    height: 70px;
+    width: 50px;
+}
+.videos{
+    margin:30px;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="./index.css" />
+  </head>
+
+<body>
+    <div class="about-me-section pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 order-1 order-md-2 d-flex flex-column justify-content-center">
+                    <h1 class="about-me-section-sub-heading mb-3">Facts</h1>
+                    <h1 class="about-me-section-heading mb-3">About me</h1>
+                    <img src="" />
+                    <p class="about-me-section-description">My name is Jenny Wilson, and I am currently looking for a job in Frontend Development. I have 3 years of experiemce working as a Frontend Developer.I have a bachelor's degree in Electronic and Communication.People find me to be an upbeat.</p>
+                </div>
+                <div class="col-12 col-md-6 order-2 order-md-1 d-none d-md-block">
+                    <img src="" class="about-me-section-image" />
+                    <h1 class="skills-card-title">JS</h1>
+                    <div class="shadow skills-card text-center mb-3"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="./index.js" type="text/javascript"></script>
+  </body>
+
+</html>

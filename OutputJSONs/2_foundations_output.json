@@ -1,0 +1,113 @@
+[
+    {
+        "question_type": "HTML_CODING",
+        "question": {
+            "question_id": "cffab948-1966-432c-baf2-049f4c9cf2c9",
+            "content": "In this assignment, let's build a Foundations page by applying the concepts we learned till now. You can use the Bootstrap concepts as well.\n\n**Refer to the below image.**\n\n<img src=\"https://assets.ccbp.in/frontend/content/static-website/foundations-output-v2-img.png\" style=\"max-width:300px;\"/>\n\n<br/>\n\n<MultiLineNote>\nTry to achieve the design as close as possible.\n</MultiLineNote>\n\n<hr/>\n\n#### Resources\n\nUse the image given below.\n\n<br/>\n\n- [https://assets.ccbp.in/frontend/static-website/foundations-bg.png](https://assets.ccbp.in/frontend/static-website/foundations-bg.png)\n- [https://assets.ccbp.in/frontend/static-website/foundations-python-img.png](https://assets.ccbp.in/frontend/static-website/foundations-python-img.png)\n- [https://assets.ccbp.in/frontend/static-website/foundations-javascript-img.png](https://assets.ccbp.in/frontend/static-website/foundations-javascript-img.png)\n- [https://assets.ccbp.in/frontend/static-website/foundations-html5-img.png](https://assets.ccbp.in/frontend/static-website/foundations-html5-img.png)\n- [https://assets.ccbp.in/frontend/static-website/foundations-java-img.png](https://assets.ccbp.in/frontend/static-website/foundations-java-img.png)\n\n**CSS Colors used:**\n\nBackground color Hex Code values:\n\n<div style=\"background-color: #ffffff ; width: 150px; padding: 10px; color: black\">\\#ffffff</div>\n\n<br/>\n\nText color Hex Code values:\n\n<div style=\"background-color: #323f4b;; width: 150px; padding: 10px; color: white\">\\#323f4b</div>\n<div style=\"background-color: #7b8794; width: 150px; padding: 10px; color: black\">\\#7b8794</div>\n\n<br/>\n\nBorder color Hex Code values:\n\n<div style=\"background-color: #cbd2d9;; width: 150px; padding: 10px; color: white\">\\#cbd2d9</div>\n\n<br/>\n\n**CSS Font families used:**\n\n- Roboto\n\n<hr/>\n\n#### Concepts Review\n\nWant to quickly review some of the concepts you\u2019ve been learning?\n\nTake a look at the Cheat Sheets.\n",
+            "content_type": "MARKDOWN",
+            "short_text": "Foundations Page",
+            "multimedia": [],
+            "language": "ENGLISH",
+            "difficulty": "EASY",
+            "tag_names": []
+        },
+        "question_asked_by_companies_info": [],
+        "test_cases": [
+            {
+                "test_case_id": "61280aa2-9574-4444-a84b-a6e2194cf755",
+                "display_text": "Page should consist of an HTML main heading element in an HTML container element",
+                "testcase_evaluation_type": "CLIENT_SIDE_EVALUATION",
+                "order": 1,
+                "criteria": "assert.isAbove($('#htmlPreview').find('div > h1').length, 0);",
+                "weightage": 5
+            },
+            {
+                "test_case_id": "83ad699a-39f6-4ad6-8dd3-2f4a3492eb7b",
+                "display_text": "Page should consist of an HTML image element in an HTML container element",
+                "testcase_evaluation_type": "CLIENT_SIDE_EVALUATION",
+                "order": 2,
+                "criteria": "assert.isAbove($('#htmlPreview div').find('img').length, 0);",
+                "weightage": 5
+            },
+            {
+                "test_case_id": "2cf94cd7-da55-4c9b-acd0-87d52eeab4d8",
+                "display_text": "Page should consist of an HTML container element with the CSS property background-image",
+                "testcase_evaluation_type": "CLIENT_SIDE_EVALUATION",
+                "order": 3,
+                "criteria": "assert.isAtLeast($('#htmlPreview').find('div').toArray().filter(( element, index )=>$(element).css('background-image')!= 'none' && $(element).css('background-image')!= undefined).length, 1);",
+                "weightage": 5
+            },
+            {
+                "test_case_id": "5191526a-180b-48c5-8505-99930a8d99f4",
+                "display_text": "Page should consist of an HTML container element with CSS property background-size and value cover",
+                "testcase_evaluation_type": "CLIENT_SIDE_EVALUATION",
+                "order": 4,
+                "criteria": "assert.isAbove($('#htmlPreview').find('div').toArray().filter(( element, index )=> $(element).css('background-size')==='cover').length, 0);",
+                "weightage": 5
+            },
+            {
+                "test_case_id": "50f84cee-a0ca-4103-8145-569ff29f5a95",
+                "display_text": "Page should consist of an HTML container element with the bootstrap class name d-flex",
+                "testcase_evaluation_type": "CLIENT_SIDE_EVALUATION",
+                "order": 5,
+                "criteria": "assert.isAbove($('#htmlPreview').find('div').toArray().filter(( element, index )=>$(element).hasClass('d-flex')).length, 0);",
+                "weightage": 5
+            },
+            {
+                "test_case_id": "92e85915-f703-4845-a7ac-0e6820ef7c8a",
+                "display_text": "Page should consist of an HTML container element with the bootstrap class name flex-row",
+                "testcase_evaluation_type": "CLIENT_SIDE_EVALUATION",
+                "order": 6,
+                "criteria": "assert.isAbove($('#htmlPreview').find('div').toArray().filter(( element, index )=>$(element).hasClass('flex-row')).length, 0);",
+                "weightage": 5
+            }
+        ],
+        "total_score": 30,
+        "html_coding_question_details": [
+            {
+                "code_content": "<!DOCTYPE html>\n<html>\n  <head>\n    <link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css\" integrity=\"sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z\" crossorigin=\"anonymous\" />\n    <script src=\"https://code.jquery.com/jquery-3.5.1.slim.min.js\" integrity=\"sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj\" crossorigin=\"anonymous\"></script>\n    <script src=\"https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js\" integrity=\"sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN\" crossorigin=\"anonymous\"></script>\n    <script src=\"https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js\" integrity=\"sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV\" crossorigin=\"anonymous\"></script>\n  </head>\n  <body>\n    Your code goes here.\n  </body>\n</html>\n",
+                "language": "HTML"
+            },
+            {
+                "code_content": "@import url(\"https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap\");\n",
+                "language": "CSS"
+            },
+            {
+                "code_content": "",
+                "language": "JAVASCRIPT"
+            }
+        ],
+        "solutions": [
+            {
+                "order": 1,
+                "title": {
+                    "content": "Foundations Page",
+                    "content_type": "TEXT"
+                },
+                "description": {
+                    "content": "An approach of designing Foundations Page.",
+                    "content_type": "TEXT"
+                },
+                "code_details": [
+                    {
+                        "default_code": true,
+                        "code_content": "<!DOCTYPE html>\n<html>\n  <head>\n    <link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css\" integrity=\"sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z\" crossorigin=\"anonymous\" />\n    <script src=\"https://code.jquery.com/jquery-3.5.1.slim.min.js\" integrity=\"sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj\" crossorigin=\"anonymous\"></script>\n    <script src=\"https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js\" integrity=\"sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN\" crossorigin=\"anonymous\"></script>\n    <script src=\"https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js\" integrity=\"sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV\" crossorigin=\"anonymous\"></script>\n  </head>\n  <body>\n    <div class=\"foundations-bg-container d-flex flex-column justify-content-end\">\n      <div class=\"foundations-card-container\">\n        <h1 class=\"foundations-card-heading\">Foundations</h1>\n        <p class=\"foundations-card-description\">Learn courses that will help you move forward in your career</p>\n        <div class=\"d-flex flex-row justify-content-center\">\n          <div class=\"programming-language-card-container d-flex flex-column justify-content-center text-center\">\n            <div class=\"text-center\">\n              <img src=\"https://assets.ccbp.in/frontend/static-website/foundations-python-img.png\" class=\"image\" />\n            </div>\n            <p class=\"programming-language-name\">Python</p>\n          </div>\n          <div class=\"programming-language-card-container d-flex flex-column justify-content-center text-center\">\n            <div class=\"text-center\">\n              <img src=\"https://assets.ccbp.in/frontend/static-website/foundations-javascript-img.png\" class=\"image\" />\n            </div>\n            <p class=\"programming-language-name\">Javascript</p>\n          </div>\n        </div>\n        <div class=\"d-flex flex-row justify-content-center\">\n          <div class=\"programming-language-card-container d-flex flex-column justify-content-center text-center\">\n            <div class=\"text-center\">\n              <img src=\"https://assets.ccbp.in/frontend/static-website/foundations-html5-img.png\" class=\"image\" />\n            </div>\n            <p class=\"programming-language-name\">HTML5</p>\n          </div>\n          <div class=\"programming-language-card-container d-flex flex-column justify-content-center text-center\">\n            <div class=\"text-center\">\n              <img src=\"https://assets.ccbp.in/frontend/static-website/foundations-java-img.png\" class=\"image\" />\n            </div>\n            <p class=\"programming-language-name\">Java</p>\n          </div>\n        </div>\n      </div>\n    </div>\n  </body>\n</html>\n",
+                        "language": "HTML"
+                    },
+                    {
+                        "default_code": true,
+                        "code_content": "@import url(\"https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap\");\n\n.foundations-bg-container {\n  background-image: url(\"https://assets.ccbp.in/frontend/static-website/foundations-bg.png\");\n  height: 100vh;\n  background-size: cover;\n}\n\n.foundations-card-container {\n  background-color: #ffffff;\n  border-top-left-radius: 32px;\n  border-top-right-radius: 32px;\n  padding: 30px;\n}\n\n.foundations-card-heading {\n  color: #323f4b;\n  font-family: \"Roboto\";\n  font-size: 28px;\n  font-weight: bold;\n  margin-top: 10px;\n}\n\n.foundations-card-description {\n  color: #7b8794;\n}\n\n.programming-language-card-container {\n  width: 45vw;\n  border-width: 1px;\n  border-style: solid;\n  border-color: #cbd2d9;\n  border-radius: 8px;\n  margin-bottom: 16px;\n  margin-right: 16px;\n  padding-top: 12px;\n}\n\n.image {\n  width: 40px;\n  height: 40px;\n}\n\n.programming-language-name {\n  margin-top: 10px;\n}\n",
+                        "language": "CSS"
+                    },
+                    {
+                        "default_code": true,
+                        "code_content": "",
+                        "language": "JAVASCRIPT"
+                    }
+                ]
+            }
+        ],
+        "read_only_languages": [],
+        "hints": []
+    }
+]

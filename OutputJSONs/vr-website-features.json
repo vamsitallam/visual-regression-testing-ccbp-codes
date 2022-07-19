@@ -1,0 +1,113 @@
+[
+    {
+        "question_type": "HTML_CODING",
+        "question": {
+            "question_id": "3119d376-f969-4eac-8cc0-4b61416f4f90",
+            "content": "In this assignment, let's build a VR Website Features Section by applying the concepts we learned till now.\n\n**Refer to the below images.**\n\nThe following images illustrate all device sizes, from extra small to extra large.\n\nExtra Small (Size < 576px), Small (Size >= 576px):\n\n<img src=\"https://nkb-backend-media-static-tenxiitian.s3.ap-south-1.amazonaws.com/tenxiitian_prod/programs/Tech+Programs/frontend-content/ccbp/coding-practice-questions/responsive-website/vr-features-section-xs-v1.png\" alt=\"vr-website-to-build\" style=\"max-width:300px;box-shadow:0 2.8px 2.2px rgba(0, 0, 0, 0.12)\"/>\n\n<br/>\n\n<br/>\n\nMedium (Size >= 768px), Large (Size >= 992px) and Extra Large (Size >= 1200px):\n\n<br/>\n\n<Img imageSrc=\"https://nkb-backend-media-static-tenxiitian.s3.ap-south-1.amazonaws.com/tenxiitian_prod/programs/Tech+Programs/frontend-content/ccbp/coding-practice-questions/responsive-website/vr-features-section-md-v1.png\" widthPercent='80'/>\n\n<MultiLineNote>\nTry to achieve the design as close as possible.\n</MultiLineNote>\n\n<hr/>\n\n#### Resources\n\nUse the image URLs given below.\n\n- [https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/easy-connect-img.png](https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/easy-connect-img.png)\n- [https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/vr-capability-img.png](https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/vr-capability-img.png)\n- [https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/video-games-img.png](https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/video-games-img.png)\n- [https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/interaction-img.png](https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/interaction-img.png)\n- [https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/easy-play-img.png](https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/easy-play-img.png)\n- [https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/experience-img.png](https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/experience-img.png)\n\n**CSS Colors used:**\n\n<div style=\"background-color: #1f2933; width: 150px; padding: 10px; color: white\">\\#1f2933</div>\n<div style=\"background-color: #7b8794; width: 150px; padding: 10px; color: white\">\\#7b8794</div>\n\n<hr/>\n\n#### Concepts Review\n\nWant to quickly review some of the concepts you\u2019ve been learning?\n\nTake a look at the Cheat Sheets.\n",
+            "content_type": "MARKDOWN",
+            "short_text": "VR Website Features Section",
+            "multimedia": [],
+            "language": "ENGLISH",
+            "difficulty": "EASY",
+            "tag_names": []
+        },
+        "question_asked_by_companies_info": [],
+        "test_cases": [
+            {
+                "test_case_id": "f74683c2-fb2c-4e97-8339-f765df075309",
+                "display_text": "Page should consist of an HTML image element",
+                "testcase_evaluation_type": "CLIENT_SIDE_EVALUATION",
+                "order": 1,
+                "criteria": "assert.isAbove($('#htmlPreview').find('img').length, 0);",
+                "weightage": 10
+            },
+            {
+                "test_case_id": "9a1d8a5c-bb32-4cc8-8e65-f7eed547d68f",
+                "display_text": "Page should consist of an HTML span element",
+                "testcase_evaluation_type": "CLIENT_SIDE_EVALUATION",
+                "order": 2,
+                "criteria": "assert.isAbove($('#htmlPreview').find('span').length, 0);",
+                "weightage": 10
+            },
+            {
+                "test_case_id": "68599aea-750a-4413-9e58-35b14ba955e8",
+                "display_text": "Page should consist of an HTML container element with the bootstrap class name container",
+                "testcase_evaluation_type": "CLIENT_SIDE_EVALUATION",
+                "order": 3,
+                "criteria": "assert.isAbove($('#htmlPreview').find('div').toArray().filter(( element, index )=>$(element).hasClass('container')).length, 0);",
+                "weightage": 10
+            },
+            {
+                "test_case_id": "01cc19d2-8dfd-4400-8c71-f9cee37e73b6",
+                "display_text": "Page should consist of an HTML container element with the bootstrap class name row",
+                "testcase_evaluation_type": "CLIENT_SIDE_EVALUATION",
+                "order": 4,
+                "criteria": "assert.isAbove($('#htmlPreview').find('div').toArray().filter(( element, index )=>$(element).hasClass('row')).length, 0);",
+                "weightage": 10
+            },
+            {
+                "test_case_id": "0c1251c2-d1a3-4546-b98a-b7b4e502753f",
+                "display_text": "Page should consist of an HTML container element with the bootstrap grid column class name in medium devices that starts with col-md-",
+                "testcase_evaluation_type": "CLIENT_SIDE_EVALUATION",
+                "order": 5,
+                "criteria": "assert.isAbove($('#htmlPreview').find('div[class*= \"col-md-\"]').length, 0);",
+                "weightage": 10
+            },
+            {
+                "test_case_id": "a261ae8f-bd37-470d-b252-dba64befba97",
+                "display_text": "Page should consist of an HTML container element with the bootstrap class name text-center or the CSS property text-align with the value center",
+                "testcase_evaluation_type": "CLIENT_SIDE_EVALUATION",
+                "order": 6,
+                "criteria": "assert.isAbove($('#htmlPreview').find('div').toArray().filter(( element, index )=>$(element).hasClass('text-center')||$(element).css('text-align')==='center').length, 0);",
+                "weightage": 10
+            }
+        ],
+        "total_score": 60,
+        "html_coding_question_details": [
+            {
+                "code_content": "<!DOCTYPE html>\n<html>\n  <head>\n    <link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css\" integrity=\"sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z\" crossorigin=\"anonymous\" />\n    <script src=\"https://code.jquery.com/jquery-3.5.1.slim.min.js\" integrity=\"sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj\" crossorigin=\"anonymous\"></script>\n    <script src=\"https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js\" integrity=\"sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN\" crossorigin=\"anonymous\"></script>\n    <script src=\"https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js\" integrity=\"sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV\" crossorigin=\"anonymous\"></script>\n  </head>\n  <body>\n    Your code goes here\n  </body>\n</html>\n",
+                "language": "HTML"
+            },
+            {
+                "code_content": "@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');\n",
+                "language": "CSS"
+            },
+            {
+                "code_content": "",
+                "language": "JAVASCRIPT"
+            }
+        ],
+        "solutions": [
+            {
+                "order": 1,
+                "title": {
+                    "content": "VR Website Features Section",
+                    "content_type": "TEXT"
+                },
+                "description": {
+                    "content": "An approach of designing a VR Website Features Section using Bootstrap.",
+                    "content_type": "TEXT"
+                },
+                "code_details": [
+                    {
+                        "default_code": true,
+                        "code_content": "<!DOCTYPE html>\n<html>\n  <head>\n    <link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css\" integrity=\"sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z\" crossorigin=\"anonymous\"/>\n    <script src=\"https://code.jquery.com/jquery-3.5.1.slim.min.js\" integrity=\"sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj\" crossorigin=\"anonymous\"></script>\n    <script src=\"https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js\" integrity=\"sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN\" crossorigin=\"anonymous\"></script>\n    <script src=\"https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js\" integrity=\"sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV\" crossorigin=\"anonymous\"></script>\n  </head>\n  <body>\n    <div class=\"pt-5 pb-5\">\n      <div class=\"container\">\n        <div class=\"row\">\n          <div class=\"col-12\">\n            <h1 class=\"vr-features-section-heading\">Features</h1>\n          </div>\n          <div class=\"col-12 col-md-4\">\n            <div class=\"p-3 mb-3 text-center\">\n              <img\n                src=\"https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/easy-connect-img.png\"\n                class=\"vr-features-card-image\"\n              />\n              <h1 class=\"vr-features-card-title mt-3\">Easy to connect</h1>\n              <p class=\"vr-features-card-description\">\n                Instead of viewing a screen in front of them, users are immersed and able to interact with 3D worlds.\n              </p>\n            </div>\n          </div>\n          <div class=\"col-12 col-md-4\">\n            <div class=\"p-3 mb-3 text-center\">\n              <img\n                src=\"https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/vr-capability-img.png\"\n                class=\"vr-features-card-image\"\n              />\n              <h1 class=\"vr-features-card-title mt-3\">VR Capability</h1>\n              <p class=\"vr-features-card-description\">\n                Virtual reality (VR) can create an environment similar to or completely different from the real world.\n              </p>\n            </div>\n          </div>\n          <div class=\"col-12 col-md-4\">\n            <div class=\"p-3 mb-3 text-center\">\n              <img\n                src=\"https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/video-games-img.png\"\n                class=\"vr-features-card-image\"\n              />\n              <h1 class=\"vr-features-card-title mt-3\">Video games</h1>\n              <p class=\"vr-features-card-description\">\n                Ability to recognize hand motion, evolving interactions and gameplay in VR.\n              </p>\n            </div>\n          </div>\n          <div class=\"col-12 col-md-4\">\n            <div class=\"p-3 mb-3 text-center\">\n              <img\n                src=\"https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/interaction-img.png\"\n                class=\"vr-features-card-image\"\n              />\n              <h1 class=\"vr-features-card-title mt-3\">Interaction</h1>\n              <p class=\"vr-features-card-description\">\n                Interaction refers to the <span class=\"interaction\">natural interaction</span> between the user and the virtual scene.\n              </p>\n            </div>\n          </div>\n          <div class=\"col-12 col-md-4\">\n            <div class=\"p-3 mb-3 text-center\">\n              <img\n                src=\"https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/easy-play-img.png\"\n                class=\"vr-features-card-image\"\n              />\n              <h1 class=\"vr-features-card-title mt-3\">Easy to play</h1>\n              <p class=\"vr-features-card-description\">\n                In 360-degree video, the locations of viewers are fixed, viewers are limited to the angles captured by the cameras.\n              </p>\n            </div>\n          </div>\n          <div class=\"col-12 col-md-4\">\n            <div class=\"p-3 mb-3 text-center\">\n              <img\n                src=\"https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/experience-img.png\"\n                class=\"vr-features-card-image\"\n              />\n              <h1 class=\"vr-features-card-title mt-3\">Awesome Experience</h1>\n              <p class=\"vr-features-card-description\">\n                Virtual reality (VR) is a simulated experience that can be similar to or completely different from the real world.\n              </p>\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n  </body>\n</html>\n",
+                        "language": "HTML"
+                    },
+                    {
+                        "default_code": true,
+                        "code_content": "@import url(\"https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap\");\n\n.vr-features-section-heading {\n  color: #1f2933;\n  font-family: \"Roboto\";\n  font-size: 26px;\n  font-weight: bold;\n}\n.vr-features-card-image {\n  width: 64px;\n  height: 64px;\n}\n.vr-features-card-title {\n  color: #1f2933;\n  font-family: \"Roboto\";\n  font-size: 22px;\n  font-weight: 500;\n}\n.vr-features-card-description {\n  color: #7b8794;\n  font-family: \"Roboto\";\n  font-size: 16px;\n}\n.interaction {\n  color: #1f2933;\n  font-style: italic;\n  font-weight: bold;\n}\n",
+                        "language": "CSS"
+                    },
+                    {
+                        "default_code": true,
+                        "code_content": "",
+                        "language": "JAVASCRIPT"
+                    }
+                ]
+            }
+        ],
+        "read_only_languages": [],
+        "hints": []
+    }
+]

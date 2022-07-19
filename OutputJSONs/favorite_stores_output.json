@@ -1,0 +1,137 @@
+[
+    {
+        "question_type": "HTML_CODING",
+        "question": {
+            "question_id": "d2d5c6fe-703a-499b-bca8-b7a36590e4b8",
+            "content": "In this assignment, let's build a Favorite Stores Page by applying the concepts we learned till now. You can use the Bootstrap concepts as well.\n\n**Refer to the below image.**\n\n<img src=\"https://assets.ccbp.in/frontend/content/static-website/favourite-stores-output-img.png\" style=\"max-width:300px;\"/>\n\n<MultiLineNote>\nTry to achieve the design as close as possible.\n</MultiLineNote>\n\n<hr/>\n\n### Resources\n\nUse the image URLs given below.\n<br/>\n\n- [https://assets.ccbp.in/frontend/static-website/stores-img.png](https://assets.ccbp.in/frontend/static-website/stores-img.png)\n- [https://assets.ccbp.in/frontend/static-website/amazon-logo-img.png](https://assets.ccbp.in/frontend/static-website/amazon-logo-img.png)\n- [https://assets.ccbp.in/frontend/static-website/ikea-logo-img.png](https://assets.ccbp.in/frontend/static-website/ikea-logo-img.png)\n- [https://assets.ccbp.in/frontend/static-website/bewakoof-logo-img.png](https://assets.ccbp.in/frontend/static-website/bewakoof-logo-img.png)\n- [https://assets.ccbp.in/frontend/static-website/flipkart-logo-img.png](https://assets.ccbp.in/frontend/static-website/flipkart-logo-img.png)\n\n<br/>\n\n**CSS Colors used:**\n\nBackground color Hex Code values:\n\n<div style=\"background-color: #894bca; width: 150px; padding: 10px; color: white\">\\#894bca</div>\n<div style=\"background-color: #ffffff; width: 150px; padding: 10px; color: black\">\\#ffffff</div>\n\n<br/>\n\nText color Hex Code values:\n\n<div style=\"background-color: #f780c3;; width: 150px; padding: 10px; color: white\">\\#f780c3</div>\n<div style=\"background-color: #ffffff; width: 150px; padding: 10px; color: black\">\\#ffffff</div>\n<div style=\"background-color: #323f4b;; width: 150px; padding: 10px; color: white\">\\#323f4b</div>\n<div style=\"background-color: #7b8794; width: 150px; padding: 10px; color: white\">\\#7b8794</div>\n\n<br/>\n\n**CSS Font families used:**\n\n- Bree Serif\n\n<hr/>\n\n#### Concepts Review\n\nWant to quickly review some of the concepts you\u2019ve been learning?\n\nTake a look at the Cheat Sheets.\n",
+            "content_type": "MARKDOWN",
+            "short_text": "Favorite Stores Page",
+            "multimedia": [],
+            "language": "ENGLISH",
+            "difficulty": "EASY",
+            "tag_names": []
+        },
+        "question_asked_by_companies_info": [],
+        "test_cases": [
+            {
+                "test_case_id": "a37077a9-4fb8-4e3b-af4f-bbb080352319",
+                "display_text": "Page should consist of an HTML heading element",
+                "testcase_evaluation_type": "CLIENT_SIDE_EVALUATION",
+                "order": 1,
+                "criteria": "assert.isAbove($(\"#htmlPreview\").find(\"h1\").length, 0);",
+                "weightage": 5
+            },
+            {
+                "test_case_id": "f78795ee-d2ef-4463-87e0-d7dcf14fdc7c",
+                "display_text": "Page should consist of an HTML image element",
+                "testcase_evaluation_type": "CLIENT_SIDE_EVALUATION",
+                "order": 2,
+                "criteria": "assert.isAbove($(\"#htmlPreview\").find(\"img\").length, 0);",
+                "weightage": 5
+            },
+            {
+                "test_case_id": "522c1917-e854-4cd0-b4c9-5c22d0c405a2",
+                "display_text": "Page should consist of an HTML paragraph element",
+                "testcase_evaluation_type": "CLIENT_SIDE_EVALUATION",
+                "order": 3,
+                "criteria": "assert.isAbove($(\"#htmlPreview\").find(\"p\").length, 0);",
+                "weightage": 5
+            },
+            {
+                "test_case_id": "5b671b72-9dc8-416d-8e99-cf8329e2796d",
+                "display_text": "Page should consist of an HTML container element with the CSS property background-color",
+                "testcase_evaluation_type": "CLIENT_SIDE_EVALUATION",
+                "order": 4,
+                "criteria": "assert.isAbove(  $(\"#htmlPreview\")    .find(\"div\")    .toArray()    .filter((element, index) => $(element).css(\"background-color\") != \"rgba(0, 0, 0, 0)\" && $(element).css(\"background-color\") != undefined).length,  0);",
+                "weightage": 5
+            },
+            {
+                "test_case_id": "2ce020bb-7114-417f-83c4-ce70fc768c77",
+                "display_text": "Page should consist of an HTML container element with the bootstrap class name d-flex",
+                "testcase_evaluation_type": "CLIENT_SIDE_EVALUATION",
+                "order": 5,
+                "criteria": "assert.isAbove(  $(\"#htmlPreview\")    .find(\"div\")    .toArray()    .filter((element, index) => $(element).hasClass(\"d-flex\")).length,  0);",
+                "weightage": 5
+            },
+            {
+                "test_case_id": "c19692fc-5398-4708-9498-48866ec4f344",
+                "display_text": "Page should consist of an HTML container element with the bootstrap class name flex-row",
+                "testcase_evaluation_type": "CLIENT_SIDE_EVALUATION",
+                "order": 6,
+                "criteria": "assert.isAbove(  $(\"#htmlPreview\")    .find(\"div\")    .toArray()    .filter((element, index) => $(element).hasClass(\"flex-row\")).length,  0);",
+                "weightage": 5
+            },
+            {
+                "test_case_id": "8c072db6-40ed-476c-ac8c-34817ed98f96",
+                "display_text": "Page should consist of an HTML container element with the CSS property border-top-right-radius having a non-zero value",
+                "testcase_evaluation_type": "CLIENT_SIDE_EVALUATION",
+                "order": 7,
+                "criteria": "assert.isAbove(  $(\"#htmlPreview\")    .find(\"div\")    .toArray()    .filter((element, index) => $(element).css(\"border-top-right-radius\") != \"0px\" && $(element).css(\"border-top-right-radius\") != undefined).length,  0);",
+                "weightage": 5
+            },
+            {
+                "test_case_id": "16b568b9-7275-4ef9-a1c0-7cf40cd5a7a1",
+                "display_text": "Page should consist of an HTML container element with the CSS property border-top-left-radius having a non-zero value",
+                "testcase_evaluation_type": "CLIENT_SIDE_EVALUATION",
+                "order": 8,
+                "criteria": "assert.isAbove(  $(\"#htmlPreview\")    .find(\"div\")    .toArray()    .filter((element, index) => $(element).css(\"border-top-left-radius\") != \"0px\" && $(element).css(\"border-top-left-radius\") != undefined).length,  0);",
+                "weightage": 5
+            },
+            {
+                "test_case_id": "00e35f2e-370b-43a0-9d34-245cdbd81ae6",
+                "display_text": "Page should consist of an HTML element with the CSS property color",
+                "testcase_evaluation_type": "CLIENT_SIDE_EVALUATION",
+                "order": 9,
+                "criteria": "assert.isAbove(  $(\"#htmlPreview *\")    .toArray()    .filter((f) => $(f).css(\"color\") != \"rgb(33, 37, 41)\" && $(f).css(\"color\") != undefined).length,  0);",
+                "weightage": 5
+            }
+        ],
+        "total_score": 45,
+        "html_coding_question_details": [
+            {
+                "code_content": "<!DOCTYPE html>\n<html>\n  <head>\n    <link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css\" integrity=\"sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z\" crossorigin=\"anonymous\" />\n    <script src=\"https://code.jquery.com/jquery-3.5.1.slim.min.js\" integrity=\"sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj\" crossorigin=\"anonymous\"></script>\n    <script src=\"https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js\" integrity=\"sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN\" crossorigin=\"anonymous\"></script>\n    <script src=\"https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js\" integrity=\"sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV\" crossorigin=\"anonymous\"></script>\n  </head>\n  <body>\n    Your code goes here\n  </body>\n</html>\n",
+                "language": "HTML"
+            },
+            {
+                "code_content": "@import url(\"https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap\");",
+                "language": "CSS"
+            },
+            {
+                "code_content": "",
+                "language": "JAVASCRIPT"
+            }
+        ],
+        "solutions": [
+            {
+                "order": 1,
+                "title": {
+                    "content": "Favorite Stores Page",
+                    "content_type": "TEXT"
+                },
+                "description": {
+                    "content": "An approach of designing a Favorite Stores Page using Bootstrap.",
+                    "content_type": "TEXT"
+                },
+                "code_details": [
+                    {
+                        "default_code": true,
+                        "code_content": "<!DOCTYPE html>\n<html>\n  <head>\n    <link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css\" integrity=\"sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z\" crossorigin=\"anonymous\" />\n    <script src=\"https://code.jquery.com/jquery-3.5.1.slim.min.js\" integrity=\"sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj\" crossorigin=\"anonymous\"></script>\n    <script src=\"https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js\" integrity=\"sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN\" crossorigin=\"anonymous\"></script>\n    <script src=\"https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js\" integrity=\"sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV\" crossorigin=\"anonymous\"></script>\n  </head>\n\n  <body>\n    <div class=\"favorite-stores-bg-container\">\n      <div class=\"d-flex flex-row\">\n        <h1 class=\"favorite-stores-heading\">Shop in your favorite stores</h1>\n        <div>\n          <img src=\"https://assets.ccbp.in/frontend/static-website/stores-img.png\" class=\"store-image\" />\n        </div>\n      </div>\n      <div class=\"favorite-stores-list-container\">\n        <h1 class=\"favorite-stores-list-heading\">Select your store with one click</h1>\n        <div class=\"favorite-store-details-container d-flex flex-row\">\n          <img src=\"https://assets.ccbp.in/frontend/static-website/amazon-logo-img.png\" class=\"favorite-store-image\" />\n          <div>\n            <h1 class=\"favorite-store-name\">Amazon</h1>\n            <p class=\"favorite-store-description\">Online Shopping Free Shipping & Cash on Delivery ...</p>\n          </div>\n        </div>\n        <div class=\"favorite-store-details-container d-flex flex-row\">\n          <img src=\"https://assets.ccbp.in/frontend/static-website/ikea-logo-img.png\" class=\"favorite-store-image\" />\n          <div>\n            <h1 class=\"favorite-store-name\">IKEA</h1>\n            <p class=\"favorite-store-description\">Explore our furniture & home furnishing range. IKEA is a global leader...</p>\n          </div>\n        </div>\n        <div class=\"favorite-store-details-container d-flex flex-row\">\n          <img src=\"https://assets.ccbp.in/frontend/static-website/bewakoof-logo-img.png\" class=\"favorite-store-image\" />\n          <div>\n            <h1 class=\"favorite-store-name\">Bewakoof</h1>\n            <p class=\"favorite-store-description\">A Lifestyle Fashion Brand That Offers Creative and Distinctive Fashion...</p>\n          </div>\n        </div>\n        <div class=\"favorite-store-details-container d-flex flex-row\">\n          <img src=\"https://assets.ccbp.in/frontend/static-website/flipkart-logo-img.png\" class=\"favorite-store-image\" />\n          <div>\n            <h1 class=\"favorite-store-name\">Flipkart</h1>\n            <p class=\"favorite-store-description\">Wide Range of Genuine Products, Easy Returns, Cash on Delivery, Browse Now...</p>\n          </div>\n        </div>\n      </div>\n    </div>\n  </body>\n</html>\n",
+                        "language": "HTML"
+                    },
+                    {
+                        "default_code": true,
+                        "code_content": "@import url(\"https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap\");\n\n.favorite-stores-bg-container {\n  background-color: #894bca;\n}\n\n.favorite-stores-heading {\n  color: #ffffff;\n  font-family: \"Bree Serif\";\n  font-size: 24px;\n  padding-top: 40px;\n  padding-bottom: 40px;\n  padding-left: 30px;\n}\n\n.store-image {\n  width: 200px;\n  margin-top: 10px;\n  margin-bottom: 10px;\n}\n\n.favorite-stores-list-container {\n  background-color: #ffffff;\n  border-top-left-radius: 16px;\n  border-top-right-radius: 16px;\n  padding: 20px;\n}\n\n.favorite-stores-list-heading {\n  color: #f780c3;\n  font-size: 18px;\n  font-weight: bold;\n  margin-top: 20px;\n  margin-bottom: 30px;\n}\n\n.favorite-store-details-container {\n  margin-bottom: 20px;\n}\n\n.favorite-store-image {\n  height: 50px;\n  margin-right: 20px;\n}\n\n.favorite-store-name {\n  color: #323f4b;\n  font-size: 18px;\n  font-weight: bold;\n}\n\n.favorite-store-description {\n  color: #7b8794;\n  font-size: 14px;\n}\n",
+                        "language": "CSS"
+                    },
+                    {
+                        "default_code": true,
+                        "code_content": "",
+                        "language": "JAVASCRIPT"
+                    }
+                ]
+            }
+        ],
+        "read_only_languages": [],
+        "hints": []
+    }
+]

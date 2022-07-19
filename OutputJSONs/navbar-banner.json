@@ -1,0 +1,161 @@
+[
+    {
+        "question_type": "HTML_CODING",
+        "question": {
+            "question_id": "b3200569-f2a1-483f-8fa3-ed8fd5c624fe",
+            "content": "In this assignment, let's build a Navbar & Banner Section by applying the concepts we learned till now.\n\n**Refer to the below images.**\n\nThe following images illustrate all device sizes, from extra small to extra large.\n\n<br/>\nExtra Small (Size < 576px), Small (Size >= 576px) :\n\n<img src=\"https://assets.ccbp.in/frontend/content/responsive-website/landing-section-sm-output-1-img-v2.png\" alt=\"vr-website-to-build\" style=\"max-width:300px;box-shadow:0 2.8px 2.2px rgba(0, 0, 0, 0.12)\"/>\n\n<br/>\n\n<img src=\"https://assets.ccbp.in/frontend/content/responsive-website/landing-section-sm-output-2-img-v2.png\" alt=\"vr-website-to-build\" style=\"max-width:300px;box-shadow:0 2.8px 2.2px rgba(0, 0, 0, 0.12)\"/>\n\n<br/>\n\n<br/>\nMedium (Size >= 768px):\n\n<img src=\"https://assets.ccbp.in/frontend/content/responsive-website/landing-section-md-output-img-v2.png\" alt=\"vr-website-to-build\"  style=\"width:90%; box-shadow:0 2.8px 2.2px rgba(0, 0, 0, 0.12)\"/>\n\n<br/>\n<br/>\nLarge (Size >= 992px) and Extra Large (Size >= 1200px):\n\n\n<img src=\"https://assets.ccbp.in/frontend/content/responsive-website/landing-section-lg-output-img-v2.png\"  style=\"width:90%;box-shadow:0 2.8px 2.2px rgba(0, 0, 0, 0.12)\"/>\n\n<MultiLineNote>\nTry to achieve the design as close as possible.\n</MultiLineNote>\n\n<hr/>\n\n#### Resources\n\nUse the image URLs given below.\n\nDesign Tool Logo:\n\n- [https://assets.ccbp.in/frontend/responsive-website/landing-section-design-logo-img.png](https://assets.ccbp.in/frontend/responsive-website/landing-section-design-logo-img.png)\n\nBackground Image:\n\n- [https://assets.ccbp.in/frontend/responsive-website/landing-section-bg.png](https://assets.ccbp.in/frontend/responsive-website/landing-section-bg.png)\n\n**CSS Colors used:**\n\n<div style=\"background-color: #0C0521; width: 150px; padding: 10px; color: white\">\\#0C0521</div>\n<div style=\"background-color: #FFDDA9; width: 150px; padding: 10px; color: black\">\\#FFDDA9</div>\n\n<hr/>\n\n#### Concepts Review\n\nWant to quickly review some of the concepts you\u2019ve been learning?\n\nTake a look at the Cheat Sheets.\n",
+            "content_type": "MARKDOWN",
+            "short_text": "Navbar & Banner Section",
+            "multimedia": [],
+            "language": "ENGLISH",
+            "difficulty": "EASY",
+            "tag_names": []
+        },
+        "question_asked_by_companies_info": [],
+        "test_cases": [
+            {
+                "test_case_id": "86bd4776-0762-4944-8de8-13a7b9b5c26b",
+                "display_text": "Page should consist of an HTML img element with non-empty src attribute",
+                "testcase_evaluation_type": "CLIENT_SIDE_EVALUATION",
+                "order": 1,
+                "criteria": "assert.isAbove(  $(\"#htmlPreview\")    .find(\"img\")    .toArray()    .filter(      (element, index) =>        $(element).attr(\"src\") !== undefined && $(element).attr(\"src\") !== \"\"    ).length,  0);",
+                "weightage": 5
+            },
+            {
+                "test_case_id": "34b4f761-3451-4084-ba80-7dc34fbc392e",
+                "display_text": "Page should consist of an HTML main heading element",
+                "testcase_evaluation_type": "CLIENT_SIDE_EVALUATION",
+                "order": 2,
+                "criteria": "assert.isAbove($(\"#htmlPreview\").find(\"h1\").length, 0);",
+                "weightage": 5
+            },
+            {
+                "test_case_id": "ec9a84a4-38dd-4dc7-8504-054fb87b085f",
+                "display_text": "Page should consist of an HTML span element in the HTML main heading element",
+                "testcase_evaluation_type": "CLIENT_SIDE_EVALUATION",
+                "order": 3,
+                "criteria": "assert.isAbove($(\"#htmlPreview h1\").find(\"span\").length, 0);",
+                "weightage": 5
+            },
+            {
+                "test_case_id": "c174a008-e61a-49ad-bfa8-f6f373ad8a1e",
+                "display_text": "Page should consist of an HTML paragraph element",
+                "testcase_evaluation_type": "CLIENT_SIDE_EVALUATION",
+                "order": 4,
+                "criteria": "assert.isAbove($(\"#htmlPreview\").find(\"p\").length, 0);",
+                "weightage": 5
+            },
+            {
+                "test_case_id": "a7645dd8-8652-46a2-9de5-cc8e08261bcb",
+                "display_text": "Page should consist of two HTML button elements",
+                "testcase_evaluation_type": "CLIENT_SIDE_EVALUATION",
+                "order": 5,
+                "criteria": "assert.isAbove($(\"#htmlPreview\").find(\"button\").length, 1);",
+                "weightage": 5
+            },
+            {
+                "test_case_id": "8d898600-1559-4cd0-9c66-9d9252a4488a",
+                "display_text": "Page should consist of a nav element with the bootstrap class name navbar",
+                "testcase_evaluation_type": "CLIENT_SIDE_EVALUATION",
+                "order": 6,
+                "criteria": "assert.isAbove(  $(\"#htmlPreview\")    .find(\"nav\")    .toArray()    .filter((element, index) => $(element).hasClass(\"navbar\")).length,  0);",
+                "weightage": 5
+            },
+            {
+                "test_case_id": "4cfcff21-c90b-4375-aded-b1b9dda89ef1",
+                "display_text": "Page should consist of an HTML nav element with the CSS property background-color and its value as #0c0521",
+                "testcase_evaluation_type": "CLIENT_SIDE_EVALUATION",
+                "order": 7,
+                "criteria": "assert(  $(\"#htmlPreview\").find(\"nav\").css(\"background-color\") !== \"undefined\" &&    $(\"#htmlPreview\").find(\"nav\").css(\"background-color\") === \"rgb(12, 5, 33)\");",
+                "weightage": 5
+            },
+            {
+                "test_case_id": "0726d4ab-6a8a-44ba-9b46-68c1cfafc065",
+                "display_text": "Page should consist of an HTML container element with class navbar-collapse in the nav element with class navbar",
+                "testcase_evaluation_type": "CLIENT_SIDE_EVALUATION",
+                "order": 8,
+                "criteria": "assert.isAbove(  $(\"#htmlPreview .navbar\")    .find(\"div\")    .toArray()    .filter((element, index) => $(element).hasClass(\"navbar-collapse\")).length,  0);",
+                "weightage": 5
+            },
+            {
+                "test_case_id": "364b9ee2-e352-40e3-a418-433bdb6a0492",
+                "display_text": "Page should consist of a container element with class ml-auto or the CSS property margin-left with value auto in the element with class navbar",
+                "testcase_evaluation_type": "CLIENT_SIDE_EVALUATION",
+                "order": 9,
+                "criteria": "assert.isAbove(  $(\"#htmlPreview .navbar .navbar-collapse\")    .find(\"div\")    .toArray()    .filter(      (element, index) =>        $(element).hasClass(\"ml-auto\") ||        $(element).css(\"margin-left\") === \"auto\"    ).length,  0);",
+                "weightage": 5
+            },
+            {
+                "test_case_id": "550d02ab-0f54-4960-9a89-a8590ab23eee",
+                "display_text": "Page should consist of an HTML container element with the CSS property background-image and non-empty value",
+                "testcase_evaluation_type": "CLIENT_SIDE_EVALUATION",
+                "order": 10,
+                "criteria": "assert.isAbove(  $(\"#htmlPreview\")    .find(\"div\")    .toArray()    .filter(      (element, index) =>        $(element).css(\"background-image\") !== \"none\" &&        $(element).css(\"background-image\") !== undefined    ).length,  0);",
+                "weightage": 5
+            },
+            {
+                "test_case_id": "2f903615-a697-4ee4-9981-c4209f0c56b1",
+                "display_text": "Page should consist of an HTML container element with the CSS property background-size and its value cover",
+                "testcase_evaluation_type": "CLIENT_SIDE_EVALUATION",
+                "order": 11,
+                "criteria": "assert.isAbove(  $(\"#htmlPreview\")    .find(\"div\")    .toArray()    .filter(      (element, index) =>        $(element).css(\"background-image\") != \"none\" &&        $(element).css(\"background-size\") === \"cover\"    ).length,  0);",
+                "weightage": 5
+            },
+            {
+                "test_case_id": "2479649b-3256-4459-bfd9-4bff34174a94",
+                "display_text": "Page should consist of an HTML container element with the bootstrap class name text-center or the CSS property text-align with the value center",
+                "testcase_evaluation_type": "CLIENT_SIDE_EVALUATION",
+                "order": 12,
+                "criteria": "assert.isAbove(  $(\"#htmlPreview\")    .find(\"div\")    .toArray()    .filter(      (element, index) =>        $(element).hasClass(\"text-center\") ||        $(element).css(\"text-align\") === \"center\"    ).length,  0);",
+                "weightage": 5
+            }
+        ],
+        "total_score": 60,
+        "html_coding_question_details": [
+            {
+                "code_content": "<!DOCTYPE html>\n<html>\n  <head>\n    <link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css\" integrity=\"sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z\" crossorigin=\"anonymous\" />\n    <script src=\"https://code.jquery.com/jquery-3.5.1.slim.min.js\" integrity=\"sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj\" crossorigin=\"anonymous\"></script>\n    <script src=\"https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js\" integrity=\"sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN\" crossorigin=\"anonymous\"></script>\n    <script src=\"https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js\" integrity=\"sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV\" crossorigin=\"anonymous\"></script>\n  </head>\n  <body>\n    Your code goes here\n  </body>\n</html>\n",
+                "language": "HTML"
+            },
+            {
+                "code_content": "@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');\n",
+                "language": "CSS"
+            },
+            {
+                "code_content": "",
+                "language": "JAVASCRIPT"
+            }
+        ],
+        "solutions": [
+            {
+                "order": 1,
+                "title": {
+                    "content": "Navbar & Banner Section",
+                    "content_type": "TEXT"
+                },
+                "description": {
+                    "content": "An approach of designing a Navbar & Banner Section using Bootstrap.",
+                    "content_type": "TEXT"
+                },
+                "code_details": [
+                    {
+                        "default_code": true,
+                        "code_content": "<!DOCTYPE html>\n<html>\n  <head>\n    <link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css\" integrity=\"sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z\" crossorigin=\"anonymous\" />\n    <script src=\"https://code.jquery.com/jquery-3.5.1.slim.min.js\" integrity=\"sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj\" crossorigin=\"anonymous\"></script>\n    <script src=\"https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js\" integrity=\"sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN\" crossorigin=\"anonymous\"></script>\n    <script src=\"https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js\" integrity=\"sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV\" crossorigin=\"anonymous\"></script>\n  </head>\n  <body>\n    <nav class=\"navbar navbar-expand-lg navbar-light navbar-background-container\">\n      <a class=\"navbar-brand\" href=\"#\">\n        <img class=\"logo-image\" src=\"https://assets.ccbp.in/frontend/responsive-website/landing-section-design-logo-img.png\"/>\n      </a>\n      <button class=\"navbar-toggler bg-white\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarNavAltMarkup\" aria-controls=\"navbarNavAltMarkup\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n        <span class=\"navbar-toggler-icon\"></span>\n      </button>\n      <div class=\"collapse navbar-collapse\" id=\"navbarNavAltMarkup\">\n        <div class=\"navbar-nav ml-auto\">\n          <a class=\"nav-link active\" href=\"#\" id=\"homeSection\"> Home </a>\n          <a class=\"nav-link\" href=\"#\" id=\"featuresSection\">Features</a>\n          <a class=\"nav-link\" href=\"#\" id=\"pricingSection\">Pricing</a>\n          <a class=\"nav-link\" href=\"#\" id=\"blogSection\">Blog</a>\n          <a class=\"nav-link\" href=\"#\" id=\"contactsSection\">Contacts</a>\n        </div>\n      </div>\n    </nav>\n    <div class=\"banner-section-bg-container d-flex flex-column justify-content-center text-center p-2\">\n      <h1 class=\"banner-heading mb-3\">The most <span class = \"flexible-text\">flexible</span> web design tool</h1>\n      <p class=\"banner-caption mt-4\">We've done it carefully and simply, Combined with the ingredients makes for beautiful landings. It is the tool you need to speed up your design process.</p>\n      <div class = \"text-center p-3\">\n        <button class=\"custom-button\">Sign Up</button>\n      </div>\n    </div>\n  </body>\n</html>\n",
+                        "language": "HTML"
+                    },
+                    {
+                        "default_code": true,
+                        "code_content": "@import url(\"https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap\");\n\n .navbar-background-container{\n  background-color: #0c0521;\n}\n\n.logo-image {\n  width: 150px;\n}\n\n#homeSection{\n  color: #ffffff;\n  font-family: \"Roboto\";\n  font-size: 16px;\n  font-weight: bold;\n  padding-left: 40px;\n}\n\n#homeSection {\n  color: #ffffff;\n  font-family: \"Roboto\";\n  font-size: 16px;\n  font-weight: bold;\n  padding-left: 40px;\n}\n\n#featuresSection {\n  color: #ffffff;\n  font-family: \"Roboto\";\n  font-size: 16px;\n  font-weight: bold;\n  padding-left: 40px;\n}\n\n#pricingSection {\n  color: #ffffff;\n  font-family: \"Roboto\";\n  font-size: 16px;\n  font-weight: bold;\n  padding-left: 40px;\n}\n\n#blogSection {\n  color: #ffffff;\n  font-family: \"Roboto\";\n  font-size: 16px;\n  font-weight: bold;\n  padding-left: 40px;\n}\n\n#contactsSection {\n  color: #ffffff;\n  font-family: \"Roboto\";\n  font-size: 16px;\n  font-weight: bold;\n  padding-left: 40px;\n}\n\n.banner-section-bg-container {\n  background-image: url(\"https://assets.ccbp.in/frontend/responsive-website/landing-section-bg.png\");\n  background-size: cover;\n  height: 100vh;\n}\n\n.banner-heading {\n  color: #ffffff;\n  font-family: \"Roboto\";\n  font-size: 38px;\n  font-weight: bold;\n}\n\n.flexible-text {\n    color:#ffdda9\n}\n\n.banner-caption {\n  color: #ffffff;\n  font-family: \"Roboto\";\n  font-size: 18px;\n}\n\n.custom-button {\n  color: #000000;\n  background-color: #ffdda9;\n  font-family: \"Roboto\";\n  font-size: 16px;\n  font-weight: bold;\n  width: 200px;\n  height: 56px;\n  border-width: 0;\n  border-radius: 24px;\n}\n",
+                        "language": "CSS"
+                    },
+                    {
+                        "default_code": true,
+                        "code_content": "",
+                        "language": "JAVASCRIPT"
+                    }
+                ]
+            }
+        ],
+        "read_only_languages": [],
+        "hints": []
+    }
+]

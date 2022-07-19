@@ -1,0 +1,129 @@
+[
+    {
+        "question_type": "HTML_CODING",
+        "question": {
+            "question_id": "23be7403-8e3d-4857-8108-b140f112354f",
+            "content": "In this assignment, let's build the Sunrise Avenue page by applying the concepts we learned till now. You can use the Bootstrap concepts and CCBP UI Kit as well.\n\n<br/>\n\n**Refer to the below images.**\n\nFlats List Page\n\n<br/>\n\n<img src=\"https://assets.ccbp.in/frontend/content/static-website/flats-output.gif\" alt=\"\" style=\"max-width:300px;\">\n\n<br/>\n\n<MultiLineNote>\n\n- When clicked on the Book Flat button on the Sunrise Avenue Home Page, it must display the Flats List Page.\n- When clicked on each flat in Flats List Page, it must display the respective Flat Details Page.\n- When clicked on Confirm button in Flat Details Page, it must display Sunrise Avenue Home Page\n- When clicked on Back button in Flat Details Page, it must display Flats List Page\n- Try to achieve the design as close as possible.\n\n</MultiLineNote>\n\n<hr/>\n\n### Resources\n\nUse the image URLs given below.\n\n<br/>\n\nHome Page Background Image\n\n- [https://assets.ccbp.in/frontend/static-website/flats-list-bg.png](https://assets.ccbp.in/frontend/static-website/flats-list-bg.png)\n\n<br/>\n\nFlats List Card Images\n\n- [https://assets.ccbp.in/frontend/static-website/flats-list-card1-img.png](https://assets.ccbp.in/frontend/static-website/flats-list-card1-img.png)\n- [https://assets.ccbp.in/frontend/static-website/flats-list-card2-img.png](https://assets.ccbp.in/frontend/static-website/flats-list-card2-img.png)\n- [https://assets.ccbp.in/frontend/static-website/flats-list-card3-img.png](https://assets.ccbp.in/frontend/static-website/flats-list-card3-img.png)\n\n<br/>\n\nLocation Icon\n\n- [https://assets.ccbp.in/frontend/static-website/flats-list-location-icon-img.png](https://assets.ccbp.in/frontend/static-website/flats-list-location-icon-img.png)\n\n<br/>\n\nFlats Description Images\n\n- [https://assets.ccbp.in/frontend/static-website/flats-list-d1-img.png](https://assets.ccbp.in/frontend/static-website/flats-list-d1-img.png)\n- [https://assets.ccbp.in/frontend/static-website/flats-list-d2-img.png](https://assets.ccbp.in/frontend/static-website/flats-list-d2-img.png)\n- [https://assets.ccbp.in/frontend/static-website/flats-list-d3-img.png](https://assets.ccbp.in/frontend/static-website/flats-list-d3-img.png)\n\n<br/>\n\n**CSS Colors used:**\n\nBackground color Hex Code values:\n\n<br/>\n\n<div style=\"background-color: #f19116 ; width: 150px; padding: 10px; color: white\">\\#f19116</div>\n<div style=\"background-color:  #222222; width: 150px; padding: 10px; color: white\">\\#222222</div>\n<div style=\"background-color: #ffffff; width: 150px; padding: 10px; color: black\">\\#ffffff</div>\n\n<br/>\n\nText color Hex Code values:\n\n<br/>\n\n<div style=\"background-color: #f19116 ; width: 150px; padding: 10px; color: white\">\\#f19116</div>\n<div style=\"background-color:  #7b8794; width: 150px; padding: 10px; color: white\">\\#7b8794</div>\n<div style=\"background-color: #ffffff; width: 150px; padding: 10px; color: black\">\\#ffffff</div>\n<div style=\"background-color: #0f0e46; width: 150px; padding: 10px; color: white\">\\#0f0e46</div>\n<div style=\"background-color: #6c6b70; width: 150px; padding: 10px; color: white\">\\#6c6b70</div>\n\n<br/>\n\n**CSS Font families used:**\n\n- Bree Serif\n\n<hr/>\n\n### Concepts Review\n\nWant to quickly review some of the concepts you\u2019ve been learning?\n\nTake a look at the Cheat Sheets.\n",
+            "content_type": "MARKDOWN",
+            "short_text": "Flats Page",
+            "multimedia": [],
+            "language": "ENGLISH",
+            "difficulty": "EASY",
+            "tag_names": []
+        },
+        "question_asked_by_companies_info": [],
+        "test_cases": [
+            {
+                "test_case_id": "8388874f-fb5a-4e56-a1a0-6ae56c2dc53c",
+                "display_text": "Page should have HTML button element inside an HTML container element",
+                "testcase_evaluation_type": "CLIENT_SIDE_EVALUATION",
+                "order": 1,
+                "criteria": "assert.isAtLeast($(\"#htmlPreview\").find(\"div > button\").length, 1);",
+                "weightage": 5
+            },
+            {
+                "test_case_id": "0dd77574-e645-439a-bc2a-03c34a0358da",
+                "display_text": "Page should have HTML image element inside an HTML container element",
+                "testcase_evaluation_type": "CLIENT_SIDE_EVALUATION",
+                "order": 2,
+                "criteria": "assert.isAtLeast($(\"#htmlPreview\").find(\"div > img\").length, 1);",
+                "weightage": 5
+            },
+            {
+                "test_case_id": "042236ad-4a31-44a9-bc7c-c359ae421687",
+                "display_text": "Page should consist of an HTML container element with the CSS property background-image",
+                "testcase_evaluation_type": "CLIENT_SIDE_EVALUATION",
+                "order": 3,
+                "criteria": "assert.isAtLeast(  $(\"#htmlPreview\")    .find(\"div\")    .toArray()    .filter((element, index) => $(element).css(\"background-image\") !== \"none\" && $(element).css(\"background-image\") !== undefined).length,  1);",
+                "weightage": 5
+            },
+            {
+                "test_case_id": "592bfeb0-b341-44a2-afe6-c2c17fc914c7",
+                "display_text": "Page should consist of an HTML container element with CSS property background-size and value cover",
+                "testcase_evaluation_type": "CLIENT_SIDE_EVALUATION",
+                "order": 4,
+                "criteria": "assert.isAtLeast(  $(\"#htmlPreview\")    .find(\"div\")    .toArray()    .filter((element, index) => $(element).css(\"background-size\") === \"cover\").length,  1);",
+                "weightage": 5
+            },
+            {
+                "test_case_id": "0ce2741b-48b0-4d9c-b969-c7565be5759d",
+                "display_text": "Page should consist of an HTML container element with the bootstrap class name d-flex",
+                "testcase_evaluation_type": "CLIENT_SIDE_EVALUATION",
+                "order": 5,
+                "criteria": "assert.isAtLeast(  $(\"#htmlPreview\")    .find(\"div\")    .toArray()    .filter((element, index) => $(element).hasClass(\"d-flex\")).length,  1);",
+                "weightage": 5
+            },
+            {
+                "test_case_id": "260174f4-03a6-4a05-a236-38ae2e9ed7c6",
+                "display_text": "Page should consist of an HTML container element with the bootstrap class name flex-row",
+                "testcase_evaluation_type": "CLIENT_SIDE_EVALUATION",
+                "order": 6,
+                "criteria": "assert.isAtLeast(  $(\"#htmlPreview\")    .find(\"div\")    .toArray()    .filter((element, index) => $(element).hasClass(\"flex-row\")).length,  1);",
+                "weightage": 5
+            },
+            {
+                "test_case_id": "533ba26c-97aa-4d14-88f6-72d0dde68ddf",
+                "display_text": "Page should consist of at least three HTML container sections that have HTML id attribute value with prefix section",
+                "testcase_evaluation_type": "CLIENT_SIDE_EVALUATION",
+                "order": 7,
+                "criteria": "assert.isAtLeast(  $(\"#htmlPreview\")    .find(\"div\")    .toArray()    .filter((element, index) => {      if ($(element).attr(\"id\")) {        return $(element)          .attr(\"id\")          .match(/^section/);      }    }).length,  3);",
+                "weightage": 5
+            },
+            {
+                "test_case_id": "1c3dd7c4-938c-45e4-9191-b38cc97a4e1b",
+                "display_text": "When clicked on Book Flat button, page should be navigated to Flats List Page using the display utility from CCBP UI Kit",
+                "testcase_evaluation_type": "CLIENT_SIDE_EVALUATION",
+                "order": 8,
+                "criteria": "assert.isAtLeast(  $(\"#htmlPreview *\")    .toArray()    .filter((element, index) => {      if ($(element).attr(\"onclick\")) {        return $(element)          .attr(\"onclick\")          .match(/^display/);      }    }).length,  1);",
+                "weightage": 10
+            }
+        ],
+        "total_score": 45,
+        "html_coding_question_details": [
+            {
+                "code_content": "<!DOCTYPE html>\n<html>\n  <head>\n    <link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css\" integrity=\"sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z\" crossorigin=\"anonymous\" />\n    <script src=\"https://code.jquery.com/jquery-3.5.1.slim.min.js\" integrity=\"sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj\" crossorigin=\"anonymous\"></script>\n    <script src=\"https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js\" integrity=\"sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN\" crossorigin=\"anonymous\"></script>\n    <script src=\"https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js\" integrity=\"sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV\" crossorigin=\"anonymous\"></script>\n  </head>\n  <body>\n    Your code goes here\n    <script type=\"text/javascript\" src=\"https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js\"></script>\n  </body>\n</html>\n",
+                "language": "HTML"
+            },
+            {
+                "code_content": "@import url(\"https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Bree Serif:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap\");\n",
+                "language": "CSS"
+            },
+            {
+                "code_content": "",
+                "language": "JAVASCRIPT"
+            }
+        ],
+        "solutions": [
+            {
+                "order": 1,
+                "title": {
+                    "content": "Flats Page",
+                    "content_type": "TEXT"
+                },
+                "description": {
+                    "content": "An approach to design a web page for Flats Page",
+                    "content_type": "TEXT"
+                },
+                "code_details": [
+                    {
+                        "default_code": true,
+                        "code_content": "<!DOCTYPE html>\n<html>\n  <head>\n    <link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css\" integrity=\"sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z\" crossorigin=\"anonymous\" />\n    <script src=\"https://code.jquery.com/jquery-3.5.1.slim.min.js\" integrity=\"sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj\" crossorigin=\"anonymous\"></script>\n    <script src=\"https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js\" integrity=\"sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN\" crossorigin=\"anonymous\"></script>\n    <script src=\"https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js\" integrity=\"sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV\" crossorigin=\"anonymous\"></script>\n  </head>\n  <body>\n    <div id=\"sectionHome\">\n      <div class=\"bg-container d-flex flex-column justify-content-end\">\n        <div class=\"safety-flats-card text-center\">\n          <h1 class=\"main-heading\">Sunrise Avenue</h1>\n          <p class=\"paragraph\">Move to what moves you.</p>\n          <button class=\"button\" onclick=\"display('sectionFlatsList')\">Book Flat</button>\n        </div>\n      </div>\n    </div>\n    <div id=\"sectionFlatsList\">\n      <div class=\"flats-list-bg-container\">\n        <h1 class=\"flats-list-heading\">Sunrise Avenue</h1>\n        <div class=\"flats-list-card-container d-flex flex-row\" onclick=\"display('sectionFlatDetails3BHK')\">\n          <img src=\"https://assets.ccbp.in/frontend/static-website/flats-list-card1-img.png\" class=\"flats-list-card-image\" />\n          <div class=\"flats-list-card-details-container\">\n            <h1 class=\"flats-list-card-title\">3BHK Flat</h1>\n            <p class=\"flats-list-card-description\">This is a fully furnished house with handmade furniture including a luxury en-suite facilities pack. Its built-up area is about 1600sq.ft. A spacious home for you to live in.</p>\n          </div>\n        </div>\n        <div class=\"flats-list-card-container d-flex flex-row\" onclick=\"display('sectionFlatDetails2BHK')\">\n          <img src=\"https://assets.ccbp.in/frontend/static-website/flats-list-card2-img.png\" class=\"flats-list-card-image\" />\n          <div class=\"flats-list-card-details-container\">\n            <h1 class=\"flats-list-card-title\">2BHK Flat</h1>\n            <p class=\"flats-list-card-description\">A minimalist house made for modern-day families. It is fully furnished with trending furniture. Its built-up area is about 1200sq.ft.</p>\n          </div>\n        </div>\n        <div class=\"flats-list-card-container d-flex flex-row\" onclick=\"display('sectionFlatDetails4BHK')\">\n          <img src=\"https://assets.ccbp.in/frontend/static-website/flats-list-card3-img.png\" class=\"flats-list-card-image\" />\n          <div class=\"flats-list-card-details-container\">\n            <h1 class=\"flats-list-card-title\">4BHK Flat</h1>\n            <p class=\"flats-list-card-description\">A contemporary home with more color and vibrancy. It is fully furnished with elegant furniture. Its built-up area is about 3600sq.ft.</p>\n          </div>\n        </div>\n        <button class=\"button\" onclick=\"display('sectionHome')\">Back</button>\n      </div>\n    </div>\n    <div id=\"sectionFlatDetails3BHK\">\n      <div class=\"flat-details-section\">\n        <img src=\"https://assets.ccbp.in/frontend/static-website/flats-list-d1-img.png\" class=\"flat-image\" />\n        <div class=\"flat-details-container\">\n          <h1 class=\"flat-cost\">Rs 3000/-</h1>\n          <div class=\"d-flex flex-row\">\n            <img src=\"https://assets.ccbp.in/frontend/static-website/flats-list-location-icon-img.png\" class=\"icon\" />\n            <p class=\"flat-address\">D/N 5-2, Food Street, Indore</p>\n          </div>\n          <hr class=\"horizontal-line\" />\n          <h1 class=\"flat-description-heading\">Description</h1>\n          <p class=\"flat-description\">This is a fully furnished house with handmade furniture including a luxury en-suite facilities pack. Its built-up area is about 1600sq.ft. A spacious home for you to live in.</p>\n          <div class=\"text-center\">\n            <button class=\"button\" onclick=\"display('sectionHome')\">Confirm</button>\n            <button class=\"button\" onclick=\"display('sectionFlatsList')\">Back</button>\n          </div>\n        </div>\n      </div>\n    </div>\n    <div id=\"sectionFlatDetails2BHK\">\n      <div class=\"flat-details-section\">\n        <img src=\"https://assets.ccbp.in/frontend/static-website/flats-list-d2-img.png\" class=\"flat-image\" />\n        <div class=\"flat-details-container\">\n          <h1 class=\"flat-cost\">Rs 2000/-</h1>\n          <div class=\"d-flex flex-row\">\n            <img src=\"https://assets.ccbp.in/frontend/static-website/flats-list-location-icon-img.png\" class=\"icon\" />\n            <p class=\"flat-address\">D/N 6-2, Food Street, Indore</p>\n          </div>\n          <hr class=\"horizontal-line\" />\n          <h1 class=\"flat-description-heading\">Description</h1>\n          <p class=\"flat-description\">A minimalist house made for modern-day families. It is fully furnished with trending furniture. Its built-up area is about 1200sq.ft.</p>\n          <div class=\"text-center\">\n            <button class=\"button\" onclick=\"display('sectionHome')\">Confirm</button>\n            <button class=\"button\" onclick=\"display('sectionFlatsList')\">Back</button>\n          </div>\n        </div>\n      </div>\n    </div>\n    <div id=\"sectionFlatDetails4BHK\">\n      <div class=\"flat-details-section\">\n        <img src=\"https://assets.ccbp.in/frontend/static-website/flats-list-d3-img.png\" class=\"flat-image\" />\n        <div class=\"flat-details-container\">\n          <h1 class=\"flat-cost\">Rs 4000/-</h1>\n          <div class=\"d-flex flex-row\">\n            <img src=\"https://assets.ccbp.in/frontend/static-website/flats-list-location-icon-img.png\" class=\"icon\" />\n            <p class=\"flat-address\">D/N 5-2, Food Street, Indore</p>\n          </div>\n          <hr class=\"horizontal-line\" />\n          <h1 class=\"flat-description-heading\">Description</h1>\n          <p class=\"flat-description\">A contemporary home with more color and vibrancy. It is fully furnished with elegant furniture. Its built-up area is about 3600sq.ft.</p>\n          <div class=\"text-center\">\n            <button class=\"button\" onclick=\"display('sectionHome')\">Confirm</button>\n            <button class=\"button\" onclick=\"display('sectionFlatsList')\">Back</button>\n          </div>\n        </div>\n      </div>\n    </div>\n    <script type=\"text/javascript\" src=\"https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js\"></script>\n  </body>\n</html>\n",
+                        "language": "HTML"
+                    },
+                    {
+                        "default_code": true,
+                        "code_content": "@import url(\"https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Bree Serif:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap\");\n\n.bg-container {\n  background-image: url(\"https://assets.ccbp.in/frontend/static-website/flats-list-bg.png\");\n  background-size: cover;\n  height: 100vh;\n}\n\n.safety-flats-card {\n  background-color: #ffffff;\n  border-top-left-radius: 16px;\n  border-top-right-radius: 16px;\n  padding-top: 48px;\n  padding-bottom: 48px;\n}\n\n.main-heading {\n  color: #f19116;\n  font-family: \"Bree Serif\";\n  font-size: 24px;\n}\n\n.paragraph {\n  color: #7b8794;\n  font-family: \"Bree Serif\";\n  margin-top: 12px;\n}\n\n.button {\n  color: #ffffff;\n  background-color: #f19116;\n  font-size: 12px;\n  width: 84px;\n  height: 32px;\n  border-width: 0px;\n  border-radius: 4px;\n  margin-top: 24px;\n  margin-right: 16px;\n}\n\n.flats-list-bg-container {\n  background-color: #222222;\n  height: 100vh;\n  padding-top: 32px;\n  padding-bottom: 32px;\n  padding-left: 16px;\n  padding-right: 16px;\n}\n\n.flats-list-heading {\n  color: #f19116;\n  font-family: \"Bree Serif\";\n  font-size: 24px;\n}\n\n.flats-list-card-container {\n  background-color: #ffffff;\n  border-radius: 8px;\n  margin-bottom: 16px;\n}\n\n.flats-list-card-details-container {\n  margin-top: 16px;\n  margin-left: 12px;\n}\n\n.flats-list-card-title {\n  color: #0f0e46;\n  font-family: \"Bree Serif\";\n  font-size: 23px;\n  font-weight: bold;\n}\n\n.flats-list-card-image {\n  width: 80px;\n  border-top-left-radius: 8px;\n  border-bottom-left-radius: 8px;\n}\n\n.flats-list-card-description {\n  color: #6c6b70;\n  font-family: \"Bree Serif\";\n  font-size: 13px;\n}\n\n.flat-details-section {\n  background-color: #222222;\n  height: 100vh;\n}\n\n.flat-image {\n  height: 224px;\n  width: 100%;\n}\n\n.flat-details-container {\n  padding: 24px;\n}\n\n.flat-cost {\n  color: #f19116;\n  font-family: \"Bree Serif\";\n  font-size: 24px;\n}\n\n.icon {\n  width: 24px;\n  height: 24px;\n  margin-top: 15px;\n}\n\n.flat-address {\n  color: #ffffff;\n  font-family: \"Bree Serif\";\n  font-size: 14px;\n  margin-left: 12px;\n  margin-top: 16px;\n}\n\n.horizontal-line {\n  border-width: 1px;\n  border-style: solid;\n  border-color: #ffffff;\n}\n\n.flat-description-heading {\n  color: #f19116;\n  font-family: \"Bree Serif\";\n  font-size: 24px;\n}\n\n.flat-description {\n  color: #ffffff;\n  font-family: \"Bree Serif\";\n  font-size: 14px;\n}\n",
+                        "language": "CSS"
+                    },
+                    {
+                        "default_code": true,
+                        "code_content": "",
+                        "language": "JAVASCRIPT"
+                    }
+                ]
+            }
+        ],
+        "read_only_languages": [],
+        "hints": []
+    }
+]

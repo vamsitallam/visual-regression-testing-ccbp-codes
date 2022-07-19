@@ -1,0 +1,153 @@
+[
+    {
+        "question_type": "HTML_CODING",
+        "question": {
+            "question_id": "c536b242-6c81-453d-b00e-65645cd0363e",
+            "content": "In this assignment, let's build an **Responsive Navbar** page by applying the CSS concepts we learned till now.\n\n**Refer to the below images.**\n\nThe following images illustrate all device sizes, from extra small to extra large.\n\nExtra Small (Size < 576px), Small (Size >= 576px):\n\n<img src=\"https://assets.ccbp.in/frontend/content/intermediate-rwd/landing-page-sm-output-v3.gif\" alt=\"\" style=\"max-width:100%;box-shadow:0 2.8px 2.2px rgba(0, 0, 0, 0.12)\"/>\n\n<br/>\n\n<br/>\n\nMedium (Size >= 768px), Large (Size >= 992px), and Extra Large (Size >= 1200px):\n\n<Img imageSrc=\"https://assets.ccbp.in/frontend/content/intermediate-rwd/landing-page-lg-output-v2.png\" alt=\"\" style=\"max-width:100%;box-shadow:0 2.8px 2.2px rgba(0, 0, 0, 0.12)\"/>\n\n#### Instructions:\n\n- Use the HTML `nav` element to provide navigation links, either within the current document or to other documents.\n- The links in the HTML `nav` element should be hidden in devices below 768px and visible in devices equal and above 768px.\n- The page should have two different background images in devices below 768px and devices equal and above 768px.\n\nBy following the above instructions, achieve the given functionality.\n\n- The links in the HTML `nav` element should be displayed when clicked on the menu icon in devices below 768px.\n- The links in the HTML `nav` element should be hidden when clicked on the close icon in devices below 768px.\n- Use `classList.toggle()` to show and hide the HTML elements.\n\n<MultiLineNote>\n- Achieve the design using the CSS Flexbox layout and Media queries and Javascript.\n- The Icons used in this page are Font Awesome Icons.\n- Try to achieve the design as close as possible.\n</MultiLineNote>\n\n#### Resources\n\n- [https://assets.ccbp.in/frontend/intermediate-rwd/landing-page-logo.png](https://assets.ccbp.in/frontend/intermediate-rwd/landing-page-logo.png)\n- [https://assets.ccbp.in/frontend/intermediate-rwd/landing-page-sm-bg.png](https://assets.ccbp.in/frontend/intermediate-rwd/landing-page-sm-bg.png)\n- [https://assets.ccbp.in/frontend/intermediate-rwd/landing-page-lg-bg.png](https://assets.ccbp.in/frontend/intermediate-rwd/landing-page-lg-bg.png)\n\n#### CSS Colors used:\n\n<div style=\"background-color: #ffffff; width: 150px; padding: 10px; color: black\">\\#ffffff</div>\n<div style=\"background-color: #12022f; width: 150px; padding: 10px; color: white\">\\#12022f</div>\n<div style=\"background-color: #e7e5ea; width: 150px; padding: 10px; color: black\">\\#e7e5ea</div>\n<div style=\"background-color: #594d6d; width: 150px; padding: 10px; color: white\">\\#594d6d</div>\n<div style=\"background-color: #ffdda9; width: 150px; padding: 10px; color: black\">\\#ffdda9</div>\n\n#### CSS Font families used:\n\n- Open Sans\n- Roboto\n\n#### Concepts Review\n\nWant to quickly review some of the concepts you\u2019ve been learning?\n\nTake a look at the Cheat Sheets.\n",
+            "content_type": "MARKDOWN",
+            "short_text": "Responsive Navbar",
+            "multimedia": [],
+            "language": "ENGLISH",
+            "difficulty": "EASY",
+            "tag_names": []
+        },
+        "question_asked_by_companies_info": [],
+        "test_cases": [
+            {
+                "test_case_id": "08beace9-2dc9-4f1d-b3dd-30aa1af5bcad",
+                "display_text": "Page should consist of HTML image element inside an HTML nav element",
+                "testcase_evaluation_type": "CLIENT_SIDE_EVALUATION",
+                "order": 1,
+                "criteria": "assert.isAbove($(\"#htmlPreview\").find('nav img').toArray().length, 0);",
+                "weightage": 5
+            },
+            {
+                "test_case_id": "2d84774d-0021-4cdb-a19f-e8734f4f94b9",
+                "display_text": "Page should consist of at least three HTML anchor elements",
+                "testcase_evaluation_type": "CLIENT_SIDE_EVALUATION",
+                "order": 2,
+                "criteria": "assert.isAtLeast($(\"#htmlPreview\").find('a').toArray().length, 3);",
+                "weightage": 5
+            },
+            {
+                "test_case_id": "7752e8ec-3c25-47fb-b552-f3a53da3d55c",
+                "display_text": "Page should consist of HTML main heading element inside an HTML container element",
+                "testcase_evaluation_type": "CLIENT_SIDE_EVALUATION",
+                "order": 3,
+                "criteria": "assert.isAbove($(\"#htmlPreview\").find('div > h1').toArray().length, 0);",
+                "weightage": 5
+            },
+            {
+                "test_case_id": "a1235b3b-045a-4d42-a5f8-c9340a063487",
+                "display_text": "Page should consist of HTML button element inside an HTML container element",
+                "testcase_evaluation_type": "CLIENT_SIDE_EVALUATION",
+                "order": 4,
+                "criteria": "assert.isAbove($(\"#htmlPreview\").find('div > button').toArray().length, 0);",
+                "weightage": 5
+            },
+            {
+                "test_case_id": "405a0e3c-c30a-401c-bc7f-4e39e1eff76a",
+                "display_text": "Page should consist of an HTML nav element with the CSS property justify-content and its value as space-between",
+                "testcase_evaluation_type": "CLIENT_SIDE_EVALUATION",
+                "order": 5,
+                "criteria": "assert.isAtLeast($(\"#htmlPreview\").find('nav').toArray().filter((element)=>$(element).css(\"justify-content\")===\"space-between\").length, 1);",
+                "weightage": 10
+            },
+            {
+                "test_case_id": "ac2d9b9a-d6d8-483f-a47b-9a751449cfb2",
+                "display_text": "Page should consist of an HTML container element with the CSS property align-items and its value as center",
+                "testcase_evaluation_type": "CLIENT_SIDE_EVALUATION",
+                "order": 6,
+                "criteria": "assert.isAtLeast($(\"#htmlPreview\").find('div').toArray().filter((element)=>$(element).css(\"align-items\")===\"center\").length, 1);",
+                "weightage": 10
+            },
+            {
+                "test_case_id": "a3f3b34d-e1b4-4e8d-9cf8-e906c4b859d9",
+                "display_text": "Page should consist of an HTML container element with the CSS property justify-content and its value as center",
+                "testcase_evaluation_type": "CLIENT_SIDE_EVALUATION",
+                "order": 7,
+                "criteria": "assert.isAtLeast($(\"#htmlPreview\").find('div').toArray().filter((element)=>$(element).css(\"justify-content\")===\"center\").length, 1);",
+                "weightage": 10
+            },
+            {
+                "test_case_id": "99d9af80-3746-48dc-86b2-ed86b9f40e7b",
+                "display_text": "CSS code implementation should use the CSS property display with value none to hide the HTML elements",
+                "testcase_evaluation_type": "CSS_PARSER",
+                "order": 8,
+                "criteria": "const csstree = require(\"css-tree\");const fs = require(\"fs\");const path = require(\"path\");describe(\"Sample CSS test cases\", () => {  test(\"Test display none for container\", (done) => {    const testPromise = Promise.resolve(\"Success\");    let isElementFound = false;    return testPromise.then(() => {      fs.readFile(path.resolve(__dirname, \"./index.css\"), \"utf8\", async (err, data) => {        if (err) {          expect(isElementFound).toEqual(true);          done();        } else {          let ast = csstree.parse(data, { parseRulePrelude: false });          csstree.walk(ast, function (node) {            if (node.type === \"Rule\") {              let generateSubTree = csstree.generate(node);              let subAst = csstree.parse(generateSubTree, {                parseValue: false,              });              csstree.walk(subAst, function (node) {                if (node.type === \"Declaration\" && node.property === \"display\" && node.value.value === \"none\") {                  isElementFound = true;                  return csstree.walk.break;                }              });            }          });          expect(isElementFound).toEqual(true);          done();        }      });    });  });});",
+                "weightage": 15
+            },
+            {
+                "test_case_id": "b310442b-028d-4ade-8f95-a3e5bd9ae93c",
+                "display_text": "Page should use media queries to display different background images in devices below 768px and devices equal to and above 768px",
+                "testcase_evaluation_type": "CSS_PARSER",
+                "order": 9,
+                "criteria": "const csstree = require(\"css-tree\");const fs = require(\"fs\");const path = require(\"path\");describe(\"Sample CSS test cases\", () => {  test(\"Test Value inside the media query as per given instructions 1\", (done) => {    const testPromise = Promise.resolve(\"Success\");    let isElementFound = false;    return testPromise.then(() => {      fs.readFile(path.resolve(__dirname, \"./index.css\"), \"utf8\", async (err, data) => {        if (err) {          expect(isElementFound).toEqual(true);          done();        } else {          let ast = csstree.parse(data, {            parseAtrulePrelude: false,          });          csstree.walk(ast, function (node) {            if (node.type === \"Atrule\" && node.name === \"media\") {              let generateSubTree = csstree.generate(node);              let subAst = csstree.parse(generateSubTree, {                parseValue: false,              });              csstree.walk(subAst, function (node) {                if (node.type === \"Declaration\" && node.property === \"background-image\") {                  isElementFound = true;                  return csstree.walk.break;                }              });            }          });          expect(isElementFound).toEqual(true);          done();        }      });    });  });  test(\"Test display flex for container\", (done) => {    const testPromise = Promise.resolve(\"Success\");    let isElementFound = false;    return testPromise.then(() => {      fs.readFile(path.resolve(__dirname, \"./index.css\"), \"utf8\", async (err, data) => {        if (err) {          expect(isElementFound).toEqual(true);          done();        } else {          let ast = csstree.parse(data, { parseRulePrelude: false });          csstree.walk(ast, function (node) {            if (node.type === \"Rule\") {              let generateSubTree = csstree.generate(node);              let subAst = csstree.parse(generateSubTree, {                parseValue: false,              });              csstree.walk(subAst, function (node) {                if (node.type === \"Declaration\" && node.property === \"background-image\") {                  isElementFound = true;                  return csstree.walk.break;                }              });            }          });          expect(isElementFound).toEqual(true);          done();        }      });    });  });});",
+                "weightage": 15
+            },
+            {
+                "test_case_id": "ffadf9eb-ad46-4fec-bcb6-c5cefd983a85",
+                "display_text": "JS code implementation should use classList.toggle() to show and hide elements inside the HTML nav element",
+                "testcase_evaluation_type": "JS_PARSER",
+                "order": 10,
+                "criteria": "const { expect } = require(\"@jest/globals\");const fs = require(\"fs\");const vm = require(\"vm\");const { assert } = require(\"console\");const jsCode = fs.readFileSync(\"./index.js\", \"utf-8\");const htmlCode = fs.readFileSync(\"./index.html\", \"utf-8\");describe(\"JavaScript implementation details tests\", () => {  it(\"should test whether used classList.add in the code or not\", () => {    expect(jsCode.match(/classList.toggle/g)).not.toBe(null);  });});",
+                "weightage": 10
+            },
+            {
+                "test_case_id": "7f9a9aa4-74da-4c78-84c6-73613866d8cd",
+                "display_text": "JS code should contain addEventListener for the click event",
+                "testcase_evaluation_type": "JS_PARSER",
+                "order": 11,
+                "criteria": "const { expect } = require(\"@jest/globals\");const fs = require(\"fs\");const vm = require(\"vm\");const jsCode = fs.readFileSync(\"./index.js\", \"utf-8\");const htmlCode = fs.readFileSync(\"./index.html\", \"utf-8\");describe(\"JavaScript implementation details tests\", () => {\tit(\"should test whether used addEventListener in the code or not\", () => {\t\texpect(\t\t\tjsCode.match(/.addEventListener\\('click',/gm) ||\t\t\t\tjsCode.match(/.addEventListener\\(\"click\",/gm)\t\t).not.toBe(null);\t});});",
+                "weightage": 10
+            }
+        ],
+        "total_score": 100,
+        "html_coding_question_details": [
+            {
+                "code_content": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n  </head>\n  <body>\n    Your code goes here\n  </body>\n</html>\n",
+                "language": "HTML"
+            },
+            {
+                "code_content": "@import url(\"https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap\");\n\n* {\n  box-sizing: border-box;\n}\n\nbody {\n  margin: 0px;\n}\n",
+                "language": "CSS"
+            },
+            {
+                "code_content": "",
+                "language": "JAVASCRIPT"
+            }
+        ],
+        "solutions": [
+            {
+                "order": 1,
+                "title": {
+                    "content": "Responsive Navbar",
+                    "content_type": "TEXT"
+                },
+                "description": {
+                    "content": "An approach of designing Responsive Navbar.",
+                    "content_type": "TEXT"
+                },
+                "code_details": [
+                    {
+                        "default_code": true,
+                        "code_content": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <script src=\"https://kit.fontawesome.com/5f59ca6ad3.js\" crossorigin=\"anonymous\"></script>\n  </head>\n  <body>\n    <nav class=\"navbar-container\">\n      <img class=\"brand-logo\" src=\"https://assets.ccbp.in/frontend/intermediate-rwd/landing-page-logo.png\" />\n      <div class=\"hamburger-menu-container\" id=\"hamburgerMenu\">\n        <i class=\"fa fa-bars\"></i>\n        \n      </div>\n      <div class=\"close-menu-container hide\" id=\"closeMenu\">\n        <i class=\"fa fa-close\"></i>\n      </div>\n      <div class=\"desktop-nav-items-container\">\n        <div class=\"nav-item\">\n          <a class=\"nav-link\">Features</a>\n        </div>\n        <div class=\"nav-item\">\n          <a class=\"nav-link\">About</a>\n        </div>\n        <div class=\"nav-item\">\n          <a class=\"nav-link\">Contacts</a>\n        </div>\n        <div class=\"nav-item\">\n          <button class=\"nav-link sign-up-button\">Sign Up</button>\n        </div>\n      </div>\n    </nav>\n    <div class=\"mobile-nav-items-container hide\" id=\"mobileNavItemsContainer\">\n      <div class=\"mobile-nav-item\">\n        <a class=\"mobile-nav-link\">Features</a>\n      </div>\n      <div class=\"mobile-nav-item\">\n        <a class=\"mobile-nav-link\">About</a>\n      </div>\n      <div class=\"mobile-nav-item\">\n        <a class=\"mobile-nav-link\">Contacts</a>\n      </div>\n      <div class=\"mobile-nav-item\">\n        <button class=\"nav-link sign-up-button\">Sign Up</button>\n      </div>\n    </div>\n    <div class=\"bg-container\">\n      <div class=\"heading-container\">\n        <h1 class=\"heading\">A Student Startup Acceleration Program!</h1>\n      </div>\n    </div>\n  </body>\n</html>\n",
+                        "language": "HTML"
+                    },
+                    {
+                        "default_code": true,
+                        "code_content": "@import url(\"https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap\");\n\n* {\n  box-sizing: border-box;\n}\n\nbody {\n  margin: 0px;\n}\n\n.navbar-container {\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between;\n  align-items: center;\n  background-color: #ffffff;\n  padding: 20px;\n}\n\n.hamburger-menu-container {\n  display: flex;\n  flex-direction: row;\n  justify-content: center;\n  align-items: center;\n  width: 24px;\n  height: 24px;\n  padding: 4px;\n}\n\n@media screen and (min-width: 768px) {\n  .hamburger-menu-container {\n    display: none;\n  }\n}\n\n.close-menu-container {\n  display: flex;\n  flex-direction: row;\n  justify-content: center;\n  align-items: center;\n  width: 24px;\n  height: 24px;\n  padding: 4px;\n}\n\n@media screen and (min-width: 768px) {\n  .close-menu-container {\n    display: none;\n  }\n}\n\n.desktop-nav-items-container {\n  display: none;\n}\n\n@media screen and (min-width: 768px) {\n  .desktop-nav-items-container {\n    display: flex;\n    flex-direction: row;\n    align-items: center;\n  }\n}\n\n.nav-item {\n  margin-left: 12px;\n}\n\n.nav-link {\n  color: #12022f;\n  font-family: \"Open Sans\";\n  font-size: 14px;\n  font-weight: 700;\n  padding: 12px;\n}\n\n.sign-up-button {\n  background-color: #ffdda9;\n  border: none;\n  border-radius: 28px;\n  padding-left: 24px;\n  padding-right: 24px;\n}\n\n.mobile-nav-items-container {\n  background-color: #ffffff;\n  display: flex;\n  flex-direction: column;\n}\n\n@media screen and (min-width: 768px) {\n  .mobile-nav-items-container {\n    display: none;\n  }\n}\n\n.mobile-nav-item {\n  border-top: 1px solid #e7e5ea;\n  padding: 12px;\n  padding-left: 24px;\n  padding-right: 24px;\n}\n\n.mobile-nav-link {\n  color: #594d6d;\n  font-family: \"Open Sans\";\n  font-weight: 400;\n  font-size: 14px;\n}\n\n.hide {\n  display: none;\n}\n\n.bg-container {\n  background-image: url(\"https://assets.ccbp.in/frontend/intermediate-rwd/landing-page-sm-bg.png\");\n  background-size: cover;\n  height: 100vh;\n  width: 100%;\n}\n\n@media screen and (min-width: 768px) {\n  .bg-container {\n    background-image: url(\"https://assets.ccbp.in/frontend/intermediate-rwd/landing-page-lg-bg.png\");\n  }\n}\n\n.heading-container {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  height: 85%;\n}\n\n.heading {\n  text-align: center;\n  color: #ffffff;\n  font-family: \"Roboto\";\n  font-size: 36px;\n  width: 90%;\n}\n\n@media screen and (min-width: 768px) {\n  .heading {\n    font-size: 48px;\n    max-width: 650px;\n  }\n}\n",
+                        "language": "CSS"
+                    },
+                    {
+                        "default_code": true,
+                        "code_content": "const hamburgerIconContainerEl = document.getElementById(\"hamburgerMenu\");\nconst closeIconContainerEl = document.getElementById(\"closeMenu\");\n\nconst mobileNavItemsContainerEl = document.getElementById(\"mobileNavItemsContainer\");\nconst hideClass = \"hide\";\n\nconst toggleHiddenElements = () => {\n  hamburgerIconContainerEl.classList.toggle(hideClass);\n  closeIconContainerEl.classList.toggle(hideClass);\n  mobileNavItemsContainerEl.classList.toggle(hideClass);\n};\n\nhamburgerIconContainerEl.addEventListener(\"click\", toggleHiddenElements);\ncloseIconContainerEl.addEventListener(\"click\", toggleHiddenElements);\n",
+                        "language": "JAVASCRIPT"
+                    }
+                ]
+            }
+        ],
+        "read_only_languages": [],
+        "hints": []
+    }
+]

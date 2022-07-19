@@ -1,0 +1,121 @@
+[
+    {
+        "question_type": "HTML_CODING",
+        "question": {
+            "question_id": "e40c012d-8e4a-4d22-a336-f02bb359f984",
+            "content": "In this assignment, let's build a VR Website Trending Blogs Section by applying the concepts we learned till now.\n\n**Refer to the below images.**\n\nThe following images illustrate all device sizes, from extra small to extra large.\n\nExtra Small (Size < 576px) and Small (Size >= 576px):\n\n<img src=\"https://nkb-backend-media-static-tenxiitian.s3.ap-south-1.amazonaws.com/tenxiitian_prod/programs/Tech+Programs/frontend-content/ccbp/coding-practice-questions/responsive-website/vr-trending-blogs-section-xs-v1.png\" alt=\"vr-website-to-build\" style=\"max-width:300px;box-shadow:0 2.8px 2.2px rgba(0, 0, 0, 0.12)\"/>\n\n<br/>\n\n<br/>\n\nMedium (Size >= 768px), Large (Size >= 992px) and Extra Large (Size >= 1200px):\n\n<br/>\n\n<Img imageSrc=\"https://nkb-backend-media-static-tenxiitian.s3.ap-south-1.amazonaws.com/tenxiitian_prod/programs/Tech+Programs/frontend-content/ccbp/coding-practice-questions/responsive-website/vr-trending-blogs-section-md-v1.png\" widthPercent='100'/>\n\n<MultiLineNote>\nTry to achieve the design as close as possible.\n</MultiLineNote>\n\n<hr/>\n\n#### Resources\n\nUse the image URLs given below.\n\n- [https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/vr-trending-blogs-1-img.png](https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/vr-trending-blogs-1-img.png)\n- [https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/vr-trending-blogs-2-img.png](https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/vr-trending-blogs-2-img.png)\n\n\n**CSS Colors used:**\n\n<div style=\"background-color: #1f2933; width: 150px; padding: 10px; color: white\">\\#1f2933</div>\n<div style=\"background-color: #323f4b; width: 150px; padding: 10px; color: white\">\\#323f4b</div>\n<div style=\"background-color: #959ead; width: 150px; padding: 10px; color: white\">\\#959ead</div>\n<div style=\"background-color: #1754a1; width: 150px; padding: 10px; color: white\">\\#1754a1</div>\n\n<hr/>\n\n#### Concepts Review\n\nWant to quickly review some of the concepts you\u2019ve been learning?\n\nTake a look at the Cheat Sheets.\n",
+            "content_type": "MARKDOWN",
+            "short_text": "VR Website Trending Blogs Section",
+            "multimedia": [],
+            "language": "ENGLISH",
+            "difficulty": "EASY",
+            "tag_names": []
+        },
+        "question_asked_by_companies_info": [],
+        "test_cases": [
+            {
+                "test_case_id": "4499cfbd-a70d-4b29-8458-5dfd0762b5fa",
+                "display_text": "Page should consist of an HTML image element",
+                "testcase_evaluation_type": "CLIENT_SIDE_EVALUATION",
+                "order": 1,
+                "criteria": "assert.isAbove($('#htmlPreview').find('img').length, 0);",
+                "weightage": 10
+            },
+            {
+                "test_case_id": "461906b7-acf7-4001-817d-53264778dcbb",
+                "display_text": "Page should consist of an HTML anchor element",
+                "testcase_evaluation_type": "CLIENT_SIDE_EVALUATION",
+                "order": 2,
+                "criteria": "assert.isAbove($('#htmlPreview').find('a').length, 0);",
+                "weightage": 10
+            },
+            {
+                "test_case_id": "03dcf94c-c206-4e31-b0a5-17be1d9d1a02",
+                "display_text": "Page should consist of an HTML container element with the bootstrap class name container",
+                "testcase_evaluation_type": "CLIENT_SIDE_EVALUATION",
+                "order": 3,
+                "criteria": "assert.isAbove($('#htmlPreview').find('div').toArray().filter(( element, index )=>$(element).hasClass('container')).length, 0);",
+                "weightage": 10
+            },
+            {
+                "test_case_id": "998193c4-279b-43eb-8840-d971bb472d23",
+                "display_text": "Page should consist of an HTML container element with the bootstrap class name row",
+                "testcase_evaluation_type": "CLIENT_SIDE_EVALUATION",
+                "order": 4,
+                "criteria": "assert.isAbove($('#htmlPreview').find('div').toArray().filter(( element, index )=>$(element).hasClass('row')).length, 0);",
+                "weightage": 10
+            },
+            {
+                "test_case_id": "5406871d-c624-433d-862e-4e2befb99c36",
+                "display_text": "Page should consist of an HTML container element with the bootstrap grid column class name in medium devices that starts with col-md-",
+                "testcase_evaluation_type": "CLIENT_SIDE_EVALUATION",
+                "order": 5,
+                "criteria": "assert.isAbove($('#htmlPreview').find('div[class*= \"col-md-\"]').length, 0);",
+                "weightage": 10
+            },
+            {
+                "test_case_id": "f8a6e459-a91a-4925-8ff7-6c34000f88d5",
+                "display_text": "Page should consist of an HTML container element with the bootstrap class name shadow",
+                "testcase_evaluation_type": "CLIENT_SIDE_EVALUATION",
+                "order": 6,
+                "criteria": "assert.isAbove($('#htmlPreview').find('div').toArray().filter(( element, index )=>$(element).hasClass('shadow')).length, 0);",
+                "weightage": 10
+            },
+            {
+                "test_case_id": "420dde21-f1ea-4fa3-80e8-a119f3afc1b2",
+                "display_text": "Page should consist of an HTML container element with the bootstrap class name justify-content-end",
+                "testcase_evaluation_type": "CLIENT_SIDE_EVALUATION",
+                "order": 7,
+                "criteria": "assert.isAbove($('#htmlPreview').find('div').toArray().filter(( element, index )=>$(element).hasClass('justify-content-end')).length, 0);",
+                "weightage": 10
+            }
+        ],
+        "total_score": 70,
+        "html_coding_question_details": [
+            {
+                "code_content": "<!DOCTYPE html>\n<html>\n  <head>\n    <link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css\" integrity=\"sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z\" crossorigin=\"anonymous\" />\n    <script src=\"https://code.jquery.com/jquery-3.5.1.slim.min.js\" integrity=\"sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj\" crossorigin=\"anonymous\"></script>\n    <script src=\"https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js\" integrity=\"sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN\" crossorigin=\"anonymous\"></script>\n    <script src=\"https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js\" integrity=\"sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV\" crossorigin=\"anonymous\"></script>\n  </head>\n  <body>\n    Your code goes here\n  </body>\n</html>\n",
+                "language": "HTML"
+            },
+            {
+                "code_content": "@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');\n",
+                "language": "CSS"
+            },
+            {
+                "code_content": "",
+                "language": "JAVASCRIPT"
+            }
+        ],
+        "solutions": [
+            {
+                "order": 1,
+                "title": {
+                    "content": "VR Website Trending Blogs Section",
+                    "content_type": "TEXT"
+                },
+                "description": {
+                    "content": "An approach of designing a VR Website Trending Blogs Section using Bootstrap.",
+                    "content_type": "TEXT"
+                },
+                "code_details": [
+                    {
+                        "default_code": true,
+                        "code_content": "<!DOCTYPE html>\n<html>\n  <head>\n    <link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css\" integrity=\"sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z\" crossorigin=\"anonymous\" />\n    <script src=\"https://code.jquery.com/jquery-3.5.1.slim.min.js\" integrity=\"sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj\" crossorigin=\"anonymous\"></script>\n    <script src=\"https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js\" integrity=\"sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN\" crossorigin=\"anonymous\"></script>\n    <script src=\"https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js\" integrity=\"sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV\" crossorigin=\"anonymous\"></script>\n  </head>\n  <body>\n    <div class=\"pt-5 pb-5\">\n      <div class=\"container\">\n        <div class=\"row\">\n          <div class=\"col-12\">\n            <h1 class=\"trending-blogs-section-heading pb-2\">Trending Blogs</h1>\n          </div>\n          <div class=\"col-12 col-md-6\">\n            <div class=\"shadow mb-3\">\n              <img\n                src=\"https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/vr-trending-blogs-1-img.png\"\n                class=\"w-100\"\n              />\n              <div class=\"p-3\">\n                <h1 class=\"trending-blogs-card-title\">Amazon</h1>\n                <p class=\"trending-blogs-card-description\">\n                  New Way to See the World. It is a simulated experience that can\n                  be completely different from the real world.\n                </p>\n                <a class=\"trending-blogs-card-link\" href=\"\">\n                  READ MORE\n                  <svg width=\"16px\" height=\"16px\" viewBox=\"0 0 16 16\" class=\"bi bi-arrow-right-short\" fill=\"#1754a1\" xmlns=\"http://www.w3.org/2000/svg\">\n                    <path\n                      fill-rule=\"evenodd\"\n                      d=\"M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z\"\n                    />\n                  </svg>\n                </a>\n              </div>\n            </div>\n          </div>\n          <div class=\"col-12 col-md-6\">\n            <div class=\"shadow mb-3\">\n              <img\n                src=\"https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/vr-trending-blogs-2-img.png\"\n                class=\"w-100\"\n              />\n              <div class=\"p-3\">\n                <h1 class=\"trending-blogs-card-title\">Advertising</h1>\n                <p class=\"trending-blogs-card-description\">\n                  The best one for you. Come experience the wonder of Google Earth\n                  in virtual reality.\n                </p>\n                <a class=\"trending-blogs-card-link\" href=\"\">\n                  READ MORE\n                  <svg width=\"16px\" height=\"16px\" viewBox=\"0 0 16 16\" class=\"bi bi-arrow-right-short\" fill=\"#1754a1\" xmlns=\"http://www.w3.org/2000/svg\">\n                    <path\n                      fill-rule=\"evenodd\"\n                      d=\"M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z\"\n                    />\n                  </svg>\n                </a>\n              </div>\n            </div>\n          </div>\n          <div class=\"col-12 d-flex flex-row justify-content-end\">\n            <button class=\"view-all-button\">View All</button>\n          </div>\n        </div>\n      </div>\n    </div>\n  </body>\n</html>\n",
+                        "language": "HTML"
+                    },
+                    {
+                        "default_code": true,
+                        "code_content": "@import url(\"https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap\");\n\n.trending-blogs-section-heading {\n  color: #1f2933;\n  font-family: \"Roboto\";\n  font-size: 36px;\n  font-weight: 700;\n}\n.trending-blogs-card-title {\n  color: #959ead;\n  font-family: \"Roboto\";\n  font-weight: 700;\n  font-size: 14px;\n}\n.trending-blogs-card-description {\n  color: #323f4b;\n  font-family: \"Roboto\";\n  font-weight: 500;\n  font-size: 20px;\n}\n.trending-blogs-card-link {\n  color: #1754a1;\n  font-family: \"Roboto\";\n  font-size: 14px;\n  font-weight: 700;\n}\n.view-all-button {\n  color: #ffffff;\n  background-color: #1754a1;\n  font-family: \"Roboto\";\n  font-size: 18px;\n  font-weight: 500;\n  width: 173px;\n  height: 56px;\n  border-width: 0;\n  border-radius: 4px;\n}\n",
+                        "language": "CSS"
+                    },
+                    {
+                        "default_code": true,
+                        "code_content": "",
+                        "language": "JAVASCRIPT"
+                    }
+                ]
+            }
+        ],
+        "read_only_languages": [],
+        "hints": []
+    }
+]

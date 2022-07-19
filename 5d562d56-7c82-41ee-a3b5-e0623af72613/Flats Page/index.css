@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Bree Serif:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+.bg-container {
+    background-color: black;
+
+    background-size: cover;
+}
+
+.main-heading {
+    font-family: "bree-serif";
+    font-size: 26px;
+    padding: 20px;
+    font-weight: bold;
+    color: orange;
+}
+
+.bg-container1 {
+    padding: 20px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+.pic {
+    height: 180px;
+    width: 100px;
+}
+
+.main-heading1 {
+    font-family: "roboto";
+    font-size: 20px;
+    color: brown;
+    margin: 10px;
+}
+
+.paragraph {
+    font-family: "roboto";
+    color: green;
+    margin: 10px;
+}
+
+.back {
+    margin: 15px;
+    border-radius: 8px;
+}
+
+.bg {
+    background-image: url("https://assets.ccbp.in/frontend/static-website/flats-list-d1-img.png");
+    height: 30vh;
+    background-size: cover;
+}
+
+.pad {
+    padding: 20px;
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+
+  <body>
+    <div id="sectionHomePage">
+      <div class="podcast-home-page-bg-container">
+        <h1 class="podcast-heading">Podcasts</h1>
+      </div>
+      <div class="podcasts-cards-container">
+        <div class="d-flex flex-row">
+          <div
+            class="details-card"
+            onclick="display('sectionpurijagannadhpodcast')"
+          >
+            <img
+              class="podcast-image"
+              src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/puri-jagannadh-img.png"
+            />
+            <h1 class="podcast-name">Puri jagannadh</h1>
+            <p class="episodes-count">24 episodes</p>
+          </div>
+          <div class="details-card" onclick="display('sectiontedxtalkpodcast')">
+            <img
+              class="podcast-image"
+              src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/tedx-img.png"
+            />
+            <h1 class="podcast-name">Tedx talks</h1>
+            <p class="episodes-count">12 episodes</p>
+          </div>
+        </div>
+        <div class="podcast-row d-flex flex-row">
+          <div class="details-card" onclick="display('sectionSadhgurupodcast')">
+            <img
+              class="podcast-image"
+              src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/sadhguru-img.png"
+            />
+            <h1 class="podcast-name">Sadhguru</h1>
+            <p class="episodes-count">49 episodes</p>
+          </div>
+          <div class="detils-card" onclick="display('sectiononpurposepodcast')">
+            <img
+              class="podcast-image"
+              src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/sadhguru-img.png"
+            />
+            <h1 class="podcast-name">On purpose</h1>
+            <p class="episodes-count">49 episodes</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="sectionpurijagannadhpodcast">
+      <div class="podcast-header d-flex flex-row">
+        <img
+          src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/puri-jagannadh-img.png"
+          class="podcast-=image"
+        />
+        <div class="podcast-text-container">
+          <p class="category">Podcast</p>
+          <h1 class="podcast-title">Puri Jagannadh Podcast</h1>
+          <p class="podcast-caption">ThePuriJagannadh Podcast</p>
+        </div>
+      </div>
+    </div>
+    <script
+      type="text/javascript"
+      src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"
+    ></script>
+    <script src="./index.js" type="text/javascript"></script>
+  </body>
+</html>

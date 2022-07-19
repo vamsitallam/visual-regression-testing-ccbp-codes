@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+.favorite-stores-bg-container {
+  background-color: #894bca;
+}
+
+.favorite-stores-heading {
+  color: #ffffff;
+  font-family: "Bree Serif";
+  font-size: 24px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 30px;
+}
+
+.store-image {
+  width: 200px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.favorite-stores-list-container {
+  background-color: #ffffff;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  padding: 20px;
+}
+
+.favorite-stores-list-heading {
+  color: #f780c3;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.favorite-store-details-container {
+  margin-bottom: 20px;
+}
+
+.favorite-store-image {
+  height: 50px;
+  margin-right: 20px;
+}
+
+.favorite-store-name {
+  color: #323f4b;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.favorite-store-description {
+  color: #7b8794;
+  font-size: 14px;
+}

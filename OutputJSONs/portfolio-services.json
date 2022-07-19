@@ -1,0 +1,105 @@
+[
+    {
+        "question_type": "HTML_CODING",
+        "question": {
+            "question_id": "d634c6ac-c694-42cc-9a0c-8abeb351cfe1",
+            "content": "In this assignment, let's build a Portfolio Website Services Section by applying the concepts we learned till now.\n\n**Refer to the below images.**\n\nThe following images illustrate all device sizes, from extra small to extra large.\n\nExtra Small (Size < 576px) and Small (Size >= 576px):\n\n<img src=\"https://nkb-backend-media-static-tenxiitian.s3.ap-south-1.amazonaws.com/tenxiitian_prod/programs/Tech+Programs/frontend-content/ccbp/coding-practice-questions/responsive-website/portfolio-services-section-xs-v1.png\" alt=\"portfolio-website-to-build\" style=\"max-width:100%;box-shadow:0 2.8px 2.2px rgba(0, 0, 0, 0.12)\"/>\n\n<br/>\n\n<br/>\n\nMedium (Size >= 768px):\n\n<img src=\"https://nkb-backend-media-static-tenxiitian.s3.ap-south-1.amazonaws.com/tenxiitian_prod/programs/Tech+Programs/frontend-content/ccbp/coding-practice-questions/responsive-website/portfolio-services-section-md-v1.png\" alt=\"portfolio-website-to-build\" style=\"max-width:100%;box-shadow:0 2.8px 2.2px rgba(0, 0, 0, 0.12)\"/>\n\n<br/>\n\n<br/>\n\nLarge (Size >= 992px) and Extra Large (Size >= 1200px):\n\n<img src=\"https://nkb-backend-media-static-tenxiitian.s3.ap-south-1.amazonaws.com/tenxiitian_prod/programs/Tech+Programs/frontend-content/ccbp/coding-practice-questions/responsive-website/portfolio-services-section-lg-v1.png\" alt=\"portfolio-website-to-build\" style=\"max-width:100%;box-shadow:0 2.8px 2.2px rgba(0, 0, 0, 0.12)\"/>\n\n<br/>\n\n<MultiLineNote>\nTry to achieve the design as close as possible.\n</MultiLineNote>\n\n<hr/>\n\n#### Resources\n\nUse the image URLs given below.\n\n- [https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/portfolio-web-design-img.png](https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/portfolio-web-design-img.png)\n- [https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/portfolio-web-development-img.png](https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/portfolio-web-development-img.png)\n- [https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/portfolio-customize-img.png](https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/portfolio-customize-img.png)\n\n\n**CSS Colors used:**\n\n<div style=\"background-color: #cced00; width: 150px; padding: 10px; color: black\">\\#cced00</div>\n<div style=\"background-color: #52606d; width: 150px; padding: 10px; color: white\">\\#52606d</div>\n<div style=\"background-color: #9aa5b1; width: 150px; padding: 10px; color: white\">\\#9aa5b1</div>\n<div style=\"background-color: #323f4b; width: 150px; padding: 10px; color: white\">\\#323f4b</div>\n\n<hr/>\n\n#### Concepts Review\n\nWant to quickly review some of the concepts you\u2019ve been learning?\n\nTake a look at the Cheat Sheets.\n",
+            "content_type": "MARKDOWN",
+            "short_text": "Portfolio Website Services Section",
+            "multimedia": [],
+            "language": "ENGLISH",
+            "difficulty": "EASY",
+            "tag_names": []
+        },
+        "question_asked_by_companies_info": [],
+        "test_cases": [
+            {
+                "test_case_id": "4fcf4c93-d74d-44d1-8a53-4ed948eefc0c",
+                "display_text": "Page should consist of an HTML image element",
+                "testcase_evaluation_type": "CLIENT_SIDE_EVALUATION",
+                "order": 1,
+                "criteria": "assert.isAbove($('#htmlPreview').find('img').length, 0);",
+                "weightage": 10
+            },
+            {
+                "test_case_id": "8fc846f6-cc6b-46af-b9fe-4f3c74ef8c78",
+                "display_text": "Page should consist of an HTML container element with the bootstrap class name container",
+                "testcase_evaluation_type": "CLIENT_SIDE_EVALUATION",
+                "order": 2,
+                "criteria": "assert.isAbove($('#htmlPreview').find('div').toArray().filter(( element, index )=>$(element).hasClass('container')).length, 0);",
+                "weightage": 10
+            },
+            {
+                "test_case_id": "33dfeb9b-7624-465d-90d8-03b10acd028f",
+                "display_text": "Page should consist of an HTML container element with the bootstrap class name row",
+                "testcase_evaluation_type": "CLIENT_SIDE_EVALUATION",
+                "order": 3,
+                "criteria": "assert.isAbove($('#htmlPreview').find('div').toArray().filter(( element, index )=>$(element).hasClass('row')).length, 0);",
+                "weightage": 10
+            },
+            {
+                "test_case_id": "cf781173-41c2-465f-8fb6-110ce6ee5dc8",
+                "display_text": "Page should consist of an HTML container element with the bootstrap grid column class name in medium devices that starts with col-md-",
+                "testcase_evaluation_type": "CLIENT_SIDE_EVALUATION",
+                "order": 4,
+                "criteria": "assert.isAbove($('#htmlPreview').find('div[class*= \"col-md-\"]').length, 0);",
+                "weightage": 10
+            },
+            {
+                "test_case_id": "aee3c833-ec44-4945-ac3b-44881a734426",
+                "display_text": "Page should consist of an HTML container element with the bootstrap class name shadow",
+                "testcase_evaluation_type": "CLIENT_SIDE_EVALUATION",
+                "order": 5,
+                "criteria": "assert.isAbove($('#htmlPreview').find('div').toArray().filter(( element, index )=>$(element).hasClass('shadow')).length, 0);",
+                "weightage": 10
+            }
+        ],
+        "total_score": 50,
+        "html_coding_question_details": [
+            {
+                "code_content": "<!DOCTYPE html>\n<html>\n  <head>\n    <link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css\" integrity=\"sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z\" crossorigin=\"anonymous\" />\n    <script src=\"https://code.jquery.com/jquery-3.5.1.slim.min.js\" integrity=\"sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj\" crossorigin=\"anonymous\"></script>\n    <script src=\"https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js\" integrity=\"sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN\" crossorigin=\"anonymous\"></script>\n    <script src=\"https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js\" integrity=\"sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV\" crossorigin=\"anonymous\"></script>\n  </head>\n  <body>\n    Your code goes here\n  </body>\n</html>\n",
+                "language": "HTML"
+            },
+            {
+                "code_content": "@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');\n",
+                "language": "CSS"
+            },
+            {
+                "code_content": "",
+                "language": "JAVASCRIPT"
+            }
+        ],
+        "solutions": [
+            {
+                "order": 1,
+                "title": {
+                    "content": "Portfolio Website Services Section",
+                    "content_type": "TEXT"
+                },
+                "description": {
+                    "content": "An approach of designing a Portfolio Website Services Section using Bootstrap.",
+                    "content_type": "TEXT"
+                },
+                "code_details": [
+                    {
+                        "default_code": true,
+                        "code_content": "<!DOCTYPE html>\n<html>\n  <head>\n    <link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css\" integrity=\"sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z\" crossorigin=\"anonymous\" />\n    <script src=\"https://code.jquery.com/jquery-3.5.1.slim.min.js\" integrity=\"sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj\" crossorigin=\"anonymous\"></script>\n    <script src=\"https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js\" integrity=\"sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN\" crossorigin=\"anonymous\"></script>\n    <script src=\"https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js\" integrity=\"sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV\" crossorigin=\"anonymous\"></script>\n  </head>\n  <body>\n    <div class=\"services-section pt-5 pb-5\">\n      <div class=\"container\">\n        <div class=\"row\">\n          <div class=\"col-12\">\n            <h1 class=\"services-section-sub-heading mb-3\">Services</h1>\n            <h1 class=\"services-section-heading mb-3\">What I do</h1>\n          </div>\n          <div class=\"col-12 col-md-6 col-lg-4\">\n            <div class=\"shadow services-card mb-3\">\n              <img\n                src=\"https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/portfolio-web-design-img.png\"\n                class=\"services-card-image\"\n              />\n              <h1 class=\"services-card-title mt-2\">Static Websites</h1>\n              <p class=\"services-card-description\">\n                A Static Website contains Web pages with fixed content.\n                Each page is developed using HTML and CSS and displays the same information to every visitor.\n              </p>\n            </div>\n          </div>\n          <div class=\"col-12 col-md-6 col-lg-4\">\n            <div class=\"services-card mb-3\">\n              <img\n                src=\"https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/portfolio-web-development-img.png\"\n                class=\"services-card-image\"\n              />\n              <h1 class=\"services-card-title mt-2\">Responsive Web design</h1>\n              <p class=\"services-card-description\">\n                Responsive Web design is the approach that suggests that design and development should respond to the user\u2019s behaviour and environment based on screen size, platform and orientation.\n              </p>\n            </div>\n          </div>\n          <div class=\"col-12 col-md-6 col-lg-4\">\n            <div class=\"shadow services-card mb-3\">\n              <img\n                src=\"https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/portfolio-customize-img.png\"\n                class=\"services-card-image\"\n              />\n              <h1 class=\"services-card-title mt-2\">Customisable Layouts</h1>\n              <p class=\"services-card-description\">\n                Customisable sites are templates with set layouts. You may be\n                able to change photos and colors, but your site will look\n                similar to many other sites due to the template. The same goes\n                for...\n              </p>\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n  </body>\n</html>\n",
+                        "language": "HTML"
+                    },
+                    {
+                        "default_code": true,
+                        "code_content": "@import url(\"https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap\");\n\n.services-section {\n  background-color: #52606d;\n}\n.services-section-sub-heading {\n  color: #cced00;\n  font-family: \"Roboto\";\n  font-size: 20px;\n  font-weight: bold;\n}\n.services-section-heading {\n  color: #ffffff;\n  font-family: \"Roboto\";\n  font-size: 36px;\n  font-weight: bold;\n}\n.services-card {\n  background-color: #323f4b;\n  border-radius: 8px;\n  padding: 20px;\n}\n.services-card-image {\n  height: 48px;\n  width: 48px;\n}\n.services-card-title {\n  color: #ffffff;\n  font-family: \"Roboto\";\n  font-size: 24px;\n  font-weight: bold;\n}\n.services-card-description {\n  color: #9aa5b1;\n  font-family: \"Roboto\";\n  font-size: 20px;\n}\n",
+                        "language": "CSS"
+                    },
+                    {
+                        "default_code": true,
+                        "code_content": "",
+                        "language": "JAVASCRIPT"
+                    }
+                ]
+            }
+        ],
+        "read_only_languages": [],
+        "hints": []
+    }
+]

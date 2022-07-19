@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Bree Serif:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+.image-container {
+    background-image: url("https://assets.ccbp.in/frontend/static-website/flats-list-bg.png");
+    background-size: cover;
+    text-align: center;
+    height: 100vh;
+    width: 70vh;
+    padding: 25px;
+}
+
+.Sunrise-Avenue {
+    text-align: center;
+}
+
+.content-name {
+    color: orange;
+    text-align: center;
+    font-family: Bree Serif;
+    font-size: 28px;
+}
+
+.what-moves {
+    color: #6c6b70;
+    font-style: Serif;
+    font-size: bold;
+    font-weight: 30px;
+}
+
+.button {
+    background-color: #f19116;
+    color: white;
+    font-size: 15px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    margin: 10px;
+
+}
+
+.background-image {
+    background-color: black;
+    background-image: cover;
+    height: 100vh;
+    width: 100vh;
+
+}
+
+.Sunrise-Avenue-heading {
+    color: #f19116;
+    font-size: 28px;
+    font-family: 'Roboto';
+    font-weight: bold;
+    padding: 23px;
+}
+
+.Sunrise-Avenue-card-container {
+    background-color: white;
+    border-radius: 8px;
+    padding: 15px;
+}
+
+
+.Sunrise-Avenue-card-heading {
+    background-color: white;
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-size: 20px;
+
+
+
+}
+
+.sunrise-avenue-card-description {
+    background-color: white;
+    font-family: 'Roboto';
+    font-size: 13px;
+    padding: 24px;
+
+}
+
+.favourite-place-card-image {
+    background-image: cover;
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+}
+
+.Sunrise-Avenue-card-heading-2 {
+    background-image: cover;
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+}
+
+.Sunrise-Avenue-card-heading-3 {
+    background-image: cover;
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+}
+
+.back {
+    background-color: #f19116;
+    color: white;
+    height: 35px;
+    width: 65px;
+    padding: 5px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-left-radius: 10px;
+}

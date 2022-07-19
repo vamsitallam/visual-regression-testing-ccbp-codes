@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+.Music-page-bg-container {
+    background-image: url("https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/moon-stars-bg.png");
+    height: 100vh;
+    background-size: cover;
+}
+
+.Music-page-bg-container-heading {
+    text-align: center;
+    padding: 60px;
+    color: white;
+    font-family: "bree serif";
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.Music-page-bg-container-description {
+    font-size: 15px;
+    color: white;
+    font-family: "bree serif";
+    text-align: center;
+    font-weight: 200;
+}
+
+
+
+.night-island-card-container-heading {
+    font-family: "bree serif";
+    font-size: 30px;
+    color: #ffe7bf;
+
+    text-align: center;
+}
+
+.night-island-image {
+    height: 30vh;
+    width: 70vw;
+    padding: 5px;
+    margin: 6px;
+}
+
+.night-island-card-container-description {
+    font-size: 12px;
+    font-family: "bree serif";
+    color: white;
+    padding: 6px;
+}
+
+.button {
+    border-radius: 16px;
+    border-width: 0px;
+    font-family: "bree serif";
+    background-color: #8e97fd;
+    color: #ffffff;
+    font-size: 11px;
+    height: 5vh;
+    width: 80px;
+}
+
+.Music-details-bg-container {
+    background-image: url("https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/clouds-img.png");
+    height: 30vh;
+    width: 80vw;
+    background-size: cover;
+
+}
+
+.Music-details-card-container {
+    background-color: #03174c;
+    height: 110vh;
+}
+
+.Music-details-card-container-heading {
+    color: white;
+    font-size: 30px;
+    font-family: "bree serif";
+    padding: 10px;
+}
+
+.Music-details-card-container-description {
+    font-size: 10px;
+    font-family: "bree serif";
+    padding: 10px;
+    color: #98a1bd;
+}
+
+.moon-clouds-image {
+    height: 20vh;
+    width: 40vw;
+    margin-left: 10px;
+}
+
+.sub-heading {
+    font-size: 15px;
+    font-family: "bree serif";
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.moon-clouds-image-heading {
+    font-size: 13px;
+    color: white;
+    font-family: "bree serif";
+    padding: 6px;
+
+}
+
+.moon-clouds-image-description {
+    font-size: 13px;
+    font-family: 'bree serif';
+    color: #98a1bd;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.sweet-sleep-image {
+    height: 20vh;
+    width: 40vw;
+    margin-left: 10px;
+}
+
+.sweet-sleep-image-heading {
+    font-size: 13px;
+    color: white;
+    font-family: "bree serif";
+    padding: 6px;
+
+}
+
+.sweet-sleep-image-description {
+    font-size: 13px;
+    font-family: 'bree serif';
+    color: #98a1bd;
+    text-align: left;
+    margin-left: 10px;
+}
+
+..button {
+    border-radius: 16px;
+    border-width: 0px;
+    font-family: "bree serif";
+    background-color: #8e97fd;
+    color: #ffffff;
+    font-size: 14px;
+    height: 5vh;
+    width: 80px;
+    margin-left: 10px;
+}

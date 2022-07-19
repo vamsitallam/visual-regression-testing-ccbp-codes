@@ -1,0 +1,56 @@
+import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+.bg-container {
+    background-color: white;
+    background-size: cover;
+    height: 100vh;
+    width: 70vh;
+}
+.card-container {
+    font-family: "Bree Serif";
+    background-color: #894bca;
+    height: 30vh;
+    width: 70vh;
+    margin: 10px;
+}
+.image-card {
+    height: 25vh;
+    width: 30vh;
+}
+.main-heading {
+    font-family: "Roboto";
+    font-size: 30px;
+    color: white;
+    margin: 10px;
+    text-align: center;
+    padding: 25px;
+}
+.card-container1 {
+    font-family: "Roboto";
+    color: #f780c3;
+    height: 10vh;
+    width: 70vh;
+    margin: 10px;
+    font-size: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.image-card1 {
+    height: 13vh;
+    width: 13vh;
+}
+.card-container2 {
+    font-family: "Roboto";
+    color: #f780c3;
+    height: 30vh;
+    width: 70vh;
+    margin: 10px;
+    font-size: 20px;
+}
+.main-heading1 {
+    font-family: "Roboto";
+    font-size: 15px;
+    color: black;
+    margin: 10px;
+    text-align: center;
+    padding: 25px;
+}

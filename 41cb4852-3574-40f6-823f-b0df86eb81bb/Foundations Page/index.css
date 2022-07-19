@@ -1,0 +1,49 @@
+.top-section-bg-container {
+  background-image: url("https://assets.ccbp.in/frontend/static-website/foundations-bg.png");
+  background-size: cover;
+  height: 40vh;
+}
+
+.bottom-section {
+  background-color: #ffffff;
+  padding: 15px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.heading {
+  color: #323f4b;
+  font-family: "Roboto";
+  font-size: 30px;
+  font-weight: bold;
+  padding: 15px;
+}
+
+.courses {
+  color: #7b8794;
+  font-family: "Roboto";
+  font-size: 18px;
+  padding: 15px;
+}
+
+.courses-card {
+  margin: 15px;
+  width: 140px;
+  border-color: #cbd2d9;
+  border-radius: 8px;
+  border-width: 2px;
+  text-align: center;
+  padding: 8px;
+}
+
+.courses-card-image {
+  width: 65px;
+  height: 65px;
+}
+.course-name {
+  color: #323f4b;
+  font-family: "Roboto";
+  font-size: 16px;
+  padding: 15px;
+  font-weight: 600;
+}

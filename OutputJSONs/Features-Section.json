@@ -1,0 +1,129 @@
+[
+    {
+        "question_type": "HTML_CODING",
+        "question": {
+            "question_id": "5b9b822e-b004-4c54-865c-23c19fbab4e0",
+            "content": "In this assignment, let's build a Features Section by applying the concepts we learned till now.\n\n**Refer to the below images.**\n\nThe following images illustrate all device sizes, from extra small to extra large.\n\nExtra Small (Size < 576px) and Small (Size >= 576px)\n\n<img src=\"https://assets.ccbp.in/frontend/content/responsive-website/awsome-features-output-sm-img-v2.png\" style=\"width:90%;box-shadow:0 2.8px 2.2px rgba(0, 0, 0, 0.12)\"/>\n\n<br/>\n<br/>\nMedium (Size >= 768px), Large (Size >= 992px) and Extra Large (Size >= 1200px):\n\n<img src=\"https://assets.ccbp.in/frontend/content/responsive-website/awsome-features-output-md-img.png\"  style = \"width:90%;box-shadow:0 2.8px 2.2px rgba(0, 0, 0, 0.12)\"/>\n\n<MultiLineNote>\nTry to achieve the design as close as possible.\n</MultiLineNote>\n\n<hr/>\n\n#### Resources\n\nUse the image URLs given below.\n\n- [https://assets.ccbp.in/frontend/responsive-website/awsome-features-1-img.png](https://assets.ccbp.in/frontend/responsive-website/awsome-features-1-img.png)\n- [https://assets.ccbp.in/frontend/responsive-website/awsome-features-2-img.png](https://assets.ccbp.in/frontend/responsive-website/awsome-features-2-img.png)\n- [https://assets.ccbp.in/frontend/responsive-website/awsome-features-3-img.png](https://assets.ccbp.in/frontend/responsive-website/awsome-features-3-img.png)\n- [https://assets.ccbp.in/frontend/responsive-website/awsome-features-4-img.png](https://assets.ccbp.in/frontend/responsive-website/awsome-features-4-img.png)\n- [https://assets.ccbp.in/frontend/responsive-website/awsome-features-5-img.png](https://assets.ccbp.in/frontend/responsive-website/awsome-features-5-img.png)\n- [https://assets.ccbp.in/frontend/responsive-website/awsome-features-6-img.png](https://assets.ccbp.in/frontend/responsive-website/awsome-features-6-img.png)\n  <br/>\n\n**CSS Colors used:**\n\nText color Hex Code values:\n\n<div style=\"background-color: #323f4b; width: 150px; padding: 10px; color: white\">\\#323f4b</div>\n<div style=\"background-color: #7b8794; width: 150px; padding: 10px; color: white\">\\#7b8794</div>\n<div style=\"background-color: #9aa5b1; width: 150px; padding: 10px; color: white\">\\#9aa5b1</div>\n\n<br/>\n\n**CSS Font families used:**\n\n- Roboto\n\n<hr/>\n\n#### Concepts Review\n\nWant to quickly review some of the concepts you\u2019ve been learning?\n\nTake a look at the Cheat Sheets.\n",
+            "content_type": "MARKDOWN",
+            "short_text": "Features Section",
+            "multimedia": [],
+            "language": "ENGLISH",
+            "difficulty": "EASY",
+            "tag_names": []
+        },
+        "question_asked_by_companies_info": [],
+        "test_cases": [
+            {
+                "test_case_id": "ac881ad6-d7c5-4846-a734-f20829dc44dd",
+                "display_text": "Page should consist of an HTML container element with the bootstrap class name container",
+                "testcase_evaluation_type": "CLIENT_SIDE_EVALUATION",
+                "order": 1,
+                "criteria": "assert.isAbove($(\"#htmlPreview\").find(\"div\").toArray().filter((element, index) => $(element).hasClass(\"container\")).length,0);",
+                "weightage": 5
+            },
+            {
+                "test_case_id": "44b0abea-c5aa-45d7-a5b8-f159fda5b70d",
+                "display_text": "Page should consist of an HTML element with the bootstrap class name row in the HTML element with bootstrap class name container",
+                "testcase_evaluation_type": "CLIENT_SIDE_EVALUATION",
+                "order": 2,
+                "criteria": "assert.isAbove($(\"#htmlPreview .container\").find(\"div\").toArray().filter((element, index) => $(element).hasClass(\"row\")).length,0);",
+                "weightage": 5
+            },
+            {
+                "test_case_id": "131dde2a-f529-472b-88a5-e843fe46edaf",
+                "display_text": "Page should consist of HTML heading element in the HTML container element with the bootstrap class name row",
+                "testcase_evaluation_type": "CLIENT_SIDE_EVALUATION",
+                "order": 3,
+                "criteria": "assert.isAbove($(\"#htmlPreview .container .row\").find(\"h1\").length,0);",
+                "weightage": 5
+            },
+            {
+                "test_case_id": "ac290fca-7c22-4b5a-ae7d-b8ff7d7bcf0d",
+                "display_text": "Page should consist of at least seven HTML paragraph elements in the HTML container element with class name row",
+                "testcase_evaluation_type": "CLIENT_SIDE_EVALUATION",
+                "order": 4,
+                "criteria": "function isDivContainsParagraphs() {  var paragraphsCount = $(\"#htmlPreview .container .row\").find(\"p\").length;  assert(paragraphsCount >=7 );}isDivContainsParagraphs();",
+                "weightage": 5
+            },
+            {
+                "test_case_id": "506813f3-ad3e-4a2c-b808-8a69be22f674",
+                "display_text": "Page should consist of at least six HTML container elements with the bootstrap class name col-md-6 in the HTML element with bootstrap class name row",
+                "testcase_evaluation_type": "CLIENT_SIDE_EVALUATION",
+                "order": 5,
+                "criteria": "assert.isAbove($('#htmlPreview .container .row').find('div[class*= \\\"col-md-6\\\"]').length, 5);",
+                "weightage": 5
+            },
+            {
+                "test_case_id": "11b20431-ae7b-4ae4-9c7d-c77907652e40",
+                "display_text": "Page should consist of at least six HTML elements with the bootstrap class name d-flex in the HTML element with class name row",
+                "testcase_evaluation_type": "CLIENT_SIDE_EVALUATION",
+                "order": 6,
+                "criteria": "assert.isAbove($(\"#htmlPreview .container .row\").find(\"div\").toArray().filter((element, index) => $(element).hasClass(\"d-flex\")).length,5);",
+                "weightage": 5
+            },
+            {
+                "test_case_id": "23d63627-90a6-41e4-adbf-91ee00891c86",
+                "display_text": "Page should consist of at least six HTML elements with the bootstrap class name flex-row in the HTML element with class name row",
+                "testcase_evaluation_type": "CLIENT_SIDE_EVALUATION",
+                "order": 7,
+                "criteria": "assert.isAbove($(\"#htmlPreview .container .row\").find(\"div\").toArray().filter((element, index) => $(element).hasClass(\"flex-row\")).length,5);",
+                "weightage": 5
+            },
+            {
+                "test_case_id": "44aa433a-022a-4401-a1aa-f455c62b3611",
+                "display_text": "Page should consist of at least six HTML image elements in HTML container element with class name row",
+                "testcase_evaluation_type": "CLIENT_SIDE_EVALUATION",
+                "order": 8,
+                "criteria": "function isDivContainsImages() {  assert.isAbove($('#htmlPreview .container .row').find('img').toArray().filter(( element, index )=>$(element).attr(\"src\") !== undefined && $(element).attr(\"src\") !== \"\").length, 5);  }isDivContainsImages();",
+                "weightage": 5
+            }
+        ],
+        "total_score": 40,
+        "html_coding_question_details": [
+            {
+                "code_content": "<!DOCTYPE html>\n<html>\n  <head>\n    <link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css\" integrity=\"sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z\" crossorigin=\"anonymous\" />\n    <script src=\"https://code.jquery.com/jquery-3.5.1.slim.min.js\" integrity=\"sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew  +OrCXaRkfj\" crossorigin=\"anonymous\"></script>\n    <script src=\"https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js\" integrity=\"sha384-9 reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN\" crossorigin=\"anonymous\"></script>\n    <script src=\"https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js\" integrity=\"sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV\" crossorigin=\"anonymous\"></script>\n  </head>\n  <body>\n    Your code goes here\n  </body>\n</html>\n",
+                "language": "HTML"
+            },
+            {
+                "code_content": "@import url(\"https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap\");\n",
+                "language": "CSS"
+            },
+            {
+                "code_content": "",
+                "language": "JAVASCRIPT"
+            }
+        ],
+        "solutions": [
+            {
+                "order": 1,
+                "title": {
+                    "content": "Features Section",
+                    "content_type": "TEXT"
+                },
+                "description": {
+                    "content": "An approach of designing a Features Section using Bootstrap.",
+                    "content_type": "TEXT"
+                },
+                "code_details": [
+                    {
+                        "default_code": true,
+                        "code_content": "<!DOCTYPE html>\n<html>\n  <head>\n    <link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css\" integrity=\"sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z\" crossorigin=\"anonymous\" />\n    <script src=\"https://code.jquery.com/jquery-3.5.1.slim.min.js\" integrity=\"sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew  +OrCXaRkfj\" crossorigin=\"anonymous\"></script>\n    <script src=\"https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js\" integrity=\"sha384-9 reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN\" crossorigin=\"anonymous\"></script>\n    <script src=\"https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js\" integrity=\"sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV\" crossorigin=\"anonymous\"></script>\n  </head>\n  <body>\n    <div class=\"container\">\n      <div class=\"row\">\n        <div class=\"col-12 text-center mt-4\">\n          <h1 class=\"features-section-heading\">Features that make Design simply awesome</h1>\n          <p class=\"features-section-description\">Not sure if Design is for you? Check out a few of the key features!</p>\n        </div>\n        <div class=\"col-12 col-md-6 d-flex flex-row mt-2\">\n          <img src=\"https://assets.ccbp.in/frontend/responsive-website/awsome-features-1-img.png\" class=\"feature-image\" />\n          <div class = \"p-2\">\n            <p class=\"feature-title\">Vectors</p>\n            <p class=\"feature-description\">Use SVGs that always stay crisp and you can change the color as you go.</p>\n          </div>\n        </div>\n        <div class=\"col-12 col-md-6 d-flex flex-row\">\n          <img src=\"https://assets.ccbp.in/frontend/responsive-website/awsome-features-2-img.png\" class=\"feature-image\" />\n          <div class=\"p-2\">\n            <p class=\"feature-title\">Forms</p>\n            <p class=\"feature-description\">Add forms to collect your visitors' emails directly with Mailchimp.</p>\n          </div>\n        </div>\n        <div class=\"col-12 col-md-6 d-flex flex-row\">\n          <img src=\"https://assets.ccbp.in/frontend/responsive-website/awsome-features-3-img.png\" class=\"feature-image\" />\n          <div class=\"p-2\">\n            <p class=\"feature-title\">Effects</p>\n            <p class=\"feature-description\">Add some fancy elements to your designs by adding interactive scroll effects or animations.</p>\n          </div>\n        </div>\n        <div class=\"col-12 col-md-6 d-flex flex-row\">\n          <img src=\"https://assets.ccbp.in/frontend/responsive-website/awsome-features-4-img.png\" class=\"feature-image\" />\n          <div class=\"p-2\">\n            <p class=\"feature-title\">Paste CSS</p>\n            <p class=\"feature-description\">Copy CSS from Photoshop or Sketch or even your text editor and paste it.</p>\n          </div>\n        </div>\n        <div class=\"col-12 col-md-6 d-flex flex-row\">\n          <img src=\"https://assets.ccbp.in/frontend/responsive-website/awsome-features-5-img.png\" class=\"feature-image\" />\n          <div class=\"p-2\">\n            <p class=\"feature-title\">Responsive from the start</p>\n            <p class=\"feature-description\">Have full control over mobile layouts. Move the breakpoints where it's best for the content.</p>\n          </div>\n        </div>\n        <div class=\"col-12 col-md-6 d-flex flex-row\">\n          <img src=\"https://assets.ccbp.in/frontend/responsive-website/awsome-features-6-img.png\" class=\"feature-image\" />\n          <div class=\"p-2\">\n            <p class=\"feature-title\">Library</p>\n            <p class=\"feature-description\">Choose from presets or create your collections of elements to re-use later in your projects.</p>\n          </div>\n        </div>\n      </div>\n    </div>\n  </body>\n</html>\n",
+                        "language": "HTML"
+                    },
+                    {
+                        "default_code": true,
+                        "code_content": "@import url(\"https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap\");\n\n.features-section-heading {\n  color: #323f4b;\n  font-family: \"Roboto\";\n  font-weight: bold;\n  font-size: 36px;\n}\n\n.features-section-description {\n  color: #9aa5b1;\n  font-family: \"Roboto\";\n  font-size: 20px;\n  margin-top: 16px;\n}\n\n.feature-image {\n  width: 120px;\n  height: 100px;\n}\n\n.feature-title {\n  font-family: \"Roboto\";\n  font-size: 24px;\n}\n\n.feature-description {\n  color: #7b8794;\n  font-family: \"Roboto\";\n  font-size: 16px;\n  margin-top: 8px;\n}\n",
+                        "language": "CSS"
+                    },
+                    {
+                        "default_code": true,
+                        "code_content": "",
+                        "language": "JAVASCRIPT"
+                    }
+                ]
+            }
+        ],
+        "read_only_languages": [],
+        "hints": []
+    }
+]

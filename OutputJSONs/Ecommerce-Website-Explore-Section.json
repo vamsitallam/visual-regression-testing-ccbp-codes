@@ -1,0 +1,121 @@
+[
+    {
+        "question_type": "HTML_CODING",
+        "question": {
+            "question_id": "ba97e159-e385-4eec-b23d-b9c16a80969b",
+            "content": "In this assignment, let's build an Ecommerce Website Explore Section by applying the concepts we learned till now.\n\n**Refer to the below images.**\n\nThe following images illustrate all device sizes, from extra small to extra large.\n\nExtra Small (Size < 576px) and Small (Size >= 576px):\n\n<img src=\"https://nkb-backend-media-static-tenxiitian.s3.ap-south-1.amazonaws.com/tenxiitian_prod/programs/Tech+Programs/frontend-content/ccbp/coding-practice-questions/responsive-website/ecommerce-explore-section-xs-v1.png\" alt=\"ecommerce-website-to-build\" style=\"max-width:100%;box-shadow:0 2.8px 2.2px rgba(0, 0, 0, 0.12)\"/>\n\n<br/>\n\n<br/>\n\nMedium (Size >= 768px):\n\n<img src=\"https://nkb-backend-media-static-tenxiitian.s3.ap-south-1.amazonaws.com/tenxiitian_prod/programs/Tech+Programs/frontend-content/ccbp/coding-practice-questions/responsive-website/ecommerce-explore-section-md-v1.png\" alt=\"ecommerce-website-to-build\" style=\"max-width:100%;box-shadow:0 2.8px 2.2px rgba(0, 0, 0, 0.12)\"/>\n\n<br/>\n\n<br/>\n\nLarge (Size >= 992px) and Extra Large (Size >= 1200px):\n\n<img src=\"https://nkb-backend-media-static-tenxiitian.s3.ap-south-1.amazonaws.com/tenxiitian_prod/programs/Tech+Programs/frontend-content/ccbp/coding-practice-questions/responsive-website/ecommerce-explore-section-lg-v1.png\" alt=\"ecommerce-website-to-build\" style=\"max-width:100%;box-shadow:0 2.8px 2.2px rgba(0, 0, 0, 0.12)\"/>\n\n<MultiLineNote>\nTry to achieve the design as close as possible.\n</MultiLineNote>\n\n<hr/>\n\n#### Resources\n\nUse the image URLs given below.\n\n- [https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/ecommerce-explore-mamba-watch-img.png](https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/ecommerce-explore-mamba-watch-img.png)\n- [https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/ecommerce-explore-camera-img.png](https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/ecommerce-explore-camera-img.png)\n- [https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/ecommerce-explore-sport-and-fitness-img.png](https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/ecommerce-explore-sport-and-fitness-img.png)\n- [https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/ecommerce-explore-ear-phones-pink-img.png](https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/ecommerce-explore-ear-phones-pink-img.png)\n- [https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/ecommerce-explore-tv-img.png](https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/ecommerce-explore-tv-img.png)\n- [https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/ecommerce-explore-tablet-device-img.png](https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/ecommerce-explore-tablet-device-img.png)\n- [https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/ecommerce-explore-joy-stick-img.png](https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/ecommerce-explore-joy-stick-img.png)\n- [https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/ecommerce-explore-speakers-big-img.png](https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/ecommerce-explore-speakers-big-img.png)\n- [https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/ecommerce-explore-vr-set-img.png](https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/ecommerce-explore-vr-set-img.png)\n\n**CSS Colors used:**\n\n<div style=\"background-color: #f5f7fa ; width: 150px; padding: 10px; color: black\">\\#f5f7fa</div>\n<div style=\"background-color: #183b56; width: 150px; padding: 10px; color: white\">\\#183b56</div>\n<div style=\"background-color: #1f2933; width: 150px; padding: 10px; color: white\">\\#1f2933</div>\n<div style=\"background-color: #ff9f00; width: 150px; padding: 10px; color: white\">\\#ff9f00</div>\n\n<hr/>\n\n#### Concepts Review\n\nWant to quickly review some of the concepts you\u2019ve been learning?\n\nTake a look at the Cheat Sheets.\n",
+            "content_type": "MARKDOWN",
+            "short_text": "Ecommerce Website Explore Section",
+            "multimedia": [],
+            "language": "ENGLISH",
+            "difficulty": "EASY",
+            "tag_names": []
+        },
+        "question_asked_by_companies_info": [],
+        "test_cases": [
+            {
+                "test_case_id": "730ba4d9-c363-4210-8c3e-0c41f1c83ed7",
+                "display_text": "Page should consist of an HTML image element",
+                "testcase_evaluation_type": "CLIENT_SIDE_EVALUATION",
+                "order": 1,
+                "criteria": "assert.isAbove($('#htmlPreview').find('img').length, 0);",
+                "weightage": 10
+            },
+            {
+                "test_case_id": "49ee44f8-e77c-4a74-94ee-02b34e768e39",
+                "display_text": "Page should consist of an HTML container element with the bootstrap class name container",
+                "testcase_evaluation_type": "CLIENT_SIDE_EVALUATION",
+                "order": 2,
+                "criteria": "assert.isAbove($('#htmlPreview').find('div').toArray().filter(( element, index )=>$(element).hasClass('container')).length, 0);",
+                "weightage": 10
+            },
+            {
+                "test_case_id": "37702ec5-8ea3-40c1-bb08-0e03fcd3d3eb",
+                "display_text": "Page should consist of an HTML container element with the bootstrap class name row",
+                "testcase_evaluation_type": "CLIENT_SIDE_EVALUATION",
+                "order": 3,
+                "criteria": "assert.isAbove($('#htmlPreview').find('div').toArray().filter(( element, index )=>$(element).hasClass('row')).length, 0);",
+                "weightage": 10
+            },
+            {
+                "test_case_id": "4512dd68-5e47-4ae3-be22-a5f7af5de272",
+                "display_text": "Page should consist of an HTML container element with the bootstrap grid column class name in medium devices that starts with col-md-",
+                "testcase_evaluation_type": "CLIENT_SIDE_EVALUATION",
+                "order": 4,
+                "criteria": "assert.isAbove($('#htmlPreview').find('div[class*= \"col-md-\"]').length, 0);",
+                "weightage": 10
+            },
+            {
+                "test_case_id": "700051b6-6772-471b-a5ba-79121f4451f5",
+                "display_text": "Page should consist of an HTML container element with the bootstrap class name shadow",
+                "testcase_evaluation_type": "CLIENT_SIDE_EVALUATION",
+                "order": 5,
+                "criteria": "assert.isAbove($('#htmlPreview').find('div').toArray().filter(( element, index )=>$(element).hasClass('shadow')).length, 0);",
+                "weightage": 10
+            },
+            {
+                "test_case_id": "6fbb99d1-16b1-4b98-8554-695d8442288e",
+                "display_text": "Page should consist of an HTML container element with the bootstrap class name d-flex",
+                "testcase_evaluation_type": "CLIENT_SIDE_EVALUATION",
+                "order": 6,
+                "criteria": "assert.isAbove($('#htmlPreview').find('div').toArray().filter(( element, index )=>$(element).hasClass('d-flex')).length, 0);",
+                "weightage": 10
+            },
+            {
+                "test_case_id": "4323b1d6-f36d-4ebc-ba9c-9acb816d5a7c",
+                "display_text": "Page should consist of an HTML container element with the bootstrap class name flex-row",
+                "testcase_evaluation_type": "CLIENT_SIDE_EVALUATION",
+                "order": 7,
+                "criteria": "assert.isAbove($('#htmlPreview').find('div').toArray().filter(( element, index )=>$(element).hasClass('flex-row')).length, 0);",
+                "weightage": 10
+            }
+        ],
+        "total_score": 70,
+        "html_coding_question_details": [
+            {
+                "code_content": "<!DOCTYPE html>\n<html>\n  <head>\n    <link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css\" integrity=\"sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z\" crossorigin=\"anonymous\" />\n    <script src=\"https://code.jquery.com/jquery-3.5.1.slim.min.js\" integrity=\"sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj\" crossorigin=\"anonymous\"></script>\n    <script src=\"https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js\" integrity=\"sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN\" crossorigin=\"anonymous\"></script>\n    <script src=\"https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js\" integrity=\"sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV\" crossorigin=\"anonymous\"></script>\n  </head>\n  <body>\n    Your code goes here\n  </body>\n</html>\n",
+                "language": "HTML"
+            },
+            {
+                "code_content": "@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');\n",
+                "language": "CSS"
+            },
+            {
+                "code_content": "",
+                "language": "JAVASCRIPT"
+            }
+        ],
+        "solutions": [
+            {
+                "order": 1,
+                "title": {
+                    "content": "Ecommerce Website Explore Section",
+                    "content_type": "TEXT"
+                },
+                "description": {
+                    "content": "An approach of designing an Ecommerce Website Explore section using Bootstrap.",
+                    "content_type": "TEXT"
+                },
+                "code_details": [
+                    {
+                        "default_code": true,
+                        "code_content": "<!DOCTYPE html>\n<html>\n  <head>\n    <link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css\" integrity=\"sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z\" crossorigin=\"anonymous\" />\n    <script src=\"https://code.jquery.com/jquery-3.5.1.slim.min.js\" integrity=\"sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj\" crossorigin=\"anonymous\"></script>\n    <script src=\"https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js\" integrity=\"sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN\" crossorigin=\"anonymous\"></script>\n    <script src=\"https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js\" integrity=\"sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV\" crossorigin=\"anonymous\"></script>\n  </head>\n  <body>\n    <div class=\"explore-section pt-5 pb-5\">\n      <div class=\"container\">\n        <div class=\"row\">\n          <div class=\"col-12\">\n            <h1 class=\"explore-section-heading mb-3\">Explore Deals & Offers</h1>\n          </div>\n          <div class=\"col-12 col-md-6 col-lg-4\">\n            <div class=\"shadow explore-card p-3 mb-3\">\n              <h1 class=\"explore-card-title\">\n                Up to 80% Off | Electronics & Gadgets\n              </h1>\n              <div class=\"d-flex flex-row\">\n                <div class=\"text-center\">\n                  <div class=\"explore-card-image-container\">\n                    <img\n                      src=\"https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/ecommerce-explore-mamba-watch-img.png\"\n                      class=\"explore-card-image\"\n                    />\n                  </div>\n                  <h1 class=\"explore-card-product-title\">Smart Watch</h1>\n                </div>\n                <div class=\"text-center\">\n                  <div class=\"explore-card-image-container\">\n                    <img\n                      src=\"https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/ecommerce-explore-camera-img.png\"\n                      class=\"explore-card-image\"\n                    />\n                  </div>\n                  <h1 class=\"explore-card-product-title\">Cameras</h1>\n                </div>\n              </div>\n              <div class=\"d-flex flex-row\">\n                <div class=\"text-center\">\n                  <div class=\"explore-card-image-container\">\n                    <img\n                      src=\"https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/ecommerce-explore-sport-and-fitness-img.png\"\n                      class=\"explore-card-image\"\n                    />\n                  </div>\n                  <h1 class=\"explore-card-product-title\">Sports & Fitness</h1>\n                </div>\n                <div class=\"text-center\">\n                  <div class=\"explore-card-image-container\">\n                    <img\n                      src=\"https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/ecommerce-explore-ear-phones-pink-img.png\"\n                      class=\"explore-card-image\"\n                    />\n                  </div>\n                  <h1 class=\"explore-card-product-title\">Earphones</h1>\n                </div>\n              </div>\n              <a class=\"explore-card-link\" href=\"\">\n                See All Deals\n                <svg width=\"16px\" height=\"16px\" viewBox=\"0 0 16 16\" class=\"bi bi-arrow-right-short\" fill=\"#ff9f00\" xmlns=\"http://www.w3.org/2000/svg\">\n                  <path\n                    fill-rule=\"evenodd\"\n                    d=\"M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z\"\n                  />\n                </svg>\n              </a>\n            </div>\n          </div>\n          <div class=\"col-12 col-md-6 col-lg-4\">\n            <div class=\"shadow explore-card p-3 mb-3\">\n              <h1 class=\"explore-card-title\">\n                Festive Offers TVs & appliances\n              </h1>\n              <div class=\"explore-card-image-container\">\n                <img\n                  src=\"https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/ecommerce-explore-tv-img.png\"\n                  class=\"explore-card-image\"\n                />\n              </div>\n              <a class=\"explore-card-link\" href=\"\">\n                See All Deals\n                <svg width=\"16px\" height=\"16px\" viewBox=\"0 0 16 16\" class=\"bi bi-arrow-right-short\" fill=\"#ff9f00\" xmlns=\"http://www.w3.org/2000/svg\">\n                  <path\n                    fill-rule=\"evenodd\"\n                    d=\"M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z\"\n                  />\n                </svg>\n              </a>\n            </div>\n          </div>\n          <div class=\"col-12 col-md-6 col-lg-4\">\n            <div class=\"shadow explore-card p-3 mb-3\">\n              <h1 class=\"explore-card-title mt-3\">\n                Under Rs 4000 | Friendly Accessories\n              </h1>\n              <div class=\"d-flex flex-row\">\n                <div class=\"text-center\">\n                  <div class=\"explore-card-image-container\">\n                    <img\n                      src=\"https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/ecommerce-explore-tablet-device-img.png\"\n                      class=\"explore-card-image\"\n                    />\n                  </div>\n                  <h1 class=\"explore-card-product-title\">Tablet</h1>\n                </div>\n                <div class=\"text-center\">\n                  <div class=\"explore-card-image-container\">\n                    <img\n                      src=\"https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/ecommerce-explore-joy-stick-img.png\"\n                      class=\"explore-card-image\"\n                    />\n                  </div>\n                  <h1 class=\"explore-card-product-title\">PlayStation</h1>\n                </div>\n              </div>\n              <div class=\"d-flex flex-row\">\n                <div class=\"text-center\">\n                  <div class=\"explore-card-image-container\">\n                    <img\n                      src=\"https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/ecommerce-explore-speakers-big-img.png\"\n                      class=\"explore-card-image\"\n                    />\n                  </div>\n                  <h1 class=\"explore-card-product-title\">Speakers</h1>\n                </div>\n                <div class=\"text-center\">\n                  <div class=\"explore-card-image-container\">\n                    <img\n                      src=\"https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/ecommerce-explore-vr-set-img.png\"\n                      class=\"explore-card-image\"\n                    />\n                  </div>\n                  <h1 class=\"explore-card-product-title\">Virtual Reality Set</h1>\n                </div>\n              </div>\n              <a class=\"explore-card-link\" href=\"\">\n                See All Deals\n                <svg width=\"16px\" height=\"16px\" viewBox=\"0 0 16 16\" class=\"bi bi-arrow-right-short\" fill=\"#ff9f00\" xmlns=\"http://www.w3.org/2000/svg\">\n                  <path\n                    fill-rule=\"evenodd\"\n                    d=\"M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z\"\n                  />\n                </svg>\n              </a>\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n  </body>\n</html>\n",
+                        "language": "HTML"
+                    },
+                    {
+                        "default_code": true,
+                        "code_content": "@import url(\"https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap\");\n\n.explore-section {\n  background-color: #f5f7fa;\n}\n.explore-section-heading {\n  color: #183b56;\n  font-family: \"Roboto\";\n  font-size: 36px;\n  font-weight: bold;\n}\n.explore-card {\n  background-color: #ffffff;\n  border-radius: 8px;\n}\n.explore-card-image-container {\n  padding: 10px;\n}\n.explore-card-image {\n  width: 100%;\n  border-radius: 20px;\n}\n.explore-card-title {\n  color: #183b56;\n  font-family: \"Roboto\";\n  font-size: 24px;\n  font-weight: bold;\n}\n.explore-card-product-title {\n  color: #1f2933;\n  font-family: \"Roboto\";\n  font-size: 16px;\n  margin-top: 10px;\n}\n.explore-card-link {\n  color: #ff9f00;\n  font-family: \"Roboto\";\n  font-size: 14px;\n  font-weight: bold;\n}\n",
+                        "language": "CSS"
+                    },
+                    {
+                        "default_code": true,
+                        "code_content": "",
+                        "language": "JAVASCRIPT"
+                    }
+                ]
+            }
+        ],
+        "read_only_languages": [],
+        "hints": []
+    }
+]

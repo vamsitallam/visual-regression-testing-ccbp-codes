@@ -1,0 +1,129 @@
+[
+    {
+        "question_type": "HTML_CODING",
+        "question": {
+            "question_id": "30cfba33-6f40-4a0a-92b0-27882ed3f52a",
+            "content": "In this assignment, let's build a Yoga page by applying the concepts we learned till now. You can use the Bootstrap concepts and CCBP UI Kit as well.\n\n<br/>\n\n**Refer to the below image.**\n\nYoga Page\n\n<br/>\n\n<img src=\"https://assets.ccbp.in/frontend/content/static-website/yoga-output-v2.gif\" alt=\"\" style=\"max-width:300px;\">\n\n<br/>\n\n<MultiLineNote>\n\n- When clicked on the Get Started button on the Yoga Home Page, it must display the Types of Yoga Page.\n\n- Try to achieve the design as close as possible.\n\n</MultiLineNote>\n\n<hr/>\n\n### Resources\n\nUse the image URLs given below.\n\n<br/>\n\nHome Page Background Image\n\n- [https://assets.ccbp.in/frontend/static-website/yoga-bg.png](https://assets.ccbp.in/frontend/static-website/yoga-bg.png)\n\n<br/>\n\nHome Page Girl Image\n\n- [https://assets.ccbp.in/frontend/static-website/yoga-girl-with-headphones-img.png](https://assets.ccbp.in/frontend/static-website/yoga-girl-with-headphones-img.png)\n\nTypes of Yoga Page Images\n\n- [https://assets.ccbp.in/frontend/static-website/yoga-girl-without-headphones-img.png](https://assets.ccbp.in/frontend/static-website/yoga-girl-without-headphones-img.png)\n- [https://assets.ccbp.in/frontend/static-website/yoga-card1-img.png](https://assets.ccbp.in/frontend/static-website/yoga-card1-img.png)\n- [https://assets.ccbp.in/frontend/static-website/yoga-card2-img.png](https://assets.ccbp.in/frontend/static-website/yoga-card2-img.png)\n- [https://assets.ccbp.in/frontend/static-website/yoga-card3-img.png](https://assets.ccbp.in/frontend/static-website/yoga-card3-img.png)\n- [https://assets.ccbp.in/frontend/static-website/yoga-card4-img.png](https://assets.ccbp.in/frontend/static-website/yoga-card4-img.png)\n\n<br/>\n\n**CSS Colors used:**\n\nBackground color Hex Code values:\n\n<br/>\n\n<div style=\"background-color: #ffedcb ; width: 150px; padding: 10px; color: black\">\\#ffedcb</div>\n<div style=\"background-color:  #132d84; width: 150px; padding: 10px; color: white\">\\#132d84</div>\n<div style=\"background-color: #ffe2ab; width: 150px; padding: 10px; color: black\">\\#ffe2ab</div>\n\n<br/>\n\nText color Hex Code values:\n\n<br/>\n\n<div style=\"background-color:  #323f4b; width: 150px; padding: 10px; color: white\">\\#323f4b</div>\n<div style=\"background-color: #fad693; width: 150px; padding: 10px; color: black\">\\#fad693</div>\n<div style=\"background-color: #132d84; width: 150px; padding: 10px; color: white\">\\#132d84</div>\n<div style=\"background-color: #253263; width: 150px; padding: 10px; color: white\">\\#253263</div>\n\n<br/>\n\n**CSS Font families used:**\n\n- Roboto\n\n<br/>\n\n<hr/>\n\n### Concepts Review\n\nWant to quickly review some of the concepts you\u2019ve been learning?\n\nTake a look at the Cheat Sheets.\n",
+            "content_type": "MARKDOWN",
+            "short_text": "Yoga Page",
+            "multimedia": [],
+            "language": "ENGLISH",
+            "difficulty": "EASY",
+            "tag_names": []
+        },
+        "question_asked_by_companies_info": [],
+        "test_cases": [
+            {
+                "test_case_id": "4d23a697-5b11-405c-85e9-c7e9a987a973",
+                "display_text": "Page should have HTML image element inside an HTML container element",
+                "testcase_evaluation_type": "CLIENT_SIDE_EVALUATION",
+                "order": 1,
+                "criteria": "assert.isAtLeast($(\"#htmlPreview\").find(\"div > img\").length, 1);",
+                "weightage": 5
+            },
+            {
+                "test_case_id": "23b7cd09-d28c-4e21-8095-783722912eee",
+                "display_text": "Page should have HTML button element inside an HTML container element",
+                "testcase_evaluation_type": "CLIENT_SIDE_EVALUATION",
+                "order": 2,
+                "criteria": "assert.isAtLeast($(\"#htmlPreview\").find(\"div > button\").length, 1);",
+                "weightage": 5
+            },
+            {
+                "test_case_id": "bf1d6de2-251f-414e-885c-14eabf26791d",
+                "display_text": "Page should consist of an HTML container element with the CSS property background-image",
+                "testcase_evaluation_type": "CLIENT_SIDE_EVALUATION",
+                "order": 3,
+                "criteria": "assert.isAtLeast(  $(\"#htmlPreview\")    .find(\"div\")    .toArray()    .filter((element, index) => $(element).css(\"background-image\") != \"none\" && $(element).css(\"background-image\") != undefined).length,  1);",
+                "weightage": 5
+            },
+            {
+                "test_case_id": "416ade8f-475a-46d7-8278-fdab58c52e6e",
+                "display_text": "Page should consist of an HTML container element with CSS property background-size and value cover",
+                "testcase_evaluation_type": "CLIENT_SIDE_EVALUATION",
+                "order": 4,
+                "criteria": "assert.isAtLeast(  $(\"#htmlPreview\")    .find(\"div\")    .toArray()    .filter((element, index) => $(element).css(\"background-size\") === \"cover\").length,  1);",
+                "weightage": 5
+            },
+            {
+                "test_case_id": "ad759b79-4659-473e-8011-b2674f890405",
+                "display_text": "Page should consist of an HTML container element with the bootstrap class name d-flex",
+                "testcase_evaluation_type": "CLIENT_SIDE_EVALUATION",
+                "order": 5,
+                "criteria": "assert.isAbove(  $(\"#htmlPreview\")    .find(\"div\")    .toArray()    .filter((element, index) => $(element).hasClass(\"d-flex\")).length,  1);",
+                "weightage": 5
+            },
+            {
+                "test_case_id": "fb63691b-09fd-4ba4-b005-99375152bad5",
+                "display_text": "Page should consist of an HTML container element with the bootstrap class name flex-row",
+                "testcase_evaluation_type": "CLIENT_SIDE_EVALUATION",
+                "order": 6,
+                "criteria": "assert.isAbove(  $(\"#htmlPreview\")    .find(\"div\")    .toArray()    .filter((element, index) => $(element).hasClass(\"flex-row\")).length,  1);",
+                "weightage": 5
+            },
+            {
+                "test_case_id": "25cdb44c-28d2-4052-bb3b-4929e88dd57b",
+                "display_text": "Page should consist of at least two HTML container sections that have HTML id attribute value with prefix section",
+                "testcase_evaluation_type": "CLIENT_SIDE_EVALUATION",
+                "order": 7,
+                "criteria": "assert.isAtLeast(  $(\"#htmlPreview\")    .find(\"div\")    .toArray()    .filter((element, index) => {      if ($(element).attr(\"id\")) {        return $(element)          .attr(\"id\")          .match(/^section/);      }    }).length,  2);",
+                "weightage": 5
+            },
+            {
+                "test_case_id": "4e7453bb-0a8d-486e-8915-f5daa1b4c574",
+                "display_text": "When clicked on Get Started button, page should be navigated to Types of Yoga page using the display utility from CCBP UI Kit",
+                "testcase_evaluation_type": "CLIENT_SIDE_EVALUATION",
+                "order": 8,
+                "criteria": "assert.isAtLeast(  $(\"#htmlPreview\")    .find(\"button\")    .toArray()    .filter((element, index) => {      if ($(element).attr(\"onclick\")) {        return $(element)          .attr(\"onclick\")          .match(/^display/);      }    }).length,  1);",
+                "weightage": 10
+            }
+        ],
+        "total_score": 45,
+        "html_coding_question_details": [
+            {
+                "code_content": "<!DOCTYPE html>\n<html>\n  <head>\n    <link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css\" integrity=\"sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z\" crossorigin=\"anonymous\" />\n    <script src=\"https://code.jquery.com/jquery-3.5.1.slim.min.js\" integrity=\"sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj\" crossorigin=\"anonymous\"></script>\n    <script src=\"https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js\" integrity=\"sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN\" crossorigin=\"anonymous\"></script>\n    <script src=\"https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js\" integrity=\"sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV\" crossorigin=\"anonymous\"></script>\n  </head>\n  <body>\n    Your code goes here\n    <script type=\"text/javascript\" src=\"https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js\"></script>\n  </body>\n</html>\n",
+                "language": "HTML"
+            },
+            {
+                "code_content": "@import url(\"https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap\");\n",
+                "language": "CSS"
+            },
+            {
+                "code_content": "",
+                "language": "JAVASCRIPT"
+            }
+        ],
+        "solutions": [
+            {
+                "order": 1,
+                "title": {
+                    "content": "Yoga Page",
+                    "content_type": "TEXT"
+                },
+                "description": {
+                    "content": "An approach of designing a Yoga Page using Bootstrap.",
+                    "content_type": "TEXT"
+                },
+                "code_details": [
+                    {
+                        "default_code": true,
+                        "code_content": "<!DOCTYPE html>\n<html>\n  <head>\n    <link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css\" integrity=\"sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z\" crossorigin=\"anonymous\" />\n    <script src=\"https://code.jquery.com/jquery-3.5.1.slim.min.js\" integrity=\"sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj\" crossorigin=\"anonymous\"></script>\n    <script src=\"https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js\" integrity=\"sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN\" crossorigin=\"anonymous\"></script>\n    <script src=\"https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js\" integrity=\"sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV\" crossorigin=\"anonymous\"></script>\n  </head>\n  <body>\n    <div id=\"sectionHome\">\n      <div class=\"introduction-section d-flex flex-column justify-content-between text-center\">\n        <h1 class=\"introduction-title\">Discover the yogi life on the Yoga Experience Platform</h1>\n        <div>\n          <img src=\"https://assets.ccbp.in/frontend/static-website/yoga-girl-with-headphones-img.png\" class=\"yoga-girl-image\" />\n          <p class=\"about-yoga\">Yoga poses strengthen and open tight areas of the body.</p>\n          <div>\n            <button class=\"button\" onclick=\"display('sectionTypesOfYoga')\">Get Started</button>\n          </div>\n        </div>\n      </div>\n    </div>\n    <div id=\"sectionTypesOfYoga\">\n      <div class=\"types-of-yoga-section\">\n        <div class=\"text-center\">\n          <img src=\"https://assets.ccbp.in/frontend/static-website/yoga-girl-without-headphones-img.png\" class=\"meditating-girl-image\" />\n        </div>\n        <h1 class=\"heading text-center\">Types Of Yoga</h1>\n        <div class=\"yoga-type-card d-flex flex-row\">\n          <img src=\"https://assets.ccbp.in/frontend/static-website/yoga-card1-img.png\" class=\"yoga-image\" />\n          <div class=\"yoga-type-details-container\">\n            <h1 class=\"yoga-type-heading\">Acro yoga</h1>\n            <p class=\"yoga-type-description\">It stretches and relaxes your body, improves stamina and memory.</p>\n          </div>\n        </div>\n        <div class=\"yoga-type-card d-flex flex-row\">\n          <img src=\"https://assets.ccbp.in/frontend/static-website/yoga-card2-img.png\" class=\"yoga-image\" />\n          <div class=\"yoga-type-details-container\">\n            <h1 class=\"yoga-type-heading\">Vinyasa yoga</h1>\n            <p class=\"yoga-type-description\">It serves as a training to increase strength and helps to build lean muscle mass throughout the body.</p>\n          </div>\n        </div>\n        <div class=\"yoga-type-card d-flex flex-row\">\n          <img src=\"https://assets.ccbp.in/frontend/static-website/yoga-card3-img.png\" class=\"yoga-image\" />\n          <div class=\"yoga-type-details-container\">\n            <h1 class=\"yoga-type-heading\">Hatha yoga</h1>\n            <p class=\"yoga-type-description\">It introduces beginners to the main relaxation techniques and asanas</p>\n          </div>\n        </div>\n        <div class=\"yoga-type-card d-flex flex-row\">\n          <img src=\"https://assets.ccbp.in/frontend/static-website/yoga-card4-img.png\" class=\"yoga-image\" />\n          <div class=\"yoga-type-details-container\">\n            <h1 class=\"yoga-type-heading\">Kundalini yoga</h1>\n            <p class=\"yoga-type-description\">It helps relax and restore the mind and the body, improving strength, flexibility, and endurance.</p>\n          </div>\n        </div>\n        <div class=\"text-center\">\n          <button class=\"button\" onclick=\"display('sectionHome')\">Back</button>\n        </div>\n      </div>\n    </div>\n    <script type=\"text/javascript\" src=\"https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js\"></script>\n  </body>\n</html>\n",
+                        "language": "HTML"
+                    },
+                    {
+                        "default_code": true,
+                        "code_content": "@import url(\"https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap\");\n\n.introduction-section {\n  background-image: url(\"https://assets.ccbp.in/frontend/static-website/yoga-bg.png\");\n  background-size: cover;\n  height: 100vh;\n  padding-top: 48px;\n  padding-left: 32px;\n  padding-right: 32px;\n  padding-bottom: 32px;\n}\n\n.introduction-title {\n  color: #132d84;\n  font-family: \"Roboto\";\n  font-size: 24px;\n  font-weight: 600;\n}\n\n.yoga-girl-image {\n  width: 250px;\n  height: 250px;\n}\n\n.about-yoga {\n  color: #323f4b;\n  font-family: \"Roboto\";\n  font-size: 16px;\n}\n\n.button {\n  background-color: #132d84;\n  color: #fad693;\n  font-family: \"Roboto\";\n  font-size: 12px;\n  font-weight: 500;\n  height: 32px;\n  width: 80px;\n  border-style: none;\n  border-radius: 4px;\n}\n\n.types-of-yoga-section {\n  background-color: #ffedcb;\n  padding-top: 32px;\n  padding-left: 32px;\n  padding-right: 32px;\n  padding-bottom: 32px;\n}\n\n.meditating-girl-image {\n  width: 220px;\n  height: 210px;\n}\n\n.heading {\n  color: #132d84;\n  font-family: \"Roboto\";\n  font-size: 24px;\n  font-weight: 500;\n  margin-top: 20px;\n  margin-bottom: 24px;\n}\n\n.yoga-type-card {\n  background-color: #ffe2ab;\n  border-radius: 12px;\n  margin-bottom: 16px;\n  padding-left: 16px;\n  padding-right: 16px;\n  padding-top: 16px;\n  padding-bottom: 16px;\n}\n\n.yoga-image {\n  width: 70px;\n  height: 80px;\n}\n\n.yoga-type-details-container {\n  margin-left: 16px;\n}\n\n.yoga-type-heading {\n  color: #253263;\n  font-family: \"Roboto\";\n  font-size: 16px;\n  font-weight: 500;\n}\n\n.yoga-type-description {\n  color: #253263;\n  font-family: \"Roboto\";\n  font-size: 12px;\n  margin-top: 4px;\n}\n",
+                        "language": "CSS"
+                    },
+                    {
+                        "default_code": true,
+                        "code_content": "",
+                        "language": "JAVASCRIPT"
+                    }
+                ]
+            }
+        ],
+        "read_only_languages": [],
+        "hints": []
+    }
+]

@@ -1,0 +1,145 @@
+[
+    {
+        "question_type": "HTML_CODING",
+        "question": {
+            "question_id": "e9326b0e-61a0-439d-8b83-ba34cef5ca4a",
+            "content": "In this assignment, let's build a Tools Section by applying the concepts we learned till now.\n\n**Refer to the below images.**\n\nThe following images illustrate all device sizes, from extra small to extra large.\n\nExtra Small (Size < 576px) and Small (Size >= 576px)\n\n<img src=\"https://assets.ccbp.in/frontend/content/responsive-website/features-sm-output-img.png\" alt=\"design-tool-website-to-build\" style=\"max-width:300px;box-shadow:0 2.8px 2.2px rgba(0, 0, 0, 0.12)\"/>\n\n<br/>\n\n<br/>\n\nMedium (Size >= 768px), Large (Size >= 992px) and Extra Large (Size >= 1200px):\n\n<img src=\"https://assets.ccbp.in/frontend/content/responsive-website/features-md-output-img.png\" style=\"width:90%;box-shadow:0 2.8px 2.2px rgba(0, 0, 0, 0.12)\"/>\n\n<br/>\n\n<MultiLineNote>\nTry to achieve the design as close as possible.\n</MultiLineNote>\n\n<hr/>\n\n#### Resources\n\nUse the image URLs given below.\n\n- [https://assets.ccbp.in/frontend/responsive-website/features-1-img.png](https://assets.ccbp.in/frontend/responsive-website/features-1-img.png)\n\n- [https://assets.ccbp.in/frontend/responsive-website/features-2-img.png](https://assets.ccbp.in/frontend/responsive-website/features-2-img.png)\n\n**CSS Colors used:**\n\nBackground color Hex Code values:\n\n<div style=\"background-color: #ffffff; width: 150px; padding: 10px; color: black\">\\#ffffff</div>\n\nText color Hex Code values:\n\n<div style=\"background-color: #323f4b; width: 150px; padding: 10px; color: white\">\\#323f4b</div>\n<div style=\"background-color: #7b8794; width: 150px; padding: 10px; color: white\">\\#7b8794</div>\n\n<br/>\n\n**CSS Font families used:**\n\n- Roboto\n\n<br/>\n<hr/>\n\n#### Concepts Review\n\nWant to quickly review some of the concepts you\u2019ve been learning?\n\nTake a look at the Cheat Sheets.\n",
+            "content_type": "MARKDOWN",
+            "short_text": "Tools Section",
+            "multimedia": [],
+            "language": "ENGLISH",
+            "difficulty": "EASY",
+            "tag_names": []
+        },
+        "question_asked_by_companies_info": [],
+        "test_cases": [
+            {
+                "test_case_id": "a0042193-9976-449c-8db4-8b8ec86896f1",
+                "display_text": "Page should consist of an HTML container element with the bootstrap class name container",
+                "testcase_evaluation_type": "CLIENT_SIDE_EVALUATION",
+                "order": 1,
+                "criteria": "assert.isAbove(  $(\"#htmlPreview\")    .find(\"div\")    .toArray()    .filter((element, index) => $(element).hasClass(\"container\")).length,  0);",
+                "weightage": 5
+            },
+            {
+                "test_case_id": "a7ae03ac-206b-4ebc-80a6-10df61b84b28",
+                "display_text": "Page should consist of an HTML container element with the bootstrap class name row in HTML element with bootstrap class name container",
+                "testcase_evaluation_type": "CLIENT_SIDE_EVALUATION",
+                "order": 2,
+                "criteria": "assert.isAbove(  $(\"#htmlPreview .container\")    .find(\"div\")    .toArray()    .filter((element, index) => $(element).hasClass(\"row\")).length,  0);",
+                "weightage": 5
+            },
+            {
+                "test_case_id": "e68599f2-82b9-4328-a95e-72a8d47c5009",
+                "display_text": "Page should consist of at least four HTML elements with the class name either col-12 or col-sm-12 or col-xs-12",
+                "testcase_evaluation_type": "CLIENT_SIDE_EVALUATION",
+                "order": 3,
+                "criteria": "function isDivContainsColumns() {  var col = $(\"#htmlPreview .container .row\")    .find(\"div\")    .toArray()    .filter((element, index) => $(element).hasClass(\"col-12\")).length;  var colsm = $(\"#htmlPreview .container .row\")    .find(\"div\")    .toArray()    .filter((element, index) => $(element).hasClass(\"col-sm-12\")).length;  var colXs = $(\"#htmlPreview .container .row\")    .find(\"div\")    .toArray()    .filter((element, index) => $(element).hasClass(\"col-xs-12\")).length;  assert(col >= 4 || colsm >= 4 || colXs >= 4);}isDivContainsColumns();",
+                "weightage": 5
+            },
+            {
+                "test_case_id": "ad14676d-ea6c-4ad5-902a-cc3bca8b6af4",
+                "display_text": "Page should consist of at least four HTML container elements with the bootstrap class name col-md-6 in the HTML element with bootstrap class name row",
+                "testcase_evaluation_type": "CLIENT_SIDE_EVALUATION",
+                "order": 4,
+                "criteria": "assert.isAbove(  $(\"#htmlPreview .container .row\").find('div[class*= \"col-md-6\"]').length,  3);",
+                "weightage": 5
+            },
+            {
+                "test_case_id": "df5c4725-ca99-4607-b6c2-7b90b1b8f063",
+                "display_text": "Page should consist of at least two HTML container elements with the bootstrap class name that starts with order- in HTML element with class name row",
+                "testcase_evaluation_type": "CLIENT_SIDE_EVALUATION",
+                "order": 5,
+                "criteria": "function isDivWithOrder() {  const orderInExtraSmallandSmallDevices = $(    \"#htmlPreview .container .row\"  ).find('div[class*= \"order-\"]').length;  assert(orderInExtraSmallandSmallDevices >= 2);}isDivWithOrder();",
+                "weightage": 5
+            },
+            {
+                "test_case_id": "0c4fe841-900e-49da-8b7d-58550ad0fad6",
+                "display_text": "Page should consist of at least two HTML container elements with the bootstrap class name that starts with order-md- in HTML element with class name row",
+                "testcase_evaluation_type": "CLIENT_SIDE_EVALUATION",
+                "order": 6,
+                "criteria": "function isDivWithOrderMd() {  const orderInMediumDevices = $(\"#htmlPreview .container .row\").find(    'div[class*= \"order-md-\"]'  ).length;  assert(orderInMediumDevices >= 2);}isDivWithOrderMd();",
+                "weightage": 5
+            },
+            {
+                "test_case_id": "85bccd69-d77c-411e-bb56-02816434aa53",
+                "display_text": "Page should consist of at least two HTML image elements with non-empty src attribute in the HTML container element with class name row",
+                "testcase_evaluation_type": "CLIENT_SIDE_EVALUATION",
+                "order": 7,
+                "criteria": "function isDivContainsImages() {  assert.isAbove(    $(\"#htmlPreview .container .row\")      .find(\"img\")      .toArray()      .filter(        (element, index) =>          $(element).attr(\"src\") !== undefined && $(element).attr(\"src\") !== \"\"      ).length,    1  );}isDivContainsImages();",
+                "weightage": 5
+            },
+            {
+                "test_case_id": "dc4db3e0-6fc8-4482-b0a3-165932d443fa",
+                "display_text": "Page should consist of at least two HTML image elements with bootstrap class name w-100 in the HTML container element with class name row",
+                "testcase_evaluation_type": "CLIENT_SIDE_EVALUATION",
+                "order": 8,
+                "criteria": "assert.isAbove(  $(\"#htmlPreview .container .row\")    .find(\"img\")    .toArray()    .filter((element, index) => $(element).hasClass(\"w-100\")).length,  1);",
+                "weightage": 5
+            },
+            {
+                "test_case_id": "7a015b7f-1ed5-410d-bbb7-38348e92b573",
+                "display_text": "Page should consist of at least two HTML main heading elements in the HTML container element with class name row",
+                "testcase_evaluation_type": "CLIENT_SIDE_EVALUATION",
+                "order": 9,
+                "criteria": "assert.isAbove($(\"#htmlPreview .container .row\").find(\"h1\").length, 1);",
+                "weightage": 5
+            },
+            {
+                "test_case_id": "2b2bb65d-54ab-4f83-8262-61bc9f25c02d",
+                "display_text": "Page should consist of at least two HTML paragraph elements in the HTML container element with class name row",
+                "testcase_evaluation_type": "CLIENT_SIDE_EVALUATION",
+                "order": 10,
+                "criteria": "assert.isAbove($(\"#htmlPreview .container .row\").find(\"p\").length, 1);",
+                "weightage": 5
+            }
+        ],
+        "total_score": 50,
+        "html_coding_question_details": [
+            {
+                "code_content": "<!DOCTYPE html>\n<html>\n  <head>\n    <link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css\" integrity=\"sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z\" crossorigin=\"anonymous\" />\n    <script src=\"https://code.jquery.com/jquery-3.5.1.slim.min.js\" integrity=\"sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C  +OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj\" crossorigin=\"anonymous\"></script>\n    <script src=\"https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js\" integrity=\"sha384-9/  reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN\" crossorigin=\"anonymous\"></script>\n    <script src=\"https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js\" integrity=\"sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV\" crossorigin=\"anonymous\"></script>\n  </head>\n  <body>\n    Your code goes here\n  </body>\n</html>\n",
+                "language": "HTML"
+            },
+            {
+                "code_content": "@import url(\"https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap\");\n",
+                "language": "CSS"
+            },
+            {
+                "code_content": "",
+                "language": "JAVASCRIPT"
+            }
+        ],
+        "solutions": [
+            {
+                "order": 1,
+                "title": {
+                    "content": "Tools Section",
+                    "content_type": "TEXT"
+                },
+                "description": {
+                    "content": "An approach of designing a Tools Section using Bootstrap.",
+                    "content_type": "TEXT"
+                },
+                "code_details": [
+                    {
+                        "default_code": true,
+                        "code_content": "<!DOCTYPE html>\n<html>\n  <head>\n    <link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css\" integrity=\"sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z\" crossorigin=\"anonymous\" />\n    <script src=\"https://code.jquery.com/jquery-3.5.1.slim.min.js\" integrity=\"sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj\" crossorigin=\"anonymous\"></script>\n    <script src=\"https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js\" integrity=\"sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN\" crossorigin=\"anonymous\"></script>\n    <script src=\"https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js\" integrity=\"sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV\" crossorigin=\"anonymous\"></script>\n  </head>\n  <body>\n    <div class=\"container pt-5\">\n      <div class=\"row\">\n        <div class = \"col-12 col-md-6\">\n          <img src=\"https://assets.ccbp.in/frontend/responsive-website/features-1-img.png\" class=\"w-100\"/>\n        </div>\n        <div class=\"col-12 col-md-6 d-flex flex-column justify-content-center\">\n          <h1 class=\"visual-editor-section-heading mt-4\">A visual drag and drop editor</h1>\n          <p class=\"visual-editor-section-description\">We see web design visually, therefore it makes sense to produce the design visually. Yet you can always access the code if needed. Use a drag and drop editor with the ability to see web fonts. With drag and drop, you can rearrange the structure and elements of your layout.</p>\n        </div>\n        <div class = \"col-12 col-md-6 order-1 order-md-2 mt-4\">\n          <img src=\"https://assets.ccbp.in/frontend/responsive-website/features-2-img.png\" class=\"w-100\" />\n        </div>\n        <div class=\"col-12 col-md-6 d-flex flex-column justify-content-center order-2 order-md-1\">\n          <h1 class=\"visual-editor-section-heading mt-4\">Animations & Effects</h1>\n          <p class=\"visual-editor-section-description\">Add Behavior animations to create simple element loading animations and spice up your design. You can choose from the ones we have or use your code. An animation effect is a special visual or sound effect added to a text or an object on a slide or chart.</p>\n        </div>\n      </div>\n    </div>\n  </body>\n</html>\n\n\n",
+                        "language": "HTML"
+                    },
+                    {
+                        "default_code": true,
+                        "code_content": "@import url(\"https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap\");\n\n.visual-editor-section-heading {\n  color: #323f4b;\n  font-family: \"Roboto\";\n  font-size: 24px;\n  font-weight: 500;\n}\n\n.visual-editor-section-description {\n  color: #7b8794;\n  font-family: \"Roboto\";\n  font-size: 16px;\n  margin-top: 16px;\n}\n",
+                        "language": "CSS"
+                    },
+                    {
+                        "default_code": true,
+                        "code_content": "",
+                        "language": "JAVASCRIPT"
+                    }
+                ]
+            }
+        ],
+        "read_only_languages": [],
+        "hints": []
+    }
+]

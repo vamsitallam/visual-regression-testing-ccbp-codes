@@ -1,0 +1,145 @@
+[
+    {
+        "question_type": "HTML_CODING",
+        "question": {
+            "question_id": "b9a4934d-ac5e-4aff-9dad-e7addb642c28",
+            "content": "In this assignment, let's build an Ecommerce Website Products Section by applying the concepts we learned till now.\n\n**Refer to the below images.**\n\nThe following images illustrate all device sizes, from extra small to extra large.\n\nExtra Small (Size < 576px) and Small (Size >= 576px):\n\n<img src=\"https://nkb-backend-media-static-tenxiitian.s3.ap-south-1.amazonaws.com/tenxiitian_prod/programs/Tech+Programs/frontend-content/ccbp/coding-practice-questions/responsive-website/ecommerce-products-section-xs-v1.gif\" alt=\"ecommerce-website-to-build\" style=\"max-width:80%;box-shadow:0 2.8px 2.2px rgba(0, 0, 0, 0.12)\"/>\n\n<br/>\n\n<br/>\n\nMedium (Size >= 768px), Large (Size >= 992px) and Extra Large (Size >= 1200px):\n\n<br/>\n\n<Img imageSrc=\"https://nkb-backend-media-static-tenxiitian.s3.ap-south-1.amazonaws.com/tenxiitian_prod/programs/Tech+Programs/frontend-content/ccbp/coding-practice-questions/responsive-website/ecommerce-products-section-md-v1.gif\" widthPercent='100'/>\n\n<MultiLineNote>\n- Try to achieve the design as close as possible.\n- When clicked on the `View Details` button, the respective modal should appear.\n</MultiLineNote>\n\n<hr/>\n\n#### Resources\n\nUse the image URLs given below.\n\n- [https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/ecommerce-products-headphones-bg.png](https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/ecommerce-products-headphones-bg.png)\n- [https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/ecommerce-products-laptops-bg.png](https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/ecommerce-products-laptops-bg.png)\n\n**CSS Colors used:**\n\n<div style=\"background-color: #183b56 ; width: 150px; padding: 10px; color: white\">\\#183b56</div>\n<div style=\"background-color: #ff9f00; width: 150px; padding: 10px; color: white\">\\#ff9f00</div>\n<div style=\"background-color: #323f4b; width: 150px; padding: 10px; color: white\">\\#323f4b</div>\n\n<hr/>\n\n#### Concepts Review\n\nWant to quickly review some of the concepts you\u2019ve been learning?\n\nTake a look at the Cheat Sheets.\n",
+            "content_type": "MARKDOWN",
+            "short_text": "Ecommerce Website Products Section",
+            "multimedia": [],
+            "language": "ENGLISH",
+            "difficulty": "EASY",
+            "tag_names": []
+        },
+        "question_asked_by_companies_info": [],
+        "test_cases": [
+            {
+                "test_case_id": "998530aa-6085-4ec7-9304-1169ffd30697",
+                "display_text": "Page should consist of an HTML button element",
+                "testcase_evaluation_type": "CLIENT_SIDE_EVALUATION",
+                "order": 1,
+                "criteria": "assert.isAbove($('#htmlPreview').find('button').length, 0);",
+                "weightage": 10
+            },
+            {
+                "test_case_id": "36ba9660-4c7a-400b-83b2-1fd3b2da8940",
+                "display_text": "Page should consist of an HTML container element with the bootstrap class name container",
+                "testcase_evaluation_type": "CLIENT_SIDE_EVALUATION",
+                "order": 2,
+                "criteria": "assert.isAbove($('#htmlPreview').find('div').toArray().filter(( element, index )=>$(element).hasClass('container')).length, 0);",
+                "weightage": 10
+            },
+            {
+                "test_case_id": "9bd145ca-f770-4b8e-b384-0adb03d50eb8",
+                "display_text": "Page should consist of an HTML container element with the bootstrap class name row",
+                "testcase_evaluation_type": "CLIENT_SIDE_EVALUATION",
+                "order": 3,
+                "criteria": "assert.isAbove($('#htmlPreview').find('div').toArray().filter(( element, index )=>$(element).hasClass('row')).length, 0);",
+                "weightage": 10
+            },
+            {
+                "test_case_id": "f90efdfe-792a-4a3d-abd4-2d7bfb5880dc",
+                "display_text": "Page should consist of an HTML container element with the bootstrap grid column class name in medium devices that starts with col-md-",
+                "testcase_evaluation_type": "CLIENT_SIDE_EVALUATION",
+                "order": 4,
+                "criteria": "assert.isAbove($('#htmlPreview').find('div[class*= \"col-md-\"]').length, 0);",
+                "weightage": 10
+            },
+            {
+                "test_case_id": "cb28835f-4bac-4458-953f-af363c403495",
+                "display_text": "Page should consist of an HTML container element with the CSS property background-image",
+                "testcase_evaluation_type": "CLIENT_SIDE_EVALUATION",
+                "order": 5,
+                "criteria": "assert.isAbove($('#htmlPreview').find('div').toArray().filter(( element, index )=>$(element).css('background-image')!='none'&&$(element).css('background-image')!=undefined).length, 0);",
+                "weightage": 10
+            },
+            {
+                "test_case_id": "87fe622b-8b48-4cb3-9864-55adaa3c042d",
+                "display_text": "Page should consist of an HTML container element with the CSS property background-size and value cover",
+                "testcase_evaluation_type": "CLIENT_SIDE_EVALUATION",
+                "order": 6,
+                "criteria": "assert.isAbove($('#htmlPreview').find('div').toArray().filter(( element, index )=>$(element).css('background-image')!='none'&&$(element).css('background-size')==='cover').length, 0);",
+                "weightage": 10
+            },
+            {
+                "test_case_id": "b548d1c0-3c59-40e0-84bb-97e8e5190f38",
+                "display_text": "Page should consist of an HTML container element with the bootstrap class name d-flex",
+                "testcase_evaluation_type": "CLIENT_SIDE_EVALUATION",
+                "order": 7,
+                "criteria": "assert.isAbove($('#htmlPreview').find('div').toArray().filter(( element, index )=>$(element).hasClass('d-flex')).length, 0);",
+                "weightage": 10
+            },
+            {
+                "test_case_id": "cf9bdf94-32bb-4832-9553-be668dc1e2e2",
+                "display_text": "Page should consist of an HTML container element with the bootstrap class name flex-column",
+                "testcase_evaluation_type": "CLIENT_SIDE_EVALUATION",
+                "order": 8,
+                "criteria": "assert.isAbove($('#htmlPreview').find('div').toArray().filter(( element, index )=>$(element).hasClass('flex-column')).length, 0);",
+                "weightage": 10
+            },
+            {
+                "test_case_id": "3c1c78f5-d3aa-4213-becd-775483f044f6",
+                "display_text": "Page should consist of an HTML container element with the bootstrap class name justify-content-end",
+                "testcase_evaluation_type": "CLIENT_SIDE_EVALUATION",
+                "order": 9,
+                "criteria": "assert.isAbove($('#htmlPreview').find('div').toArray().filter(( element, index )=>$(element).hasClass('justify-content-end')).length, 0);",
+                "weightage": 10
+            },
+            {
+                "test_case_id": "777938e4-3031-4eee-86a7-2892ee9633f9",
+                "display_text": "Page should consist of an HTML container element with the bootstrap class name modal",
+                "testcase_evaluation_type": "CLIENT_SIDE_EVALUATION",
+                "order": 10,
+                "criteria": "assert.isAbove($('#htmlPreview').find('div').toArray().filter(( element, index )=>$(element).hasClass('modal')).length, 0);",
+                "weightage": 10
+            }
+        ],
+        "total_score": 100,
+        "html_coding_question_details": [
+            {
+                "code_content": "<!DOCTYPE html>\n<html>\n  <head>\n    <link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css\" integrity=\"sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z\" crossorigin=\"anonymous\" />\n    <script src=\"https://code.jquery.com/jquery-3.5.1.slim.min.js\" integrity=\"sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj\" crossorigin=\"anonymous\"></script>\n    <script src=\"https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js\" integrity=\"sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN\" crossorigin=\"anonymous\"></script>\n    <script src=\"https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js\" integrity=\"sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV\" crossorigin=\"anonymous\"></script>\n  </head>\n  <body>\n    Your code goes here\n  </body>\n</html>\n",
+                "language": "HTML"
+            },
+            {
+                "code_content": "@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');\n",
+                "language": "CSS"
+            },
+            {
+                "code_content": "",
+                "language": "JAVASCRIPT"
+            }
+        ],
+        "solutions": [
+            {
+                "order": 1,
+                "title": {
+                    "content": "Ecommerce Website Products Section",
+                    "content_type": "TEXT"
+                },
+                "description": {
+                    "content": "An approach of designing an Ecommerce Website Website Products section using Bootstrap.",
+                    "content_type": "TEXT"
+                },
+                "code_details": [
+                    {
+                        "default_code": true,
+                        "code_content": "<!DOCTYPE html>\n<html>\n  <head>\n    <link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css\" integrity=\"sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z\" crossorigin=\"anonymous\" />\n    <script src=\"https://code.jquery.com/jquery-3.5.1.slim.min.js\" integrity=\"sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj\" crossorigin=\"anonymous\"></script>\n    <script src=\"https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js\" integrity=\"sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN\" crossorigin=\"anonymous\"></script>\n    <script src=\"https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js\" integrity=\"sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV\" crossorigin=\"anonymous\"></script>\n  </head>\n  <body>\n    <div class=\"pt-5 pb-5\">\n      <div class=\"container\">\n        <div class=\"row\">\n          <div class=\"col-12\">\n            <h1 class=\"products-section-heading mb-3\">Our Products</h1>\n          </div>\n          <div class=\"col-12 col-md-6\">\n            <div class=\"products-card headphones-bg-container d-flex flex-column justify-content-end mb-3\">\n              <h1 class=\"products-card-title\">Smart Headphones</h1>\n              <p class=\"products-card-description\">\n                Headphones with Deep Bass, sound, touch...\n              </p>\n              <div>\n                <button type=\"button\" class=\"products-card-button\" data-toggle=\"modal\" data-target=\"#smartHeadphonesModel\">\n                  View Details\n                </button>\n                <div class=\"modal fade\" id=\"smartHeadphonesModel\" tabindex=\"-1\" aria-labelledby=\"exampleModalLabel\" aria-hidden=\"true\">\n                  <div class=\"modal-dialog mt-5\">\n                    <div class=\"modal-content\">\n                      <div class=\"modal-header\">\n                        <h5 class=\"modal-title products-card-modal-title\" id=\"examcard-modal-pleModalLabel\">\n                          Sony WH-1000XM4 Noise Cancelling Headphones\n                        </h5>\n                        <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\">\n                          <span aria-hidden=\"true\">&times;</span>\n                        </button>\n                      </div>\n                      <div class=\"modal-body\">\n                        <p class=\"products-card-modal-description\">\n                          Get Best Smart Headphones Prices Online in India.\n                          Select from the best range of Headphones from most\n                          popular brands...\n                        </p>\n                        <ul class=\"products-card-modal-list\">\n                          <li class=\"products-card-modal-list-item\">\n                            <span class=\"products-card-modal-list-item-category\">Voice assistant:</span> Alexa, Google Assistant & Siri\n                          </li>\n                          <li class=\"products-card-modal-list-item\">\n                            <span class=\"products-card-modal-list-item-category\">Smart listening:</span> Ambient sound with the best noise\n                            cancellation\n                          </li>\n                          <li class=\"products-card-modal-list-item\">\n                            <span class=\"products-card-modal-list-item-category\">Long battery life:</span> A single charge provides 30 hours\n                            of playtime\n                          </li>\n                          <li class=\"products-card-modal-list-item\">\n                            <span class=\"products-card-modal-list-item-category\">Quick charging:</span> Charge for 10 min for 5 hours\n                            play back\n                          </li>\n                          <li class=\"products-card-modal-list-item\">\n                            <span class=\"products-card-modal-list-item-category\">Touch controls:</span> Change the track with your fingertip\n                          </li>\n                        </ul>\n                      </div>\n                      <div class=\"modal-footer\">\n                        <button type=\"button\" class=\"btn btn-outline-dark\" data-dismiss=\"modal\">\n                          Buy Now\n                        </button>\n                      </div>\n                    </div>\n                  </div>\n                </div>\n              </div>\n            </div>\n          </div>\n          <div class=\"col-12 col-md-6\">\n            <div class=\"products-card laptop-bg-container d-flex flex-column justify-content-end mb-3\">\n              <h1 class=\"products-card-title\">Laptops</h1>\n              <p class=\"products-card-description\">\n                Explore vast selection of Laptops...\n              </p>\n              <div>\n                <button type=\"button\" class=\"products-card-button\" data-toggle=\"modal\" data-target=\"#laptopsModal\">\n                  View Details\n                </button>\n                <div class=\"modal fade\" id=\"laptopsModal\" tabindex=\"-1\" aria-labelledby=\"exampleModalLabel\" aria-hidden=\"true\">\n                  <div class=\"modal-dialog mt-5\">\n                    <div class=\"modal-content\">\n                      <div class=\"modal-header\">\n                        <h5 class=\"modal-title products-card-modal-title\" id=\"exampleModalLabel\">\n                          Inspiron 14 5490 core i5 Laptop\n                        </h5>\n                        <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\">\n                          <span aria-hidden=\"true\">&times;</span>\n                        </button>\n                      </div>\n                      <div class=\"modal-body\">\n                        <p class=\"products-description\">\n                          Get Best Laptop Prices Online in India. Select from\n                          the best range of Laptops from most popular brands...\n                        </p>\n                        <ul class=\"products-card-modal-list\">\n                          <li class=\"products-card-modal-list-item\">\n                            <span class=\"products-card-modal-list-item-category\">Performance:</span> Core i5 3rd Gen, 2.6 Ghz, 4 GB RAM\n                          </li>\n                          <li class=\"products-card-modal-list-item\"><span class=\"products-card-modal-list-item-category\">Storage:</span> 500 GB HDD, SATA, 7200 RPM</li>\n                          <li class=\"products-card-modal-list-item\"><span class=\"products-card-modal-list-item-category\">Battery:</span> Li-Ion, 6 Cell</li>\n                          <li class=\"products-card-modal-list-item\">\n                            <span class=\"products-card-modal-list-item-category\">Design:</span> 14.0 Inches, 1366 X 768 , 2.07 Kg, 34 Mm\n                            Thick\n                          </li>\n                        </ul>\n                      </div>\n                      <div class=\"modal-footer\">\n                        <button type=\"button\" class=\"btn btn-outline-dark\" data-dismiss=\"modal\">\n                          Buy Now\n                        </button>\n                      </div>\n                    </div>\n                  </div>\n                </div>\n              </div>\n            </div>\n          </div>\n          <div class=\"col-12 d-flex flex-row justify-content-end\">\n            <a class=\"products-section-link\" href=\"\">\n              See All Offers\n              <svg width=\"1em\" height=\"1em\" viewBox=\"0 0 16 16\" class=\"bi bi-arrow-right-short\" fill=\"currentColor\" xmlns=\"http://www.w3.org/2000/svg\">\n                <path\n                  fill-rule=\"evenodd\"\n                  d=\"M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z\"\n                />\n              </svg>\n            </a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </body>\n</html>\n",
+                        "language": "HTML"
+                    },
+                    {
+                        "default_code": true,
+                        "code_content": "@import url(\"https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap\");\n\n.products-section-heading {\n  color: #183b56;\n  font-family: \"Roboto\";\n  font-size: 32px;\n  font-weight: 700;\n}\n.products-card {\n  height: 328px;\n  padding: 20px;\n  border-radius: 16px;\n}\n.headphones-bg-container {\n  background-image: url(\"https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/ecommerce-products-headphones-bg.png\");\n  background-size: cover;\n}\n.laptop-bg-container {\n  background-image: url(\"https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/ecommerce-products-laptops-bg.png\");\n  background-size: cover;\n}\n.products-card-title {\n  color: #ffffff;\n  font-family: \"Roboto\";\n  font-size: 36px;\n  font-weight: bold;\n}\n.products-card-description {\n  color: #ffffff;\n  font-family: \"Roboto\";\n  font-size: 16px;\n}\n.products-card-button {\n  color: #ff9f00;\n  background-color: #ffffff;\n  font-family: \"Roboto\";\n  font-size: 16px;\n  width: 134px;\n  height: 48px;\n  border-width: 0;\n  border-radius: 100px;\n}\n.products-card-modal-title {\n  color: #323f4b;\n  font-family: \"Roboto\";\n  font-size: 24px;\n  font-weight: 500;\n}\n.products-card-modal-description {\n  color: #323f4b;\n  font-family: \"Roboto\";\n  font-size: 16px;\n}\n.products-card-modal-list {\n  list-style-type: none;\n  padding-left: 0;\n}\n.products-card-modal-list-item {\n  color: #323f4b;\n  font-family: \"Roboto\";\n  font-size: 16px;\n}\n.products-card-modal-list-item-category {\n  font-weight: bold;\n}\n.products-section-link {\n  color: #ff9f00;\n  font-family: \"Roboto\";\n  font-size: 18px;\n  font-weight: 700;\n}\n",
+                        "language": "CSS"
+                    },
+                    {
+                        "default_code": true,
+                        "code_content": "",
+                        "language": "JAVASCRIPT"
+                    }
+                ]
+            }
+        ],
+        "read_only_languages": [],
+        "hints": []
+    }
+]

@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+.introduction-section {
+  background-image: url("https://assets.ccbp.in/frontend/static-website/yoga-bg.png");
+  background-size: cover;
+  height: 100vh;
+  padding-top: 48px;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-bottom: 32px;
+}
+
+.introduction-title {
+  color: #132d84;
+  font-family: "Roboto";
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.yoga-girl-image {
+  width: 250px;
+  height: 250px;
+}
+
+.about-yoga {
+  color: #323f4b;
+  font-family: "Roboto";
+  font-size: 16px;
+}
+
+.button {
+  background-color: #132d84;
+  color: #fad693;
+  font-family: "Roboto";
+  font-size: 12px;
+  font-weight: 500;
+  height: 32px;
+  width: 80px;
+  border-style: none;
+  border-radius: 4px;
+}
+
+.types-of-yoga-section {
+  background-color: #ffedcb;
+  padding-top: 32px;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-bottom: 32px;
+}
+
+.meditating-girl-image {
+  width: 220px;
+  height: 210px;
+}
+
+.heading {
+  color: #132d84;
+  font-family: "Roboto";
+  font-size: 24px;
+  font-weight: 500;
+  margin-top: 20px;
+  margin-bottom: 24px;
+}
+
+.yoga-type-card {
+  background-color: #ffe2ab;
+  border-radius: 12px;
+  margin-bottom: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.yoga-image {
+  width: 70px;
+  height: 80px;
+}
+
+.yoga-type-details-container {
+  margin-left: 16px;
+}
+
+.yoga-type-heading {
+  color: #253263;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.yoga-type-description {
+  color: #253263;
+  font-family: "Roboto";
+  font-size: 12px;
+  margin-top: 4px;
+}

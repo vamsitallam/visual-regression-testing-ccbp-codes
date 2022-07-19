@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+ .navbar-background-container{
+  background-color: #0c0521;
+}
+
+.logo-image {
+  width: 150px;
+}
+
+#homeSection{
+  color: #ffffff;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: bold;
+  padding-left: 40px;
+}
+
+#homeSection {
+  color: #ffffff;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: bold;
+  padding-left: 40px;
+}
+
+#featuresSection {
+  color: #ffffff;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: bold;
+  padding-left: 40px;
+}
+
+#pricingSection {
+  color: #ffffff;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: bold;
+  padding-left: 40px;
+}
+
+#blogSection {
+  color: #ffffff;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: bold;
+  padding-left: 40px;
+}
+
+#contactsSection {
+  color: #ffffff;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: bold;
+  padding-left: 40px;
+}
+
+.banner-section-bg-container {
+  background-image: url("https://assets.ccbp.in/frontend/responsive-website/landing-section-bg.png");
+  background-size: cover;
+  height: 100vh;
+}
+
+.banner-heading {
+  color: #ffffff;
+  font-family: "Roboto";
+  font-size: 38px;
+  font-weight: bold;
+}
+
+.flexible-text {
+    color:#ffdda9
+}
+
+.banner-caption {
+  color: #ffffff;
+  font-family: "Roboto";
+  font-size: 18px;
+}
+
+.custom-button {
+  color: #000000;
+  background-color: #ffdda9;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: bold;
+  width: 200px;
+  height: 56px;
+  border-width: 0;
+  border-radius: 24px;
+}

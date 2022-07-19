@@ -1,0 +1,113 @@
+[
+    {
+        "question_type": "HTML_CODING",
+        "question": {
+            "question_id": "4c4341cb-39a1-4e38-888a-63981dd1610c",
+            "question_text": "<p>In this assignment, let's build a Movie Page by applying the concepts we learned till now. You can use the Bootstrap concepts as well.</p><p><br/></p><p><strong>Refer to the below image.</strong></p><p><br/></p><p><img src=\"https://nkb-backend-media-static-tenxiitian.s3.ap-south-1.amazonaws.com/tenxiitian_prod/programs/Tech+Programs/frontend-content/ccbp/coding-practice-questions/static-websites/movie-nemo-page-v1.png\" alt=\"movie-page-to-build\" style=\"max-width:300px;\"/></p><p><br/></p><p><strong>Note</strong>:</p><p>Try to achieve the design as close as possible.</p><hr/><h3>Resources</h3><p>Use the image URLs given below.</p><p><br/></p><p>Background Image:</p><ul><li><a href=\"https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/orange-color-bg.png\">https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/orange-color-bg.png</a></li></ul><p><br/></p><p>Carousel:</p><ul><li><a href=\"https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/nemo-c1-img.png\">https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/nemo-c1-img.png</a></li><li><a href=\"https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/nemo-c2-img.png\">https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/nemo-c2-img.png</a></li><li><a href=\"https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/nemo-c3-img.png\">https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/nemo-c3-img.png</a></li></ul><p><br/></p><p>Similar Movies:</p><ul><li><a href=\"https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/finding-dory-img.png\">https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/finding-dory-img.png</a></li><li><a href=\"https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/bugslife-img.png\">https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/bugslife-img.png</a></li><li><a href=\"https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/ratatouille-movie-img.png\">https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/ratatouille-movie-img.png</a></li></ul><p><br/></p><p><strong>CSS Colors used:</strong></p><p>Text color Hex Code values:</p><p><br/></p><p><img src=\"https://nkb-backend-media-static-tenxiitian.s3.ap-south-1.amazonaws.com/tenxiitian_prod/programs/Tech+Programs/frontend-content/ccbp/coding-practice-questions/static-websites/colors/text-colors-movie-page.png\" alt=\"max-width:300px\"/></p><p><br/></p><p><strong>CSS Font families used:</strong></p><ul><li>Roboto</li></ul><p><br/></p><hr/><h3>Hint</h3><p>Use the Bootstrap class name <code>justify-content-between</code> to get equal space between the HTML elements.</p><p><br/></p><hr/><h3>Concepts Review</h3><p>Want to quickly review some of the concepts you\u2019ve been learning?</p><p>Take a look at the Cheat Sheets.</p>",
+            "content_type": "HTML",
+            "short_text": "Movie Page",
+            "multimedia": [],
+            "language": "ENGLISH",
+            "difficulty": "EASY",
+            "tag_names": []
+        },
+        "question_asked_by_companies_info": [],
+        "test_cases": [
+            {
+                "test_case_id": "9ca6adbf-2d66-439c-977b-2a19188472c7",
+                "display_text": "Page should consist of an HTML image element in an HTML container element",
+                "testcase_evaluation_type": "CLIENT_SIDE_EVALUATION",
+                "order": 1,
+                "criteria": "assert.isAbove($('#htmlPreview div').find('img').length, 0);",
+                "weightage": 10
+            },
+            {
+                "test_case_id": "ab389f4b-4d5a-4689-81e7-fcf2e6d0e499",
+                "display_text": "Page should consist of an HTML container element with the CSS property padding having non-zero value",
+                "testcase_evaluation_type": "CLIENT_SIDE_EVALUATION",
+                "order": 2,
+                "criteria": "assert.isAbove($('#htmlPreview').find('div').toArray().filter(( element, index )=> $(element).css('padding')!='0px' && $(element).css('padding')!=undefined).length, 0);",
+                "weightage": 10
+            },
+            {
+                "test_case_id": "76a3d062-53c6-480d-8902-6b7330744fb8",
+                "display_text": "Page should consist of an HTML container element with the CSS property margin-top having non-zero value",
+                "testcase_evaluation_type": "CLIENT_SIDE_EVALUATION",
+                "order": 3,
+                "criteria": "assert.isAbove($('#htmlPreview').find('div').toArray().filter(( element, index )=> $(element).css('margin-top')!='0px' && $(element).css('margin-top')!=undefined).length, 0);",
+                "weightage": 10
+            },
+            {
+                "test_case_id": "253e5afb-f55a-4845-a41a-b6fac2370bbe",
+                "display_text": "Page should consist of an HTML container element with the bootstrap class name d-flex",
+                "testcase_evaluation_type": "CLIENT_SIDE_EVALUATION",
+                "order": 4,
+                "criteria": "assert.isAbove($('#htmlPreview').find('div').toArray().filter(( element, index )=>$(element).hasClass('d-flex')).length, 0);",
+                "weightage": 10
+            },
+            {
+                "test_case_id": "b24260ec-a221-40d7-84f8-fa5f1916f947",
+                "display_text": "Page should consist of an HTML container element with the bootstrap class name flex-row",
+                "testcase_evaluation_type": "CLIENT_SIDE_EVALUATION",
+                "order": 5,
+                "criteria": "assert.isAbove($('#htmlPreview').find('div').toArray().filter(( element, index )=>$(element).hasClass('d-flex') && $(element).hasClass('flex-row')).length, 0);",
+                "weightage": 10
+            },
+            {
+                "test_case_id": "c51e60a2-b8c7-481e-9204-1f85df0229f3",
+                "display_text": "Page should consist of an HTML button element with the CSS property border-radius having non-zero value",
+                "testcase_evaluation_type": "CLIENT_SIDE_EVALUATION",
+                "order": 6,
+                "criteria": "assert.isAbove($('#htmlPreview').find('button').toArray().filter(( element, index )=> $(element).css('border-radius')!='0px' && $(element).css('border-radius')!=undefined).length, 0);",
+                "weightage": 10
+            }
+        ],
+        "total_score": 60,
+        "html_coding_question_details": [
+            {
+                "code_content": "<!DOCTYPE html>\n<html>\n  <head>\n    <link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css\" integrity=\"sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z\" crossorigin=\"anonymous\">\n    <script src=\"https://code.jquery.com/jquery-3.5.1.slim.min.js\" integrity=\"sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj\" crossorigin=\"anonymous\"></script>\n    <script src=\"https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js\" integrity=\"sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN\" crossorigin=\"anonymous\"></script>\n    <script src=\"https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js\" integrity=\"sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV\" crossorigin=\"anonymous\"></script>\n  </head>\n  <body>\n    Your code goes here\n  </body>\n</html>\n",
+                "language": "HTML"
+            },
+            {
+                "code_content": "@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');\n",
+                "language": "CSS"
+            },
+            {
+                "code_content": "",
+                "language": "JAVASCRIPT"
+            }
+        ],
+        "solutions": [
+            {
+                "order": 1,
+                "title": {
+                    "content": "Movie Page",
+                    "content_type": "TEXT"
+                },
+                "description": {
+                    "content": "An approach of designing a Movie Page using Bootstrap.",
+                    "content_type": "TEXT"
+                },
+                "code_details": [
+                    {
+                        "default_code": true,
+                        "code_content": "<!DOCTYPE html>\n<html>\n  <head>\n    <link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css\" integrity=\"sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z\" crossorigin=\"anonymous\">\n    <script src=\"https://code.jquery.com/jquery-3.5.1.slim.min.js\" integrity=\"sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj\" crossorigin=\"anonymous\"></script>\n    <script src=\"https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js\" integrity=\"sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN\" crossorigin=\"anonymous\"></script>\n    <script src=\"https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js\" integrity=\"sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV\" crossorigin=\"anonymous\"></script>\n  </head>\n  <body>\n    <div class=\"movie-bg-container\">\n      <div id=\"carouselExampleIndicators\" class=\"carousel slide\" data-ride=\"carousel\">\n        <ol class=\"carousel-indicators\">\n           <li data-target=\"#carouselExampleIndicators\" data-slide-to=\"0\" class=\"active\"></li>\n           <li data-target=\"#carouselExampleIndicators\" data-slide-to=\"1\"></li>\n           <li data-target=\"#carouselExampleIndicators\" data-slide-to=\"2\"></li>\n        </ol>\n        <div class=\"carousel-inner\">\n          <div class=\"carousel-item active\">\n            <img src=\"https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/nemo-c1-img.png\" class=\"d-block w-100\" alt=\"...\">\n          </div>\n          <div class=\"carousel-item\">\n            <img src=\"https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/nemo-c2-img.png\" class=\"d-block w-100\" alt=\"...\">\n          </div>\n          <div class=\"carousel-item\">\n            <img src=\"https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/nemo-c3-img.png\" class=\"d-block w-100\" alt=\"...\">\n          </div>\n        </div>\n        <a class=\"carousel-control-prev\" href=\"#carouselExampleIndicators\" role=\"button\" data-slide=\"prev\">\n          <span class=\"carousel-control-prev-icon\" aria-hidden=\"true\"></span>\n          <span class=\"sr-only\">Previous</span>\n        </a>\n        <a class=\"carousel-control-next\" href=\"#carouselExampleIndicators\" role=\"button\" data-slide=\"next\">\n          <span class=\"carousel-control-next-icon\" aria-hidden=\"true\"></span>\n          <span class=\"sr-only\">Next</span>\n        </a>\n      </div>\n      <div class=\"movie-heading-container d-flex flex-row justify-content-between\">\n        <h1 class=\"movie-title\">Finding Nemo</h1>\n        <button class=\"button\">Watch Now</button>\n      </div>\n      <p class=\"movie-description\">\n        A clown fish, is overly cautious with his son, Nemo who has a\n        foreshortened fin. When Nemo swims too close to the surface to prove\n        himself, he is caught by a diver, and horrified Marlin must set out to\n        find him. A blue reef fish named Dory joins Marlin and complicates the\n        encounters with sharks, jellyfish, and a host of ocean dangers.\n        Meanwhile, Nemo plots his escape from a dentist's fish tank.\n      </p>\n      <h1 class=\"sub-heading\">Similar Movies</h1>\n      <img src=\"https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/finding-dory-img.png\"/>\n      <img src=\"https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/bugslife-img.png\" class=\"similar-movie-image\"/>\n      <img src=\"https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/ratatouille-movie-img.png\"/>\n    </div>\n  </body>\n</html>\n",
+                        "language": "HTML"
+                    },
+                    {
+                        "default_code": true,
+                        "code_content": "@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');\n\n.movie-bg-container {\n  background-image: url(\"https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/orange-color-bg.png\");\n  background-size: cover;\n  padding: 24px;\n}\n\n.movie-heading-container {\n  margin-top: 10px;\n  margin-bottom: 10px;\n}\n\n.movie-title {\n  color: #ffffff;\n  font-family: \"Roboto\";\n  font-size: 28px;\n  font-weight: bold;\n}\n\n.button {\n  color: #ff8348;\n  background-color: #ffffff;\n  font-family: \"Roboto\";\n  font-size: 12px;\n  font-weight: 500;\n  width: 98px;\n  height: 38px;\n  border-width: 0px;\n  border-radius: 8px;\n}\n\n.movie-description {\n  color: #ffffff;\n  font-family: \"Roboto\";\n  font-size: 12px;\n}\n\n.sub-heading {\n  color: #ffffff;\n  font-family: \"Roboto\";\n  font-size: 18px;\n  font-weight: 500;\n}\n\n.similar-movie-image {\n  margin-left: 5px;\n  margin-right: 5px;\n}\n\n",
+                        "language": "CSS"
+                    },
+                    {
+                        "default_code": true,
+                        "code_content": "",
+                        "language": "JAVASCRIPT"
+                    }
+                ]
+            }
+        ],
+        "read_only_languages": [],
+        "hints": []
+    }
+]

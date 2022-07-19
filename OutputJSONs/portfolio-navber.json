@@ -1,0 +1,129 @@
+[
+    {
+        "question_type": "HTML_CODING",
+        "question": {
+            "question_id": "cd33ae6a-a3b9-4bb8-8ce5-d677b1e0895d",
+            "content": "In this assignment, let's build a Portfolio Website Navbar & Banner Section by applying the concepts we learned till now.\n\n**Refer to the below images.**\n\nThe following images illustrate all device sizes, from extra small to extra large.\n\nExtra Small (Size < 576px) and Small (Size >= 576px):\n\n<img src=\"https://nkb-backend-media-static-tenxiitian.s3.ap-south-1.amazonaws.com/tenxiitian_prod/programs/Tech+Programs/frontend-content/ccbp/coding-practice-questions/responsive-website/porfolio-nav-and-banner-xs-v1.png\" alt=\"portfolio-website-to-build\" style=\"max-width:100%;box-shadow:0 2.8px 2.2px rgba(0, 0, 0, 0.12)\"/>\n\n<br/>\n\n<img src=\"https://nkb-backend-media-static-tenxiitian.s3.ap-south-1.amazonaws.com/tenxiitian_prod/programs/Tech+Programs/frontend-content/ccbp/coding-practice-questions/responsive-website/porfolio-nav-and-banner-expand-xs-v1.png\" alt=\"portfolio-website-to-build\" style=\"max-width:100%;box-shadow:0 2.8px 2.2px rgba(0, 0, 0, 0.12)\"/>\n\n<br/>\n\n<br/>\n\nMedium (Size >= 768px):\n\n<img src=\"https://nkb-backend-media-static-tenxiitian.s3.ap-south-1.amazonaws.com/tenxiitian_prod/programs/Tech+Programs/frontend-content/ccbp/coding-practice-questions/responsive-website/porfolio-nav-and-banner-md-v1.png\" alt=\"portfolio-website-to-build\" style=\"max-width:100%;box-shadow:0 2.8px 2.2px rgba(0, 0, 0, 0.12)\"/>\n\n<br/>\n\n<br/>\n\nLarge (Size >= 992px) and Extra Large (Size >= 1200px):\n\n<img src=\"https://nkb-backend-media-static-tenxiitian.s3.ap-south-1.amazonaws.com/tenxiitian_prod/programs/Tech+Programs/frontend-content/ccbp/coding-practice-questions/responsive-website/porfolio-nav-and-banner-lg-v1.png\" alt=\"portfolio-website-to-build\" style=\"max-width:100%;box-shadow:0 2.8px 2.2px rgba(0, 0, 0, 0.12)\"/>\n\n<MultiLineNote>\n- Try to achieve the design as close as possible.\n- The logo in the Navbar is the text. You can customise it by adding your favourite or initial letters.\n- You can use your own image in the Banner Section.\n</MultiLineNote>\n\n<hr/>\n\n#### Resources\n\nUse the image URL given below.\n\n- [https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/portfolio-banner-img.png](https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/portfolio-banner-img.png)\n\n\n**CSS Colors used:**\n\n<div style=\"background-color: #4b6cc1; width: 150px; padding: 10px; color: white\">\\#4b6cc1</div>\n<div style=\"background-color: #191a1d; width: 150px; padding: 10px; color: white\">\\#191a1d</div>\n<div style=\"background-color: #9aa5b1; width: 150px; padding: 10px; color: white\">\\#9aa5b1</div>\n\n<hr/>\n\n#### Concepts Review\n\nWant to quickly review some of the concepts you\u2019ve been learning?\n\nTake a look at the Cheat Sheets.\n",
+            "content_type": "MARKDOWN",
+            "short_text": "Portfolio Website Navbar & Banner Section",
+            "multimedia": [],
+            "language": "ENGLISH",
+            "difficulty": "EASY",
+            "tag_names": []
+        },
+        "question_asked_by_companies_info": [],
+        "test_cases": [
+            {
+                "test_case_id": "7f619520-3361-44fd-922b-0095215bd345",
+                "display_text": "Page should consist of an HTML image element",
+                "testcase_evaluation_type": "CLIENT_SIDE_EVALUATION",
+                "order": 1,
+                "criteria": "assert.isAbove($('#htmlPreview').find('img').length, 0);",
+                "weightage": 10
+            },
+            {
+                "test_case_id": "32e861c4-b755-47c1-b929-39cee3e0afa6",
+                "display_text": "Page should consist of an HTML button element",
+                "testcase_evaluation_type": "CLIENT_SIDE_EVALUATION",
+                "order": 2,
+                "criteria": "assert.isAbove($('#htmlPreview').find('button').length, 0);",
+                "weightage": 10
+            },
+            {
+                "test_case_id": "1b9cd5e3-6523-46ec-bd5f-2a2983b229cc",
+                "display_text": "Page should consist of an HTML span element",
+                "testcase_evaluation_type": "CLIENT_SIDE_EVALUATION",
+                "order": 3,
+                "criteria": "assert.isAbove($('#htmlPreview').find('span').length, 0);",
+                "weightage": 10
+            },
+            {
+                "test_case_id": "99876224-9ec7-476f-bdd8-6607b755441a",
+                "display_text": "Page should consist of an HTML container element with the bootstrap class name ml-auto or the CSS property margin-left with the value auto",
+                "testcase_evaluation_type": "CLIENT_SIDE_EVALUATION",
+                "order": 4,
+                "criteria": "assert.isAbove($('#htmlPreview').find('div').toArray().filter(( element, index )=>$(element).hasClass('ml-auto')||$(element).css('margin-left')==='auto').length, 0);",
+                "weightage": 10
+            },
+            {
+                "test_case_id": "3648733c-f30d-4d7b-9a3f-45e55e367b26",
+                "display_text": "Page should consist of an HTML container element with the bootstrap class name container",
+                "testcase_evaluation_type": "CLIENT_SIDE_EVALUATION",
+                "order": 5,
+                "criteria": "assert.isAbove($('#htmlPreview').find('div').toArray().filter(( element, index )=>$(element).hasClass('container')).length, 0);",
+                "weightage": 10
+            },
+            {
+                "test_case_id": "6de02520-5b78-4d1f-88fb-bf78746f3c91",
+                "display_text": "Page should consist of an HTML container element with the bootstrap class name row",
+                "testcase_evaluation_type": "CLIENT_SIDE_EVALUATION",
+                "order": 6,
+                "criteria": "assert.isAbove($('#htmlPreview').find('div').toArray().filter(( element, index )=>$(element).hasClass('row')).length, 0);",
+                "weightage": 10
+            },
+            {
+                "test_case_id": "76832e99-d8d1-40d3-9d16-f6d5298e2f61",
+                "display_text": "Page should consist of an HTML container element with the bootstrap grid column class name in medium devices that starts with col-md-",
+                "testcase_evaluation_type": "CLIENT_SIDE_EVALUATION",
+                "order": 7,
+                "criteria": "assert.isAbove($('#htmlPreview').find('div[class*= \"col-md-\"]').length, 0);",
+                "weightage": 10
+            },
+            {
+                "test_case_id": "dc772ca6-7fec-4f28-9b55-a8aa1067637c",
+                "display_text": "Page should consist of an HTML container element with the bootstrap order class name in medium devices that starts with order-md-",
+                "testcase_evaluation_type": "CLIENT_SIDE_EVALUATION",
+                "order": 8,
+                "criteria": "assert.isAbove($('#htmlPreview').find('div[class*= \"order-md-\"]').length, 0);",
+                "weightage": 10
+            }
+        ],
+        "total_score": 80,
+        "html_coding_question_details": [
+            {
+                "code_content": "<!DOCTYPE html>\n<html>\n  <head>\n    <link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css\" integrity=\"sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z\" crossorigin=\"anonymous\" />\n    <script src=\"https://code.jquery.com/jquery-3.5.1.slim.min.js\" integrity=\"sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj\" crossorigin=\"anonymous\"></script>\n    <script src=\"https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js\" integrity=\"sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN\" crossorigin=\"anonymous\"></script>\n    <script src=\"https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js\" integrity=\"sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV\" crossorigin=\"anonymous\"></script>\n  </head>\n  <body>\n    Your code goes here\n  </body>\n</html>\n",
+                "language": "HTML"
+            },
+            {
+                "code_content": "@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');\n",
+                "language": "CSS"
+            },
+            {
+                "code_content": "",
+                "language": "JAVASCRIPT"
+            }
+        ],
+        "solutions": [
+            {
+                "order": 1,
+                "title": {
+                    "content": "Portfolio Website Navbar & Banner Section",
+                    "content_type": "TEXT"
+                },
+                "description": {
+                    "content": "An approach of designing a Portfolio Website Navbar & Banner Section using Bootstrap.",
+                    "content_type": "TEXT"
+                },
+                "code_details": [
+                    {
+                        "default_code": true,
+                        "code_content": "<!DOCTYPE html>\n<html>\n  <head>\n    <link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css\" integrity=\"sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z\" crossorigin=\"anonymous\" />\n    <script src=\"https://code.jquery.com/jquery-3.5.1.slim.min.js\" integrity=\"sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj\" crossorigin=\"anonymous\"></script>\n    <script src=\"https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js\" integrity=\"sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN\" crossorigin=\"anonymous\"></script>\n    <script src=\"https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js\" integrity=\"sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV\" crossorigin=\"anonymous\"></script>\n  </head>\n  <body>\n    <nav class=\"navbar navbar-expand-lg navbar-dark bg-dark\">\n      <a class=\"navbar-brand portfolio-logo\" href=\"#\">J.</a>\n      <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarNavAltMarkup\" aria-controls=\"navbarNavAltMarkup\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n        <span class=\"navbar-toggler-icon\"></span>\n      </button>\n      <div class=\"collapse navbar-collapse\" id=\"navbarNavAltMarkup\">\n        <div class=\"navbar-nav ml-auto\">\n          <a class=\"nav-link active text-white\" href=\"#\">\n            Home\n            <span class=\"sr-only\">(current)</span>\n          </a>\n          <a class=\"nav-link text-white\" href=\"#\">About me</a>\n          <a class=\"nav-link text-white\" href=\"#\">Projects</a>\n          <a class=\"nav-link text-white\" href=\"#\">Recent Blogs</a>\n          <a class=\"nav-link text-white\" href=\"#\">Testimonial</a>\n        </div>\n      </div>\n    </nav>\n    <div class=\"banner-section-bg-container d-flex flex-column justify-content-center\">\n      <div class=\"container\">\n        <div class=\"row\">\n          <div class=\"col-12 col-md-5 order-1 order-md-2\">\n            <img\n              src=\"https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/portfolio-banner-img.png\"\n              class=\"banner-section-image\"\n            />\n          </div>\n          <div class=\"col-12 col-md-7 order-2 order-md-1 d-flex flex-column justify-content-center\">\n            <h1 class=\"banner-section-heading mb-3\">\n              Hey, I am <span class=\"person-name\">Jenny</span>\n            </h1>\n            <p class=\"banner-section-description mb-3\">\n              I am a Frontend Developer & Mentor.\n            </p>\n            <button class=\"custom-button\">Contact Me</button>\n          </div>\n        </div>\n      </div>\n    </div>\n  </body>\n</html>\n",
+                        "language": "HTML"
+                    },
+                    {
+                        "default_code": true,
+                        "code_content": "@import url(\"https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap\");\n\n.portfolio-logo {\n  font-family: \"Roboto\";\n  font-size: 24px;\n  font-weight: 700;\n  border-style: solid;\n  border-width: 2px;\n  border-color: #4b6cc1;\n  padding-left: 10px;\n  padding-right: 10px;\n}\n.banner-section-bg-container {\n  background-color: #191a1d;\n  height: 100vh;\n}\n.banner-section-heading {\n  color: white;\n  font-family: \"Roboto\";\n  font-size: 45px;\n  font-weight: 300;\n}\n.banner-section-description {\n  color: #9aa5b1;\n  font-family: \"Roboto\";\n  font-size: 24px;\n}\n.banner-section-image {\n  width: 280px;\n  margin-bottom: 10px;\n}\n.person-name {\n  color: #4b6cc1;\n}\n.custom-button {\n  color: white;\n  background-color: #4b6cc1;\n  width: 130px;\n  height: 45px;\n  border-width: 0;\n  border-radius: 8px;\n}\n",
+                        "language": "CSS"
+                    },
+                    {
+                        "default_code": true,
+                        "code_content": "",
+                        "language": "JAVASCRIPT"
+                    }
+                ]
+            }
+        ],
+        "read_only_languages": [],
+        "hints": []
+    }
+]

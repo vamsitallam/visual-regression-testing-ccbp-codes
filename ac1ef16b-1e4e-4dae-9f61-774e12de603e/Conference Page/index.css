@@ -1,0 +1,39 @@
+.image {
+    height: 60vh;
+    width: 80vh;
+
+}
+
+.heading {
+    padding: 10px;
+    color: #183b56;
+    font-family: "Roboto";
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+.paragraph {
+    color: #5a7184;
+    font-family: "Roboto";
+    font-size: 15px;
+    padding: 12px;
+}
+
+.button {
+    width: 100px;
+    padding: 10px;
+}
+
+.heading1 {
+    padding: 10px;
+    color: #183b56;
+    font-family: "Roboto";
+    font-size: 50px;
+    font-weight: bold;
+
+}
+
+.padding {
+    padding: 10px;
+}
